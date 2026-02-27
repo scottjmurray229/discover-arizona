@@ -1,0 +1,807 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Arizona History Guide', url: '/history/' },
+];
+
+const pageTitle = 'Arizona History Guide — From Ancient Puebloans to the Wild West';
+const pageDescription = 'Explore Arizona\'s layered history — ancient cliff dwellings, Spanish missions, Wild West gunfights, copper mining booms, and the road to statehood. 15+ historic sites with visitor info.';
+
+interface HistoricSite {
+  name: string;
+  destination: string;
+  slug: string;
+  description: string;
+  tag?: string;
+}
+
+interface EraSection {
+  id: string;
+  era: string;
+  tagline: string;
+  gradient: string;
+  sites: HistoricSite[];
+}
+
+const eras: EraSection[] = [
+  {
+    id: 'native-american',
+    era: 'Native American Heritage',
+    tagline: 'Thousands of years of civilization — from Ancestral Puebloans to the Navajo, Hopi, and Tohono O\'odham nations',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    sites: [
+      {
+        name: 'Montezuma Castle National Monument',
+        destination: 'Flagstaff area',
+        slug: 'flagstaff',
+        description: 'A 20-room cliff dwelling built by the Sinagua people around 1100 AD, tucked into a limestone cliff 70 feet above Beaver Creek. One of the best-preserved cliff dwellings in North America. Despite the name, it has nothing to do with the Aztec emperor — early settlers made that mistake.',
+        tag: 'Must-See',
+      },
+      {
+        name: 'Wupatki National Monument',
+        destination: 'Flagstaff area',
+        slug: 'flagstaff',
+        description: 'Over 800 ancient pueblo ruins scattered across the red desert north of Flagstaff. The largest — Wupatki Pueblo — was once a thriving trade center with over 100 rooms. The Sinagua, Cohonina, and Ancestral Puebloan peoples built here after Sunset Crater\'s eruption enriched the soil around 1085 AD.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Navajo Nation & Monument Valley',
+        destination: 'Monument Valley',
+        slug: 'monument-valley',
+        description: 'The Navajo Nation is the largest Native American reservation in the United States, spanning 27,000 square miles across Arizona, Utah, and New Mexico. Monument Valley\'s iconic sandstone buttes have been home to the Navajo (Dine) people for centuries. Guided tours led by Navajo guides reveal petroglyphs, ancient dwellings, and cultural stories invisible to the casual visitor.',
+        tag: 'Cultural',
+      },
+      {
+        name: 'Hopi Mesas',
+        destination: 'Flagstaff area',
+        slug: 'flagstaff',
+        description: 'The Hopi have lived on three mesas in northeastern Arizona for over 1,000 years. Old Oraibi, founded around 1100 AD, is one of the oldest continuously inhabited settlements in North America. The Hopi Cultural Center on Second Mesa offers a museum, restaurant, and guided tours. Photography restrictions apply — always ask first.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Petrified Forest & Puerco Pueblo',
+        destination: 'Petrified Forest',
+        slug: 'petrified-forest',
+        description: 'Puerco Pueblo within Petrified Forest National Park was home to Ancestral Puebloan people around 1300 AD. The 100-room pueblo sits along the Puerco River, and the nearby petroglyphs include a solar calendar that aligns with the summer solstice. The park preserves both geological and human history spanning millions of years.',
+      },
+    ],
+  },
+  {
+    id: 'spanish-colonial',
+    era: 'Spanish Colonial Era',
+    tagline: 'Missionaries, presidios, and the clash of cultures that shaped the Sonoran borderlands',
+    gradient: 'linear-gradient(135deg, #BF360C 0%, #E8654A 100%)',
+    sites: [
+      {
+        name: 'San Xavier del Bac Mission',
+        destination: 'Tucson',
+        slug: 'tucson',
+        description: 'The "White Dove of the Desert" — a stunning Spanish Colonial mission founded by Father Kino in 1692 and completed in 1797. The ornate Baroque interior is one of the finest examples of Spanish Colonial architecture in the United States. Still an active parish for the Tohono O\'odham Nation. Free to visit; donations appreciated.',
+        tag: 'Must-See',
+      },
+      {
+        name: 'Tubac Presidio State Historic Park',
+        destination: 'Tucson area',
+        slug: 'tucson',
+        description: 'The site of the first European settlement in Arizona, established as a Spanish presidio in 1752. The park preserves the original presidio foundations, and the museum tells the story of Spanish, Mexican, and American occupation of the Santa Cruz Valley. Today, Tubac is an artist colony, but the layers of history run deep.',
+      },
+      {
+        name: 'Tumacacori National Historical Park',
+        destination: 'Tucson area',
+        slug: 'tucson',
+        description: 'Three Spanish mission ruins along the Santa Cruz River, south of Tucson near the Mexican border. The main church at Tumacacori — founded by Jesuits in 1691 — is a haunting ruin with partially intact walls, frescoes, and a domed sanctuary. The annual Tumacacori Festival in December celebrates the region\'s multicultural heritage.',
+        tag: 'Heritage',
+      },
+    ],
+  },
+  {
+    id: 'wild-west',
+    era: 'Wild West & Mining Boom',
+    tagline: 'Gunfights at the O.K. Corral, copper kings, and the boomtowns that built modern Arizona',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #6A1B9A 50%, #D4A853 100%)',
+    sites: [
+      {
+        name: 'Tombstone',
+        destination: 'Tombstone',
+        slug: 'tombstone',
+        description: 'The "Town Too Tough to Die" — site of the legendary Gunfight at the O.K. Corral in 1881, where Wyatt Earp and Doc Holliday faced the Clanton-McLaury gang. Today, the entire town is a National Historic Landmark with daily reenactments, the Bird Cage Theatre, Boothill Graveyard, and saloons that have been pouring whiskey since the silver mining days.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Bisbee & the Copper Queen Mine',
+        destination: 'Bisbee',
+        slug: 'bisbee',
+        description: 'Once the largest copper mining town in the world, Bisbee produced over 8 billion pounds of copper before the mines closed in 1975. The Copper Queen Mine Tour takes you 1,500 feet into the mountain on the same rail cars miners used. Above ground, the Lavender Pit — a massive open-pit mine — is a jaw-dropping testament to the scale of Arizona\'s mining industry.',
+        tag: 'Must-See',
+      },
+      {
+        name: 'Jerome',
+        destination: 'Sedona area',
+        slug: 'sedona',
+        description: 'A copper mining ghost town perched on Cleopatra Hill above the Verde Valley. Jerome went from a population of 15,000 in the 1920s to fewer than 50 by the 1950s. Today it\'s a quirky artist colony with galleries, wine tasting rooms, and the Jerome State Historic Park housed in a former mining mansion. The town literally slid down the mountain — the old jail is 225 feet from its original foundation.',
+      },
+      {
+        name: 'Route 66 Heritage',
+        destination: 'Flagstaff',
+        slug: 'flagstaff',
+        description: 'Arizona has the longest surviving stretch of Route 66 in the country. Flagstaff\'s downtown is anchored by the Mother Road, with neon signs, historic motels, and diners that haven\'t changed since the 1950s. The stretch from Seligman to Kingman is the most scenic — a winding two-lane road through high desert with classic Americana at every turn.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Yuma Territorial Prison',
+        destination: 'Phoenix area',
+        slug: 'phoenix',
+        description: 'Opened in 1876 on a bluff above the Colorado River, the Yuma Territorial Prison held over 3,000 inmates during its 33 years of operation — including 29 women. Conditions were harsh but surprisingly progressive for the era, with a library and hospital. The prison museum preserves original cells, guard towers, and the dark hole solitary confinement cell.',
+      },
+    ],
+  },
+  {
+    id: 'modern-arizona',
+    era: 'Modern Arizona & Statehood',
+    tagline: 'From the 48th state to the space age — Arizona\'s journey from territory to modern marvel',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #14B8A6 100%)',
+    sites: [
+      {
+        name: 'Arizona State Capitol Museum',
+        destination: 'Phoenix',
+        slug: 'phoenix',
+        description: 'Arizona became the 48th state on February 14, 1912 — the last of the contiguous states to join the Union. The Capitol building in Phoenix, topped with its distinctive copper dome (what else in the Copper State?), houses a museum covering territorial days through statehood. Free admission.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Hoover Dam',
+        destination: 'Phoenix area',
+        slug: 'phoenix',
+        description: 'Built during the Great Depression between 1931 and 1936, Hoover Dam tamed the Colorado River and made modern Phoenix and the agricultural boom of central Arizona possible. The dam is 726 feet tall and created Lake Mead, the largest reservoir in the United States. Guided tours of the power plant and dam interior run daily.',
+        tag: 'Must-See',
+      },
+      {
+        name: 'Heard Museum',
+        destination: 'Phoenix',
+        slug: 'phoenix',
+        description: 'One of the finest museums of Native American art and culture in the world, located in central Phoenix. The permanent collection spans centuries of Southwest Native art, from ancient pottery to contemporary installations. The "HOME: Native People in the Southwest" exhibit is essential viewing for understanding Arizona\'s indigenous cultures.',
+      },
+      {
+        name: 'Saguaro National Park',
+        destination: 'Saguaro National Park',
+        slug: 'saguaro-national-park',
+        description: 'The saguaro cactus is Arizona\'s most recognizable symbol — and this national park flanking Tucson protects the largest concentration of them on earth. Some saguaros live over 200 years and grow to 40 feet tall. The park\'s Rincon Mountain and Tucson Mountain districts preserve Sonoran Desert landscapes that represent Arizona\'s natural heritage as powerfully as any man-made monument.',
+      },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="hist-hero">
+    <div class="hist-hero-gradient"></div>
+    <div class="hist-hero-noise"></div>
+    <div class="hist-hero-content">
+      <h1 class="hist-hero-title">Arizona History Guide</h1>
+      <p class="hist-hero-subtitle">Ancient cliff dwellings, Spanish missions, Wild West gunfights, and copper mining booms — trace the layers of history that shaped the Grand Canyon State from its earliest inhabitants to the 48th star on the flag.</p>
+      <div class="hist-hero-meta">
+        <div class="hist-hero-meta-item">
+          <span class="hist-hero-meta-label">Eras</span>
+          <span class="hist-hero-meta-value">4</span>
+        </div>
+        <div class="hist-hero-meta-item">
+          <span class="hist-hero-meta-label">Historic Sites</span>
+          <span class="hist-hero-meta-value">17</span>
+        </div>
+        <div class="hist-hero-meta-item">
+          <span class="hist-hero-meta-label">Statehood</span>
+          <span class="hist-hero-meta-value">1912</span>
+        </div>
+      </div>
+    </div>
+    <div class="hist-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="hist-personal reveal">
+    <div class="container-content">
+      <blockquote class="hist-personal-quote">
+        <p>Most people come to Arizona for the landscapes, and I get it — the Grand Canyon, Monument Valley, the red rocks of Sedona. But the history is what kept bringing me back. Standing inside a Sinagua cliff dwelling at Montezuma Castle, walking through the Copper Queen Mine in Bisbee, watching a gunfight reenactment on the streets of Tombstone — Arizona packs more history per square mile than most people expect. Every canyon and mesa has a story, and every story makes the next visit richer.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="hist-quicknav reveal">
+    <div class="container-content">
+      <div class="hist-quicknav-grid">
+        {eras.map((era) => (
+          <a href={`#${era.id}`} class="hist-quicknav-chip">
+            <span class="hist-quicknav-label">{era.era}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Era Sections -->
+  {eras.map((era) => (
+    <section class="hist-era reveal" id={era.id}>
+      <div class="container-content">
+        <div class="hist-era-header" style={`background: ${era.gradient};`}>
+          <div class="hist-era-header-inner">
+            <h2 class="hist-era-name">{era.era}</h2>
+            <p class="hist-era-tagline">{era.tagline}</p>
+            <span class="hist-era-count">{era.sites.length} sites</span>
+          </div>
+        </div>
+
+        <div class="hist-site-grid">
+          {era.sites.map((site) => (
+            <a href={`/destinations/${site.slug}/`} class="hist-site-card">
+              <div class="hist-site-body">
+                <div class="hist-site-top">
+                  <h3 class="hist-site-name">{site.name}</h3>
+                  {site.tag && (
+                    <span class={`hist-tag hist-tag--${site.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{site.tag}</span>
+                  )}
+                </div>
+                <p class="hist-site-destination">{site.destination}</p>
+                <p class="hist-site-desc">{site.description}</p>
+                <span class="hist-site-cta">Explore {site.destination} &rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="hist-cta-section reveal">
+    <div class="container-content">
+      <div class="hist-cta-card">
+        <h2 class="hist-cta-heading">Plan Your History Trip</h2>
+        <p class="hist-cta-text">Tell our AI planner which eras interest you and it will build a custom itinerary — with historic sites, driving routes, and the best times to visit.</p>
+        <a href="/plan/" class="hist-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "When did Arizona become a state?", answer: "Arizona became the 48th state on February 14, 1912 — Valentine's Day. It was the last of the contiguous 48 states to be admitted to the Union. Before statehood, Arizona was a U.S. territory since 1863, and before that it was part of the New Mexico Territory, and before that part of Mexico until the Gadsden Purchase of 1853." },
+    { question: "What Native American tribes are from Arizona?", answer: "Arizona is home to 22 federally recognized tribes. The largest is the Navajo Nation (Dine), spanning 27,000 square miles. The Hopi have lived on their mesas for over 1,000 years. The Tohono O'odham and Akimel O'odham (Pima) peoples have inhabited the Sonoran Desert for centuries. The Apache (including White Mountain and San Carlos) are also deeply rooted in Arizona history. Each nation has its own government, culture, and visitor policies." },
+    { question: "What happened at the O.K. Corral?", answer: "The Gunfight at the O.K. Corral took place on October 26, 1881, in Tombstone, Arizona. Wyatt Earp, his brothers Virgil and Morgan, and Doc Holliday faced off against the Clanton-McLaury gang in a 30-second shootout that killed three men. The event became the most famous gunfight in American Western history. Tombstone reenacts it daily and preserves the original site as a National Historic Landmark." },
+    { question: "What is the oldest settlement in Arizona?", answer: "Old Oraibi on the Hopi Third Mesa, founded around 1100 AD, is one of the oldest continuously inhabited settlements in North America. For European settlement, Tubac (established as a Spanish presidio in 1752) and Tucson (presidio established in 1775) are the oldest. The Hohokam people built extensive canal systems in the Phoenix area as early as 300 BC." },
+    { question: "Why was copper so important to Arizona?", answer: "Arizona earned the nickname 'The Copper State' because it was the nation's largest copper producer for decades. Towns like Bisbee, Jerome, and Globe were built entirely around copper mining. Bisbee alone produced over 8 billion pounds of copper. The copper industry drove Arizona's economy, population growth, and path to statehood. The state capitol dome is clad in copper as a tribute." },
+    { question: "Can you visit the Navajo Nation?", answer: "Yes, the Navajo Nation welcomes visitors. Monument Valley Navajo Tribal Park is the most popular destination, with self-drive loops and guided tours. Many areas require a Navajo guide — especially backcountry locations with petroglyphs and ruins. Always respect tribal laws: no alcohol on the reservation, ask permission before photographing people, and stay on designated routes. The Navajo Nation observes Daylight Saving Time (unlike the rest of Arizona)." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Arizona History Guide"
+      description="A PDF guide to Arizona's most important historic sites — with driving routes, visitor info, and the stories behind each location."
+      bullets={[
+        'All 17 historic sites with directions and hours',
+        'Era-by-era timeline from ancient pueblos to statehood',
+        'Navajo Nation and Hopi visitor etiquette guide',
+        'Route 66 road trip itinerary through Arizona',
+      ]}
+      guideTag="pillar-history"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="hist-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hist-crosslinks-heading">Explore More</h3>
+      <div class="hist-crosslinks-grid">
+        <a href="/hiking/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#9968;</span>
+          <span class="hist-crosslink-label">Hiking Guide</span>
+          <span class="hist-crosslink-desc">20+ trails from Grand Canyon rim-to-rim to Sedona red rocks</span>
+        </a>
+        <a href="/cuisine/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127860;</span>
+          <span class="hist-crosslink-label">Arizona Cuisine</span>
+          <span class="hist-crosslink-desc">Sonoran hot dogs, Navajo fry bread, and Tucson's UNESCO food scene</span>
+        </a>
+        <a href="/destinations/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127965;</span>
+          <span class="hist-crosslink-label">All Destinations</span>
+          <span class="hist-crosslink-desc">12 Arizona destinations with honest reviews and tips</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO — History-inspired warm gradient
+     ================================================================ */
+  .hist-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .hist-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #78350F 40%, #D4A574 100%);
+  }
+
+  .hist-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .hist-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .hist-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .hist-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .hist-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .hist-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .hist-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .hist-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .hist-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: histBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes histBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .hist-personal {
+    padding-block: var(--space-8);
+  }
+
+  .hist-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #D4A574;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .hist-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .hist-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK NAV
+     ================================================================ */
+  .hist-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .hist-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .hist-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: var(--color-slate);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .hist-quicknav-chip:hover {
+    background: #FDF8F0;
+    color: #78350F;
+    transform: translateY(-2px);
+  }
+
+  .hist-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     ERA SECTION
+     ================================================================ */
+  .hist-era {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .hist-era-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .hist-era-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hist-era-name {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-1);
+    line-height: 1.1;
+  }
+
+  .hist-era-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-3);
+    max-width: 540px;
+    line-height: 1.5;
+  }
+
+  .hist-era-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     SITE CARDS
+     ================================================================ */
+  .hist-site-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .hist-site-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hist-site-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hist-site-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .hist-site-body {
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hist-site-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: 4px;
+  }
+
+  .hist-site-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .hist-site-destination {
+    font-size: 0.72rem;
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-medium);
+    margin: 0 0 var(--space-2);
+  }
+
+  .hist-site-desc {
+    font-size: 0.82rem;
+    color: var(--color-slate);
+    line-height: 1.6;
+    margin: 0 0 var(--space-3);
+  }
+
+  .hist-site-cta {
+    font-size: 0.72rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-ocean-teal);
+    letter-spacing: 0.02em;
+    margin-top: auto;
+  }
+
+  /* Tags */
+  .hist-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 6px;
+    line-height: 1.4;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .hist-tag--mustsee {
+    background: rgba(13, 115, 119, 0.1);
+    color: var(--color-ocean-teal);
+  }
+
+  .hist-tag--heritage {
+    background: rgba(191, 54, 12, 0.1);
+    color: #BF360C;
+  }
+
+  .hist-tag--iconic {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .hist-tag--cultural {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .hist-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .hist-cta-card {
+    background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .hist-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .hist-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .hist-cta-button {
+    display: inline-block;
+    background: var(--color-warm-coral);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .hist-cta-button:hover {
+    background: #d4553b;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .hist-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .hist-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .hist-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .hist-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hist-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hist-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .hist-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .hist-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .hist-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .hist-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .hist-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .hist-scroll-hint {
+      display: none;
+    }
+
+    .hist-era-header {
+      padding: var(--space-4) var(--space-4);
+    }
+  }
+</style>

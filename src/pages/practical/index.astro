@@ -1,0 +1,696 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Travel Tips', url: '/practical/' },
+];
+
+const pageTitle = 'Arizona Travel Tips — When to Visit, Getting Around & Safety Guide';
+const pageDescription = 'Everything you need to plan an Arizona trip — when to visit by region, driving corridors, budget guide, heat safety, packing for elevation changes, and essential travel tips.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'when-to-visit',
+    icon: '&#9728;',
+    title: 'When to Visit Arizona',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+    items: [
+      { label: 'Phoenix & Tucson (Desert)', text: 'October through April is the sweet spot — daytime highs of 65-85 degrees F, cool nights, and clear skies. Summer (May-September) regularly hits 110-115 degrees F in Phoenix and 100-105 degrees F in Tucson. Unless you\'re specifically visiting for resort pool season at discounted rates, avoid the low desert in summer. Monsoon season (July-September) brings dramatic afternoon thunderstorms and flash flood risks.' },
+      { label: 'Sedona', text: 'Year-round destination, but spring (March-May) and fall (September-November) are ideal — comfortable hiking weather in the 70s-80s. Summer is hot (95-100 degrees F) but manageable with early morning starts. Winter brings occasional snow that makes the red rocks absolutely stunning. Sedona is about 20 degrees cooler than Phoenix at 4,500 feet elevation.' },
+      { label: 'Grand Canyon', text: 'South Rim is open year-round. Spring (April-May) and fall (September-October) offer the best hiking weather. Summer is crowded and the inner canyon exceeds 110 degrees F at river level. Winter brings snow to the rim and dramatically fewer crowds — a magical time to visit if you\'re prepared for cold. The North Rim is only open May through October (closes for snow).' },
+      { label: 'Flagstaff & Northern Arizona', text: 'Summer (June-September) is peak season — daytime highs of 75-85 degrees F while Phoenix roasts. Fall aspens in late September are spectacular. Winter brings serious snow (100+ inches annually) and skiing at Arizona Snowbowl. Spring is muddy but beautiful with wildflowers. Flagstaff at 7,000 feet is a different world from the desert below.' },
+      { label: 'Monument Valley & Page', text: 'Spring and fall are best — mild temperatures and good light for photography. Summer is hot (90-100 degrees F) but the landscape is at its most dramatic during monsoon storms. Winter is cold, especially at night, but clear skies and low-angle light create stunning photography conditions. The Navajo Nation observes Daylight Saving Time (the rest of Arizona does not).' },
+      { label: 'Arizona Doesn\'t Observe Daylight Saving Time', text: 'Arizona stays on Mountain Standard Time (MST) year-round — no "spring forward" or "fall back." This means Arizona matches Mountain Time in winter but is equivalent to Pacific Time in summer. The one exception: the Navajo Nation does observe DST. This can create confusion when driving between Navajo and non-Navajo areas. Set your phone to automatic time zone and double-check reservation times.' },
+    ],
+  },
+  {
+    id: 'getting-around',
+    icon: '&#128663;',
+    title: 'Getting Around Arizona',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'Car Rental Is Essential', text: 'Arizona is a driving state. Public transit exists in Phoenix (Valley Metro light rail and bus) but won\'t get you to the Grand Canyon, Sedona, Monument Valley, or anywhere you actually want to go. Rent a car at Phoenix Sky Harbor (PHX) or Tucson International (TUS). Major rental companies are on-site at both airports. Book early during peak season (October-April) when snowbirds flood the state.' },
+      { label: 'I-17 Corridor (Phoenix to Flagstaff)', text: 'The main north-south highway connecting Phoenix to Flagstaff — 145 miles, about 2 hours. Climbs from 1,100 feet to 7,000 feet with dramatic scenery changes. The Sedona exit (AZ-179) is at mile 298. This is the route you\'ll drive most often. Can get icy in winter above Cordes Junction — check ADOT road conditions before heading north in winter months.' },
+      { label: 'I-10 Corridor (Phoenix to Tucson)', text: 'The southern corridor — 115 miles, about 1.5 hours. Flat, fast, and mostly straight through Sonoran Desert. Continues east to the New Mexico border and west to Los Angeles. The stretch between Phoenix and Tucson is where you\'ll see your first saguaro forests from the highway.' },
+      { label: 'I-40 Corridor (Flagstaff to East/West)', text: 'The east-west highway following the old Route 66 alignment. Connects Flagstaff to Kingman (west) and Holbrook/Petrified Forest (east). This is your route to Monument Valley (US-89 north from Flagstaff), Page and Lake Powell (US-89 north), and the Navajo Nation.' },
+      { label: 'Distances Between Destinations', text: '<strong>Phoenix to Grand Canyon:</strong> 230 miles (3.5 hours). <strong>Phoenix to Sedona:</strong> 115 miles (2 hours). <strong>Sedona to Grand Canyon:</strong> 115 miles (2 hours). <strong>Phoenix to Tucson:</strong> 115 miles (1.5 hours). <strong>Flagstaff to Monument Valley:</strong> 180 miles (3 hours). <strong>Flagstaff to Page:</strong> 130 miles (2.25 hours). <strong>Tucson to Tombstone:</strong> 70 miles (1.25 hours). Arizona is big — plan driving days accordingly.' },
+      { label: 'Gas & Road Tips', text: 'Keep your tank above half — gas stations can be 60+ miles apart on reservation roads and in rural northern Arizona. Premium fuel isn\'t necessary for rental cars. Cell service is unreliable or nonexistent on many rural highways and throughout the Navajo Nation. Download offline maps before you leave. Wildlife on roads (elk, deer, javelina) is a real hazard at dawn and dusk.' },
+    ],
+  },
+  {
+    id: 'budget',
+    icon: '&#128176;',
+    title: 'Budget Guide',
+    gradient: 'linear-gradient(135deg, #2E7D32 0%, #66BB6A 100%)',
+    items: [
+      { label: 'Budget Traveler ($75-125/day)', text: 'Stay at motels, budget hotels, or campgrounds ($30-80/night). Eat at taco trucks, diners, and fast-casual restaurants ($8-15/meal). Hike free trails (most trailheads are free or $5-10 for parking). Cook your own breakfast at accommodation with a kitchenette. Shop at Fry\'s or Safeway for snacks and water. Gas averages $3.50-4.50/gallon.' },
+      { label: 'Mid-Range Traveler ($150-300/day)', text: 'Stay at 3-star hotels and vacation rentals ($100-200/night). Mix restaurant dining with casual meals ($15-40/meal). Take guided tours at the Grand Canyon, Sedona, and Monument Valley ($50-150 each). Buy the America the Beautiful Pass ($80/year for all national parks) if visiting 2+ parks. Scottsdale and Sedona are more expensive than Tucson and Flagstaff.' },
+      { label: 'Luxury Traveler ($400+/day)', text: 'Stay at Scottsdale resorts (Sanctuary, Four Seasons, Mountain Shadows) or Grand Canyon lodges ($300-800/night). Fine dining at Scottsdale restaurants ($75-200/person). Private Jeep tours, helicopter flights over the Grand Canyon ($200-500), and hot air balloon rides in the Sonoran Desert ($250-400). Summer rates at Phoenix and Scottsdale resorts drop 50-70% — the best luxury deal in Arizona.' },
+      { label: 'Free & Cheap Activities', text: 'Hiking is mostly free. Saguaro National Park entrance is $25/vehicle for 7 days. Grand Canyon entrance is $35/vehicle for 7 days. The America the Beautiful Pass ($80) covers all national parks and federal recreation areas for a year. Many Phoenix museums have free days (Heard Museum, Phoenix Art Museum). Sedona\'s Red Rock Pass ($5/day) covers most trailhead parking. Tombstone\'s main street is free to walk.' },
+      { label: 'Tipping', text: 'Standard US tipping applies. Restaurants: 18-20% of the pre-tax bill. Hotel housekeeping: $2-5/night (leave it daily). Tour guides: 15-20% of tour cost. Bartenders: $1-2/drink. Rideshare drivers: 15-20%. Valet parking: $3-5. Tipping is not optional in Arizona — service workers rely on tips as a significant part of their income.' },
+    ],
+  },
+  {
+    id: 'safety',
+    icon: '&#9888;',
+    title: 'Safety & Health',
+    gradient: 'linear-gradient(135deg, #C62828 0%, #EF5350 100%)',
+    items: [
+      { label: 'Heat Safety Is Priority One', text: 'Heat kills more people in Arizona than any other weather event. From May through September, Phoenix temperatures regularly exceed 110 degrees F. Asphalt can reach 170 degrees F. Carry water everywhere — not just on hikes. Never leave children or pets in cars, even for minutes. If you feel dizzy, nauseous, or stop sweating, get to shade and air conditioning immediately and call 911. Heat exhaustion progresses to heat stroke fast.' },
+      { label: 'Dehydration', text: 'Arizona\'s dry air dehydrates you faster than humid climates — you lose moisture through breathing and evaporation before you feel thirsty. Drink water proactively, not just when thirsty. A good baseline: half your body weight in ounces per day, more with activity. Electrolyte tablets help. Signs of dehydration: headache, dark urine, dizziness, fatigue. Every hotel and gas station sells water — keep a case in your car at all times.' },
+      { label: 'Flash Floods', text: 'Arizona monsoon season (July-September) brings sudden, violent thunderstorms. Flash floods can fill dry washes and slot canyons in minutes — a storm 20 miles away can send a wall of water through a bone-dry wash. Never drive through flooded roads (Arizona\'s "Stupid Motorist Law" means you can be billed for your own rescue). Avoid slot canyons and dry washes when storms are in the forecast anywhere in the region.' },
+      { label: 'Wildlife', text: 'Rattlesnakes are common on trails and even in suburban areas — watch where you step, especially on rocky trails and at dusk. Gila monsters are venomous but slow and rarely encountered. Scorpions are more of a concern in hotels and campgrounds — shake out your shoes in the morning. Javelina (peccaries) can be aggressive if cornered. Mountain lions exist but are extremely shy. Black bears in northern Arizona are rare but follow food storage protocols when camping.' },
+      { label: 'Sun Exposure at Elevation', text: 'UV intensity increases roughly 4% for every 1,000 feet of elevation. At Flagstaff (7,000 feet) and the Grand Canyon South Rim (7,000 feet), you burn significantly faster than at sea level. Wear SPF 50+ sunscreen, reapply every 90 minutes, and wear a wide-brim hat and UV sunglasses. This applies year-round, including winter — snow reflects UV rays.' },
+      { label: 'Travel Insurance', text: 'If you\'re visiting from outside the US, travel insurance with medical coverage is highly recommended. US healthcare is expensive — an emergency room visit can easily cost $5,000+, and a helicopter rescue from the Grand Canyon runs $15,000-30,000+. Domestic travelers should verify their health insurance covers out-of-state emergencies. Adventure activities like backcountry hiking may not be covered by basic policies.' },
+    ],
+  },
+  {
+    id: 'packing',
+    icon: '&#127890;',
+    title: 'Packing Essentials',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D97706 100%)',
+    items: [
+      { label: 'Layers for Elevation Changes', text: 'Arizona\'s elevation ranges from 70 feet (Yuma) to 12,637 feet (Humphreys Peak). You can drive from 110-degree Phoenix to 70-degree Flagstaff in two hours. Pack layers: a lightweight fleece or jacket for northern Arizona, Grand Canyon rim, and any evening above 5,000 feet. Even in summer, the Grand Canyon rim and Flagstaff can drop into the 40s at night.' },
+      { label: 'Sun Protection', text: 'Wide-brim hat (not a baseball cap — you need ear and neck coverage), UV-rated sunglasses, SPF 50+ sunscreen (bring more than you think), and lightweight long-sleeve UPF shirts for hiking. Arizona sun is relentless, and most visitors underestimate it. Lip balm with SPF is easy to forget and hard to do without.' },
+      { label: 'Hiking Boots & Footwear', text: 'Sturdy hiking shoes with ankle support and good traction for rocky trails. Sedona and Grand Canyon trails involve scrambling on slickrock where grip matters. Break in new boots before your trip. Casual shoes for towns and restaurants. Sandals for pools and hotels only — don\'t hike in them.' },
+      { label: 'Water & Hydration Gear', text: 'Bring a reusable water bottle (at least 32 oz) and consider a hydration pack for longer hikes. Electrolyte tablets or powder packets. Keep a case of bottled water in your rental car at all times — you\'ll go through it faster than you expect. Water refill stations are available at national parks and most trailheads.' },
+      { label: 'Desert & Driving Essentials', text: 'Download offline maps (Google Maps or Gaia GPS) before leaving cell service areas — coverage is spotty throughout rural Arizona and nonexistent on much of the Navajo Nation. Bring a car phone charger, a basic first aid kit, and a flashlight/headlamp for pre-dawn hike starts. A cooler with ice and cold drinks in your car trunk is a game-changer in summer.' },
+      { label: 'Seasonal Considerations', text: '<strong>Summer (May-Sept):</strong> Lightest possible clothing, cooling towels, extra water, portable phone charger (heat drains batteries). <strong>Winter (Nov-March):</strong> Warm jacket for northern Arizona, gloves and beanie for Grand Canyon rim, tire chains if driving above 6,000 feet in storms. <strong>Monsoon (July-Sept):</strong> Quick-dry clothing, waterproof phone case, emergency poncho. <strong>Spring (March-May):</strong> Allergy medication — Arizona wildflower season is beautiful but pollen-heavy.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="prac-hero">
+    <video class="prac-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/practical-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="prac-hero-gradient"></div>
+    <div class="prac-hero-noise"></div>
+    <div class="prac-hero-content">
+      <h1 class="prac-hero-title">Arizona Travel Tips</h1>
+      <p class="prac-hero-subtitle">When to visit each region, driving corridors, budget planning, heat safety essentials, packing for elevation changes, and everything else you need to plan a smart Arizona trip.</p>
+      <div class="prac-hero-meta">
+        <div class="prac-hero-meta-item">
+          <span class="prac-hero-meta-label">Topics</span>
+          <span class="prac-hero-meta-value">5</span>
+        </div>
+        <div class="prac-hero-meta-item">
+          <span class="prac-hero-meta-label">Updated</span>
+          <span class="prac-hero-meta-value">Feb 2026</span>
+        </div>
+        <div class="prac-hero-meta-item">
+          <span class="prac-hero-meta-label">Destinations</span>
+          <span class="prac-hero-meta-value">12</span>
+        </div>
+      </div>
+    </div>
+    <div class="prac-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="prac-personal reveal">
+    <div class="container-content">
+      <blockquote class="prac-personal-quote">
+        <p>My first Arizona trip, I showed up in June with one water bottle and no sunscreen. I lasted about 30 minutes on Camelback Mountain before turning around, sunburned and dizzy. Since then, I've learned the hard way that Arizona travel is all about timing and preparation — the right season for the right region, enough water to drown a camel, and layers for the 40-degree temperature swings between Phoenix and Flagstaff. This guide is the cheat sheet I wish someone had handed me that first trip.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="prac-quicknav reveal">
+    <div class="container-content">
+      <div class="prac-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="prac-quicknav-chip">
+            <span class="prac-quicknav-icon" set:html={t.icon} />
+            <span class="prac-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="prac-topic reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="prac-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="prac-topic-header-inner">
+            <span class="prac-topic-icon" set:html={topic.icon} />
+            <h2 class="prac-topic-title">{topic.title}</h2>
+            <span class="prac-topic-count">{topic.items.length} tips</span>
+          </div>
+        </div>
+
+        <div class="prac-tip-grid">
+          {topic.items.map((item) => (
+            <div class="prac-tip-card">
+              <h3 class="prac-tip-label">{item.label}</h3>
+              <p class="prac-tip-text" set:html={item.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="prac-cta-section reveal">
+    <div class="container-content">
+      <div class="prac-cta-card">
+        <h2 class="prac-cta-heading">Plan Your Arizona Trip</h2>
+        <p class="prac-cta-text">Tell our AI planner your dates, budget, and interests — it builds a custom day-by-day itinerary with driving routes, hotels, and activities.</p>
+        <a href="/plan/" class="prac-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "When is the best time to visit Arizona?", answer: "It depends on where you're going. For Phoenix, Scottsdale, and Tucson: October through April when temperatures are pleasant (65-85 degrees F). For the Grand Canyon and Sedona: spring (March-May) and fall (September-November). For Flagstaff and northern Arizona: summer (June-September) when the mountains are cool while the desert below swelters. Winter is excellent for the Grand Canyon (fewer crowds, occasional snow) and for deeply discounted luxury resort rates in Scottsdale." },
+    { question: "Do I need a car to visit Arizona?", answer: "Yes — a rental car is essentially mandatory. Arizona's destinations are spread across vast distances with minimal public transit connections. Phoenix has light rail and buses for city exploration, but the Grand Canyon, Sedona, Monument Valley, and Tucson all require driving. Rent at Phoenix Sky Harbor (PHX) or Tucson International (TUS). Major distances: Phoenix to Grand Canyon is 3.5 hours, Phoenix to Sedona is 2 hours, Phoenix to Tucson is 1.5 hours." },
+    { question: "How hot does Arizona get in summer?", answer: "Phoenix regularly hits 110-115 degrees F (43-46 degrees C) from June through September. Tucson averages 100-105 degrees F. Ground-level surfaces like asphalt, trail rocks, and sand can reach 150-170 degrees F. Northern Arizona is significantly cooler — Flagstaff averages 80-85 degrees F in summer. The Grand Canyon rim stays in the 80s while the inner canyon at river level exceeds 110 degrees F." },
+    { question: "Is Arizona safe for tourists?", answer: "Arizona is very safe for tourists. The main risks are environmental, not criminal: heat exposure, dehydration, flash floods during monsoon season, and wildlife encounters (rattlesnakes, scorpions). Follow heat safety protocols, carry plenty of water, check weather before entering slot canyons, and watch where you step on trails. Urban areas are generally safe with standard city precautions." },
+    { question: "How much does an Arizona trip cost?", answer: "Budget: $75-125/day (motels, casual dining, free hikes). Mid-range: $150-300/day (3-star hotels, restaurants, guided tours). Luxury: $400+/day (Scottsdale resorts, fine dining, helicopter tours). National park entry: $25-35/vehicle. The America the Beautiful Pass ($80/year) covers all national parks. Summer rates at Scottsdale luxury resorts can drop 50-70% — a genuine bargain." },
+    { question: "What should I pack for Arizona?", answer: "Sun protection (hat, SPF 50+, UV sunglasses), layers for elevation changes (Phoenix at 1,100 ft to Flagstaff at 7,000 ft), sturdy hiking shoes, at least 2 reusable water bottles, electrolyte tablets, a lightweight jacket for northern Arizona evenings, and offline maps downloaded to your phone. Keep a case of water in your rental car. In summer: cooling towels and lightweight long-sleeve UPF shirts." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Arizona Travel Essentials Guide"
+      description="A printable PDF covering everything in this guide — plus packing checklists, driving route maps, and seasonal planning calendars."
+      bullets={[
+        'Region-by-region seasonal guide with temperature charts',
+        'Driving distance matrix between all 12 destinations',
+        'Packing checklist for desert, mountain, and canyon trips',
+        'Heat safety protocol and emergency contact numbers',
+      ]}
+      guideTag="pillar-practical"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="prac-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="prac-crosslinks-heading">Explore More</h3>
+      <div class="prac-crosslinks-grid">
+        <a href="/hiking/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#9968;</span>
+          <span class="prac-crosslink-label">Hiking Guide</span>
+          <span class="prac-crosslink-desc">20+ trails with difficulty ratings and safety tips</span>
+        </a>
+        <a href="/history/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#127963;</span>
+          <span class="prac-crosslink-label">Arizona History</span>
+          <span class="prac-crosslink-desc">Ancient ruins, Wild West towns, and mining heritage</span>
+        </a>
+        <a href="/cuisine/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#127860;</span>
+          <span class="prac-crosslink-label">Arizona Cuisine</span>
+          <span class="prac-crosslink-desc">Sonoran hot dogs, Navajo fry bread, and Tucson's UNESCO food scene</span>
+        </a>
+        <a href="/destinations/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#127965;</span>
+          <span class="prac-crosslink-label">All Destinations</span>
+          <span class="prac-crosslink-desc">12 Arizona destinations with honest reviews and tips</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO — Practical travel gradient
+     ================================================================ */
+  .prac-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .prac-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .prac-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%);
+  }
+
+  .prac-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .prac-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .prac-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .prac-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .prac-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .prac-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .prac-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .prac-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .prac-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: pracBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes pracBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .prac-personal {
+    padding-block: var(--space-8);
+  }
+
+  .prac-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid var(--color-ocean-teal);
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .prac-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .prac-personal-quote cite {
+    font-size: var(--text-caption);
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK NAV — Jump-to chips
+     ================================================================ */
+  .prac-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .prac-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .prac-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: var(--color-slate);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .prac-quicknav-chip:hover {
+    background: var(--color-sky);
+    color: var(--color-ocean-teal);
+    transform: translateY(-2px);
+  }
+
+  .prac-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .prac-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .prac-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .prac-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .prac-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .prac-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .prac-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .prac-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .prac-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .prac-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .prac-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .prac-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .prac-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .prac-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .prac-tip-text :global(a) {
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(13, 115, 119, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .prac-tip-text :global(a:hover) {
+    text-decoration-color: var(--color-ocean-teal);
+  }
+
+  .prac-tip-text :global(strong) {
+    color: var(--color-deep-night);
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .prac-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .prac-cta-card {
+    background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .prac-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .prac-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .prac-cta-button {
+    display: inline-block;
+    background: var(--color-warm-coral);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .prac-cta-button:hover {
+    background: #d4553b;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .prac-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .prac-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .prac-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .prac-crosslinks-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .prac-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .prac-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .prac-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .prac-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .prac-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .prac-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .prac-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .prac-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .prac-scroll-hint {
+      display: none;
+    }
+
+    .prac-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+  }
+</style>

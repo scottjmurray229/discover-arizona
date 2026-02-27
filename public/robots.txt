@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://discoveringarizona.info/sitemap-index.xml

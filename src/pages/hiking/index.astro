@@ -1,0 +1,1034 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Arizona Hiking Guide', url: '/hiking/' },
+];
+
+const pageTitle = 'Arizona Hiking Guide — 20+ Trails from Grand Canyon to Sedona';
+const pageDescription = 'The complete Arizona hiking guide — Grand Canyon rim-to-rim, Sedona red rock trails, Camelback Mountain, and desert safety tips. 20+ trails organized by difficulty and region.';
+
+interface Trail {
+  name: string;
+  destination: string;
+  slug: string;
+  difficulty: string;
+  distance: string;
+  elevation: string;
+  description: string;
+  tag?: string;
+}
+
+interface RegionSection {
+  id: string;
+  region: string;
+  tagline: string;
+  gradient: string;
+  trails: Trail[];
+}
+
+const regions: RegionSection[] = [
+  {
+    id: 'grand-canyon',
+    region: 'Grand Canyon',
+    tagline: 'America\'s greatest hiking destination — from rim strolls to multi-day backcountry descents',
+    gradient: 'linear-gradient(135deg, #BF360C 0%, #E8654A 100%)',
+    trails: [
+      {
+        name: 'Bright Angel Trail',
+        destination: 'Grand Canyon',
+        slug: 'grand-canyon',
+        difficulty: 'Strenuous',
+        distance: '9.5 miles one-way',
+        elevation: '4,380 ft descent',
+        description: 'The Grand Canyon\'s most popular below-rim trail descends from the South Rim to the Colorado River via Indian Garden. Rest houses with water at 1.5 and 3 miles make excellent turnaround points for day hikers. Going to the river and back in one day is strongly discouraged by the National Park Service — and for good reason. Start before dawn.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'South Kaibab Trail',
+        destination: 'Grand Canyon',
+        slug: 'grand-canyon',
+        difficulty: 'Strenuous',
+        distance: '7.1 miles one-way',
+        elevation: '4,860 ft descent',
+        description: 'Steeper and more exposed than Bright Angel, but the views are unmatched — every step reveals new canyon layers. Ooh Aah Point (0.9 miles) and Cedar Ridge (1.5 miles) are the best short turnarounds. No water on this trail. The combination of South Kaibab down and Bright Angel up is the classic Grand Canyon day hike for experienced hikers.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Rim-to-Rim',
+        destination: 'Grand Canyon',
+        slug: 'grand-canyon',
+        difficulty: 'Expert',
+        distance: '21–24 miles one-way',
+        elevation: '5,760 ft change',
+        description: 'The ultimate Grand Canyon experience — crossing the entire canyon from South Rim to North Rim (or vice versa) via Phantom Ranch and the Colorado River. Most hikers take 2–3 days with a night at Phantom Ranch or Bright Angel Campground. Permits required and extremely competitive. Spring and fall are the only viable seasons.',
+        tag: 'Bucket List',
+      },
+      {
+        name: 'South Rim Trail',
+        destination: 'Grand Canyon',
+        slug: 'grand-canyon',
+        difficulty: 'Easy',
+        distance: '13 miles one-way',
+        elevation: 'Mostly flat',
+        description: 'A paved rim-level trail connecting Grand Canyon Village to Hermits Rest with jaw-dropping views the entire way. Fully accessible for the first 2.5 miles. Shuttle buses run along Hermit Road (March–November) so you can hike one way and ride back. This is the hike for everyone — families, first-timers, and anyone who wants the views without the vertical.',
+      },
+    ],
+  },
+  {
+    id: 'sedona',
+    region: 'Sedona',
+    tagline: 'Red rock formations, vortex energy, and some of the most photogenic trails in the Southwest',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
+    trails: [
+      {
+        name: 'Cathedral Rock Trail',
+        destination: 'Sedona',
+        slug: 'sedona',
+        difficulty: 'Moderate–Strenuous',
+        distance: '1.2 miles round-trip',
+        elevation: '740 ft gain',
+        description: 'Short but intense — a steep scramble up slickrock to a saddle between Cathedral Rock\'s iconic spires. The final stretch requires hands-on-rock scrambling, and the reward is a 360-degree panorama of Sedona\'s red rock country. One of the most photographed spots in Arizona. Go at sunrise to beat crowds and catch the best light.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Devil\'s Bridge Trail',
+        destination: 'Sedona',
+        slug: 'sedona',
+        difficulty: 'Moderate',
+        distance: '4.2 miles round-trip',
+        elevation: '400 ft gain',
+        description: 'Sedona\'s most Instagrammed hike leads to the largest natural sandstone arch in the region. The trail itself is pleasant through juniper and pinyon, but the payoff is standing on (or under) the bridge with red rock canyon walls framing every direction. The trailhead parking fills by 8 AM on weekends — arrive early or take the shuttle.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Bell Rock Pathway',
+        destination: 'Sedona',
+        slug: 'sedona',
+        difficulty: 'Easy',
+        distance: '3.6 miles round-trip',
+        elevation: '200 ft gain',
+        description: 'A mostly flat loop around the base of Bell Rock — one of Sedona\'s four famous vortex sites. The pathway is wide, well-maintained, and accessible to most fitness levels. You can scramble up the lower sections of Bell Rock itself for elevated views, but the upper rock gets steep and slippery fast. Great for sunset.',
+      },
+      {
+        name: 'Bear Mountain Trail',
+        destination: 'Sedona',
+        slug: 'sedona',
+        difficulty: 'Strenuous',
+        distance: '4.9 miles round-trip',
+        elevation: '1,975 ft gain',
+        description: 'The hardest official trail in Sedona — a relentless climb with rock scrambles, exposed ledges, and jaw-dropping views from every switchback. The summit offers the most expansive panorama in the red rock country. Not for beginners. Bring plenty of water and start early. The descent is harder than the climb.',
+      },
+      {
+        name: 'West Fork of Oak Creek',
+        destination: 'Sedona',
+        slug: 'sedona',
+        difficulty: 'Easy–Moderate',
+        distance: '6.4 miles round-trip',
+        elevation: '200 ft gain',
+        description: 'A shaded canyon hike along Oak Creek through towering cliffs and old-growth forest. The trail crosses the creek multiple times (bring shoes that can get wet) and the fall foliage in October is some of the best in Arizona. Completely different from Sedona\'s red rock trails — lush, green, and cool even in summer. Trailhead requires a Red Rock Pass ($5/day).',
+      },
+    ],
+  },
+  {
+    id: 'phoenix-metro',
+    region: 'Phoenix Metro',
+    tagline: 'Urban desert trails with surprising mountain scrambles right in the heart of the Valley',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+    trails: [
+      {
+        name: 'Camelback Mountain (Echo Canyon)',
+        destination: 'Phoenix',
+        slug: 'phoenix',
+        difficulty: 'Strenuous',
+        distance: '2.4 miles round-trip',
+        elevation: '1,264 ft gain',
+        description: 'Phoenix\'s most famous hike — a steep, rocky scramble up the "head" of Camelback Mountain with hands-on-rock sections and iron handrails bolted into the cliff. The summit views span the entire Valley of the Sun. This trail is brutally hot from May through September — people are rescued by helicopter every summer. Hike before sunrise in summer, and bring at least 2 liters of water year-round.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Tom\'s Thumb Trail',
+        destination: 'Scottsdale',
+        slug: 'scottsdale',
+        difficulty: 'Moderate–Strenuous',
+        distance: '4.4 miles round-trip',
+        elevation: '1,120 ft gain',
+        description: 'A McDowell Sonoran Preserve trail that winds through pristine Sonoran Desert to a massive granite thumb formation. The trail passes through saguaro forests, boulder fields, and wildflower meadows (in spring). Less crowded than Camelback with equally impressive views. The final scramble to the base of Tom\'s Thumb is worth the effort.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Piestewa Peak (Summit Trail)',
+        destination: 'Phoenix',
+        slug: 'phoenix',
+        difficulty: 'Moderate–Strenuous',
+        distance: '2.4 miles round-trip',
+        elevation: '1,190 ft gain',
+        description: 'The second most popular hike in Phoenix after Camelback — a well-maintained but steep trail with stone steps and switchbacks. Views from the 2,608-foot summit span from downtown Phoenix to Four Peaks. Popular with locals for sunrise fitness hikes. Less technical than Camelback but still demanding.',
+      },
+      {
+        name: 'Flat Iron via Siphon Draw',
+        destination: 'Phoenix area',
+        slug: 'phoenix',
+        difficulty: 'Expert',
+        distance: '5.6 miles round-trip',
+        elevation: '2,800 ft gain',
+        description: 'The crown jewel of the Superstition Mountains — a lung-busting scramble to the flat summit of the iconic Flat Iron formation. The trail starts gently through Lost Dutchman State Park, then gets increasingly vertical with exposed scrambling. The views from the top — 360 degrees of Sonoran Desert and the maze of Superstition ridgelines — are the best in the metro area.',
+        tag: 'Bucket List',
+      },
+    ],
+  },
+  {
+    id: 'northern-arizona',
+    region: 'Northern Arizona & Flagstaff',
+    tagline: 'Alpine forests, volcanic peaks, and high-country trails far above the desert heat',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #6A1B9A 50%, #D4A853 100%)',
+    trails: [
+      {
+        name: 'Humphreys Peak Trail',
+        destination: 'Flagstaff',
+        slug: 'flagstaff',
+        difficulty: 'Strenuous',
+        distance: '10 miles round-trip',
+        elevation: '3,333 ft gain',
+        description: 'Arizona\'s highest point at 12,637 feet. The trail climbs through aspen groves and bristlecone pine forest above treeline to a rocky alpine summit. The final mile above treeline is exposed to weather — afternoon thunderstorms are common and dangerous in summer. Start by 6 AM. The aspens turn brilliant gold in late September.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Kachina Trail',
+        destination: 'Flagstaff',
+        slug: 'flagstaff',
+        difficulty: 'Moderate',
+        distance: '10 miles one-way (shuttled) or 5 miles out-and-back',
+        elevation: '500 ft gain',
+        description: 'A gorgeous traversing trail along the slopes of the San Francisco Peaks through aspen and mixed conifer forest. Wildflowers in summer, golden aspens in fall. The trail stays between 9,000 and 9,500 feet — cool and shaded even when Phoenix is 110 degrees. One of the best fall foliage hikes in Arizona.',
+      },
+      {
+        name: 'Peralta Trail to Fremont Saddle',
+        destination: 'Phoenix area',
+        slug: 'phoenix',
+        difficulty: 'Moderate',
+        distance: '4.6 miles round-trip',
+        elevation: '1,350 ft gain',
+        description: 'A Superstition Wilderness classic that ends at Fremont Saddle with a dramatic view of Weaver\'s Needle — the formation at the center of the Lost Dutchman gold mine legend. The trail winds through a narrow canyon with towering rock walls. Spring wildflowers (February–March) turn the canyon floor into a wildflower carpet.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Horseshoe Bend Trail',
+        destination: 'Page',
+        slug: 'page',
+        difficulty: 'Easy–Moderate',
+        distance: '1.5 miles round-trip',
+        elevation: '200 ft gain',
+        description: 'The short walk to one of the most photographed spots in Arizona — a 1,000-foot drop to the Colorado River\'s perfect horseshoe curve. The trail is easy but fully exposed to sun with no shade. Bring water even for this short hike. Guardrails now protect the overlook, but the vertigo factor is still intense. Best light is mid-morning or late afternoon.',
+      },
+      {
+        name: 'Havasu Falls (Havasupai)',
+        destination: 'Grand Canyon area',
+        slug: 'grand-canyon',
+        difficulty: 'Strenuous',
+        distance: '10 miles one-way to campground',
+        elevation: '2,000 ft descent',
+        description: 'The turquoise waterfalls of the Havasupai Reservation are among the most stunning in the world — but getting there requires planning. Permits sell out in minutes each February for the following year. The 10-mile hike to the campground descends through a side canyon to a series of impossibly blue waterfalls. Helicopter shuttles are available. A once-in-a-lifetime experience if you can get a permit.',
+        tag: 'Bucket List',
+      },
+    ],
+  },
+  {
+    id: 'southern-arizona',
+    region: 'Southern Arizona',
+    tagline: 'Saguaro forests, sky islands, and desert trails with mountain-top payoffs',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
+    trails: [
+      {
+        name: 'Valley View Overlook Trail',
+        destination: 'Saguaro National Park',
+        slug: 'saguaro-national-park',
+        difficulty: 'Easy',
+        distance: '0.8 miles round-trip',
+        elevation: '100 ft gain',
+        description: 'A short, flat trail through the densest saguaro forest in the park, ending at a ridgeline overlook with views across the Avra Valley. This is the quintessential Saguaro National Park experience — giant cacti in every direction, some over 150 years old and 40 feet tall. Best at sunrise or sunset when the saguaros cast long shadows.',
+      },
+      {
+        name: 'Tanque Verde Ridge Trail',
+        destination: 'Saguaro National Park',
+        slug: 'saguaro-national-park',
+        difficulty: 'Strenuous',
+        distance: '18 miles round-trip to Tanque Verde Peak',
+        elevation: '4,000 ft gain',
+        description: 'The most demanding trail in Saguaro National Park climbs from desert floor to the top of the Rincon Mountains through five distinct life zones — from saguaro desert at the bottom to pine forest at the top. Most hikers do the first few miles for the ridge views and turn back. The full hike to Tanque Verde Peak is an all-day commitment.',
+        tag: 'Expert',
+      },
+      {
+        name: 'Romero Pools Trail',
+        destination: 'Tucson',
+        slug: 'tucson',
+        difficulty: 'Moderate',
+        distance: '5.6 miles round-trip',
+        elevation: '1,000 ft gain',
+        description: 'A Catalina State Park trail that climbs through desert wash and boulder-strewn canyon to natural rock pools fed by seasonal streams. The pools hold water most of the year and offer a refreshing reward in the desert heat. The trail passes through classic Sonoran Desert scenery with excellent saguaro and wildflower displays in spring.',
+      },
+    ],
+  },
+];
+
+const safetyTips = [
+  { label: 'Heat Is the Real Danger', text: 'Arizona\'s desert heat kills more hikers than any other hazard. From May through September, Phoenix and Tucson regularly exceed 110 degrees F. Do not hike Camelback, Piestewa Peak, or any exposed desert trail after 9 AM in summer. Start before sunrise. Carry a minimum of 1 liter of water per hour of hiking. If you feel dizzy, nauseous, or stop sweating — stop immediately, find shade, and call 911.' },
+  { label: 'Water Requirements', text: 'Carry more water than you think you need. The rule of thumb is 1 liter per hour for moderate hiking, more for strenuous trails. Electrolyte tablets or packets help replace what you lose through sweat. Dehydration sets in fast in dry desert air — you can lose a liter of sweat per hour without realizing it. There is no reliable water on most Arizona trails.' },
+  { label: 'Sun Protection', text: 'Arizona sun at elevation is intense. Wear a wide-brim hat, UV-rated sunglasses, and apply SPF 50+ sunscreen before you start — and reapply every 90 minutes. Lightweight long sleeves with UPF protection beat bare skin. Sunburn at 7,000 feet in Sedona happens faster than you expect.' },
+  { label: 'Flash Flood Awareness', text: 'Slot canyons and desert washes are flash flood zones during monsoon season (July–September). A storm 20 miles away can send a wall of water through a dry canyon with zero warning. Never enter a slot canyon when rain is forecast anywhere in the region. Antelope Canyon near Page has been the site of fatal flash floods. Check weather before every hike.' },
+  { label: 'Wildlife', text: 'Rattlesnakes are common on Arizona trails — watch where you step and place your hands, especially around rocks and ledges. Gila monsters (venomous but slow) live in the desert but are rarely seen. Scorpions are more of a campsite concern than a trail hazard. Mountain lions exist but attacks are extremely rare. Make noise on the trail and give wildlife space.' },
+  { label: 'Best Seasons by Region', text: '<strong>Phoenix/Tucson (desert):</strong> October through April — avoid summer entirely. <strong>Sedona:</strong> Year-round, but spring and fall are ideal. Summer is hot but manageable with early starts. <strong>Flagstaff/Grand Canyon:</strong> May through October for high-elevation trails. Winter brings snow above 7,000 feet. <strong>Grand Canyon below rim:</strong> Spring and fall only — summer temperatures at the river exceed 110°F.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="hike-hero">
+    <div class="hike-hero-gradient"></div>
+    <div class="hike-hero-noise"></div>
+    <div class="hike-hero-content">
+      <h1 class="hike-hero-title">Arizona Hiking Guide</h1>
+      <p class="hike-hero-subtitle">Grand Canyon rim-to-rim, Sedona's red rock scrambles, Camelback Mountain at sunrise, and desert trails through forests of giant saguaros — 20+ trails organized by region and difficulty with safety tips for every season.</p>
+      <div class="hike-hero-meta">
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Trails</span>
+          <span class="hike-hero-meta-value">21</span>
+        </div>
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Regions</span>
+          <span class="hike-hero-meta-value">5</span>
+        </div>
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Highest Point</span>
+          <span class="hike-hero-meta-value">12,637 ft</span>
+        </div>
+      </div>
+    </div>
+    <div class="hike-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="hike-personal reveal">
+    <div class="container-content">
+      <blockquote class="hike-personal-quote">
+        <p>I came to Arizona thinking the Grand Canyon was the hike. It is, but it's one of dozens that blew me away. Scrambling up Cathedral Rock in Sedona at sunrise, climbing Camelback Mountain while the Phoenix skyline glowed beneath me, standing on the Flat Iron summit with nothing but Superstition wilderness in every direction — Arizona has more hiking variety in one state than most regions have in an entire country. The desert looks empty until you start walking through it.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="hike-quicknav reveal">
+    <div class="container-content">
+      <div class="hike-quicknav-grid">
+        {regions.map((r) => (
+          <a href={`#${r.id}`} class="hike-quicknav-chip">
+            <span class="hike-quicknav-label">{r.region}</span>
+          </a>
+        ))}
+        <a href="#safety" class="hike-quicknav-chip hike-quicknav-chip--safety">
+          <span class="hike-quicknav-label">Safety Tips</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Region Sections -->
+  {regions.map((region) => (
+    <section class="hike-region reveal" id={region.id}>
+      <div class="container-content">
+        <div class="hike-region-header" style={`background: ${region.gradient};`}>
+          <div class="hike-region-header-inner">
+            <h2 class="hike-region-name">{region.region}</h2>
+            <p class="hike-region-tagline">{region.tagline}</p>
+            <span class="hike-region-count">{region.trails.length} trails</span>
+          </div>
+        </div>
+
+        <div class="hike-trail-grid">
+          {region.trails.map((trail) => (
+            <a href={`/destinations/${trail.slug}/`} class="hike-trail-card">
+              <div class="hike-trail-body">
+                <div class="hike-trail-top">
+                  <h3 class="hike-trail-name">{trail.name}</h3>
+                  {trail.tag && (
+                    <span class={`hike-tag hike-tag--${trail.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{trail.tag}</span>
+                  )}
+                </div>
+                <p class="hike-trail-destination">{trail.destination}</p>
+                <div class="hike-trail-stats">
+                  <span class="hike-trail-stat"><strong>Difficulty:</strong> {trail.difficulty}</span>
+                  <span class="hike-trail-stat"><strong>Distance:</strong> {trail.distance}</span>
+                  <span class="hike-trail-stat"><strong>Elevation:</strong> {trail.elevation}</span>
+                </div>
+                <p class="hike-trail-desc">{trail.description}</p>
+                <span class="hike-trail-cta">Explore {trail.destination} &rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Safety Tips Section -->
+  <section class="hike-safety reveal" id="safety">
+    <div class="container-content">
+      <div class="hike-safety-header">
+        <h2 class="hike-safety-title">Desert Hiking Safety</h2>
+        <p class="hike-safety-subtitle">Arizona's desert is beautiful but unforgiving. These tips can save your life.</p>
+      </div>
+      <div class="hike-safety-grid">
+        {safetyTips.map((tip) => (
+          <div class="hike-safety-card">
+            <h3 class="hike-safety-label">{tip.label}</h3>
+            <p class="hike-safety-text" set:html={tip.text} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="hike-cta-section reveal">
+    <div class="container-content">
+      <div class="hike-cta-card">
+        <h2 class="hike-cta-heading">Plan Your Hiking Trip</h2>
+        <p class="hike-cta-text">Tell our AI planner your fitness level and preferred trails — it will build a custom Arizona hiking itinerary with trailhead directions, gear lists, and seasonal recommendations.</p>
+        <a href="/plan/" class="hike-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "What is the best hike in Arizona?", answer: "The Grand Canyon's Bright Angel Trail or South Kaibab Trail are the most iconic. For a shorter experience, Cathedral Rock in Sedona offers stunning views in under 2 hours. Camelback Mountain in Phoenix is the most popular urban hike. For a bucket-list multi-day adventure, the Grand Canyon rim-to-rim is unmatched. The 'best' depends on your fitness level, the season, and what kind of scenery you want." },
+    { question: "When is the best time to hike in Arizona?", answer: "It depends on elevation. Phoenix and Tucson desert trails: October through April (avoid summer heat entirely). Sedona: year-round, with spring and fall being ideal. Grand Canyon below-rim: spring (March-May) and fall (September-November). Flagstaff and high-elevation trails: May through October. Summer monsoon season (July-September) brings afternoon thunderstorms statewide — plan to finish hikes by early afternoon." },
+    { question: "How hot does it get on Arizona trails?", answer: "Phoenix desert trails can exceed 115 degrees F in summer. The Grand Canyon inner gorge reaches 110+ degrees F at river level. Sedona averages 95-100 degrees F in July-August. Flagstaff stays cooler at 80-85 degrees F in summer. Ground temperature on exposed rock can be 20-30 degrees hotter than air temperature. Heat-related rescues happen every week in summer — take it seriously." },
+    { question: "Do I need a permit for Grand Canyon hiking?", answer: "Day hikes on established trails (Bright Angel, South Kaibab, Rim Trail) do not require a permit. Overnight camping below the rim requires a backcountry permit from the Grand Canyon Backcountry Information Center — apply 4 months in advance on the 1st of the month. Havasu Falls (Havasupai) requires a separate tribal permit that sells out in minutes each February." },
+    { question: "What should I bring on an Arizona hike?", answer: "Minimum: 1-2 liters of water per hour, electrolyte tablets, sunscreen (SPF 50+), wide-brim hat, sturdy hiking shoes (not sandals), snacks with salt, and a fully charged phone. For longer hikes: trekking poles, first aid kit, headlamp (if starting before dawn), and a printed map — cell service is unreliable on most trails. In summer: a cooling towel and extra water beyond what you think you need." },
+    { question: "Are there easy hikes in Arizona for families?", answer: "Yes. The Grand Canyon South Rim Trail is paved and mostly flat with stunning views. Bell Rock Pathway in Sedona is a gentle loop around a famous red rock formation. Valley View Overlook Trail in Saguaro National Park is under a mile through giant cactus forests. Horseshoe Bend near Page is a short 1.5-mile round-trip to one of Arizona's most photographed spots. All are family-friendly year-round (with proper sun protection)." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Arizona Hiking Guide"
+      description="A printable PDF with all 21 trails, difficulty ratings, seasonal recommendations, and a desert safety checklist."
+      bullets={[
+        'All 21 trails with trailhead GPS coordinates',
+        'Difficulty and elevation profiles for every trail',
+        'Season-by-season hiking calendar for each region',
+        'Desert safety checklist and emergency contacts',
+      ]}
+      guideTag="pillar-hiking"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="hike-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hike-crosslinks-heading">Explore More</h3>
+      <div class="hike-crosslinks-grid">
+        <a href="/history/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127963;</span>
+          <span class="hike-crosslink-label">Arizona History</span>
+          <span class="hike-crosslink-desc">Ancient cliff dwellings, Wild West towns, and mining heritage</span>
+        </a>
+        <a href="/cuisine/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127860;</span>
+          <span class="hike-crosslink-label">Arizona Cuisine</span>
+          <span class="hike-crosslink-desc">Refuel with Sonoran hot dogs, Navajo fry bread, and more</span>
+        </a>
+        <a href="/practical/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#9993;</span>
+          <span class="hike-crosslink-label">Travel Tips</span>
+          <span class="hike-crosslink-desc">When to visit, getting around, packing, and safety essentials</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO — Hiking gradient (earth tones)
+     ================================================================ */
+  .hike-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .hike-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #065F46 40%, #059669 100%);
+  }
+
+  .hike-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .hike-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .hike-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .hike-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .hike-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .hike-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .hike-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .hike-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .hike-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: hikeBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes hikeBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .hike-personal {
+    padding-block: var(--space-8);
+  }
+
+  .hike-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #059669;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .hike-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .hike-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #065F46;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK NAV
+     ================================================================ */
+  .hike-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .hike-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .hike-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: var(--color-slate);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .hike-quicknav-chip:hover {
+    background: var(--color-sky);
+    color: #065F46;
+    transform: translateY(-2px);
+  }
+
+  .hike-quicknav-chip--safety {
+    border-color: rgba(198, 40, 40, 0.2);
+    color: #C62828;
+  }
+
+  .hike-quicknav-chip--safety:hover {
+    background: rgba(198, 40, 40, 0.05);
+    color: #C62828;
+  }
+
+  .hike-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     REGION SECTION
+     ================================================================ */
+  .hike-region {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .hike-region-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .hike-region-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hike-region-name {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-1);
+    line-height: 1.1;
+  }
+
+  .hike-region-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-3);
+    max-width: 540px;
+    line-height: 1.5;
+  }
+
+  .hike-region-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TRAIL CARDS
+     ================================================================ */
+  .hike-trail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .hike-trail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hike-trail-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hike-trail-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .hike-trail-body {
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hike-trail-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: 4px;
+  }
+
+  .hike-trail-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .hike-trail-destination {
+    font-size: 0.72rem;
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-medium);
+    margin: 0 0 var(--space-2);
+  }
+
+  .hike-trail-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .hike-trail-stat {
+    font-size: 0.72rem;
+    color: var(--color-slate);
+    background: var(--color-sky);
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+
+  .hike-trail-stat strong {
+    color: var(--color-deep-night);
+  }
+
+  .hike-trail-desc {
+    font-size: 0.82rem;
+    color: var(--color-slate);
+    line-height: 1.6;
+    margin: 0 0 var(--space-3);
+  }
+
+  .hike-trail-cta {
+    font-size: 0.72rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-ocean-teal);
+    letter-spacing: 0.02em;
+    margin-top: auto;
+  }
+
+  /* Tags */
+  .hike-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 6px;
+    line-height: 1.4;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .hike-tag--iconic {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .hike-tag--mustdo {
+    background: rgba(13, 115, 119, 0.1);
+    color: var(--color-ocean-teal);
+  }
+
+  .hike-tag--bucketlist {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .hike-tag--expert {
+    background: rgba(198, 40, 40, 0.1);
+    color: #C62828;
+  }
+
+  /* ================================================================
+     SAFETY SECTION
+     ================================================================ */
+  .hike-safety {
+    padding: var(--space-6) 0;
+    scroll-margin-top: 80px;
+  }
+
+  .hike-safety-header {
+    text-align: center;
+    margin-bottom: var(--space-6);
+  }
+
+  .hike-safety-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: var(--weight-bold);
+    color: #C62828;
+    margin: 0 0 var(--space-2);
+  }
+
+  .hike-safety-subtitle {
+    font-size: 1rem;
+    color: var(--color-slate);
+    margin: 0;
+  }
+
+  .hike-safety-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .hike-safety-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hike-safety-card {
+    background: var(--color-white);
+    border: 1px solid rgba(198, 40, 40, 0.15);
+    border-radius: 14px;
+    padding: var(--space-5);
+  }
+
+  .hike-safety-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: #C62828;
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .hike-safety-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .hike-safety-text :global(strong) {
+    color: var(--color-deep-night);
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .hike-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .hike-cta-card {
+    background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .hike-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .hike-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .hike-cta-button {
+    display: inline-block;
+    background: var(--color-warm-coral);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .hike-cta-button:hover {
+    background: #d4553b;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .hike-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .hike-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .hike-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .hike-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hike-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hike-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .hike-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .hike-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .hike-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .hike-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .hike-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .hike-scroll-hint {
+      display: none;
+    }
+
+    .hike-region-header {
+      padding: var(--space-4) var(--space-4);
+    }
+  }
+</style>

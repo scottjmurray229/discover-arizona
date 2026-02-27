@@ -1,0 +1,23 @@
+{
+	"main": "dist/_worker.js/index.js",
+	"name": "discover-arizona",
+  "compatibility_date": "2026-02-04",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
+	"observability": {
+    "enabled": true
+  },
+"d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "trip-planner-cache-az",
+      "database_id": "e6cfec41-3615-4c31-8569-f4ba499acf6f"
+    }
+  ]
+}

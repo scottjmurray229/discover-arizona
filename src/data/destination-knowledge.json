@@ -1,0 +1,213 @@
+{
+  "destinations": {
+    "grand-canyon": {
+      "title": "Grand Canyon",
+      "tagline": "One of the Seven Natural Wonders of the World",
+      "region": "northern",
+      "bestMonths": ["Mar", "Apr", "May", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 50, "midRange": 150, "luxury": 400 },
+      "gettingThere": "Drive from Phoenix (3.5 hours via I-17 and Hwy 64) or Flagstaff (1.5 hours via Hwy 180/64). South Rim is open year-round. North Rim open May-October.",
+      "highlights": ["Bright Angel Trail", "South Kaibab Trail", "Mather Point sunrise", "Desert View Watchtower", "Phantom Ranch", "Hermit Road scenic drive", "Havasu Falls (permit required)", "Rim-to-Rim hike"],
+      "essentials": {
+        "gettingAround": "Free park shuttle buses run along Hermit Road, Village Route, and Kaibab Route. Personal vehicles allowed on Desert View Drive.",
+        "airport": "Flagstaff Pulliam (FLG) or Phoenix Sky Harbor (PHX)",
+        "nearestTowns": ["Tusayan (1 mile south)", "Williams (60 miles south)", "Flagstaff (80 miles southeast)"],
+        "language": "English"
+      }
+    },
+    "sedona": {
+      "title": "Sedona",
+      "tagline": "Red Rock Country — Arizona's Most Scenic Town",
+      "region": "central",
+      "bestMonths": ["Mar", "Apr", "May", "Sep", "Oct", "Nov"],
+      "budgetPerDay": { "backpacker": 60, "midRange": 180, "luxury": 450 },
+      "gettingThere": "Drive from Phoenix (2 hours via I-17), Flagstaff (45 minutes via Hwy 89A through Oak Creek Canyon), or Tucson (4 hours via I-10 and I-17).",
+      "highlights": ["Cathedral Rock hike", "Devil's Bridge trail", "Bell Rock", "Chapel of the Holy Cross", "Slide Rock State Park", "Jeep tours of red rocks", "Vortex energy sites", "Tlaquepaque Arts & Shopping Village"],
+      "essentials": {
+        "gettingAround": "Personal vehicle recommended. Sedona Trolley for sightseeing. Red Rock Pass ($5/day) required for most trailhead parking.",
+        "airport": "Phoenix Sky Harbor (PHX) — 2 hours south",
+        "nearestTowns": ["Village of Oak Creek (7 miles south)", "Cottonwood (18 miles southwest)", "Flagstaff (30 miles north)"],
+        "language": "English"
+      }
+    },
+    "phoenix": {
+      "title": "Phoenix",
+      "tagline": "Valley of the Sun — Arizona's Desert Metropolis",
+      "region": "central",
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 50, "midRange": 120, "luxury": 350 },
+      "gettingThere": "Fly into Phoenix Sky Harbor International Airport (PHX) — major hub with direct flights from most US cities and many international destinations. Located just 4 miles from downtown.",
+      "highlights": ["Camelback Mountain hike", "Desert Botanical Garden", "Heard Museum", "South Mountain Park", "Papago Park & Hole in the Rock", "Roosevelt Row arts district", "Musical Instrument Museum", "Piestewa Peak"],
+      "essentials": {
+        "gettingAround": "Valley Metro Rail connects airport to downtown and Tempe. Rental car recommended for exploring beyond downtown. Rideshare widely available.",
+        "airport": "Phoenix Sky Harbor International (PHX)",
+        "nearestTowns": ["Tempe (adjacent)", "Scottsdale (adjacent)", "Mesa (15 miles east)"],
+        "language": "English"
+      }
+    },
+    "scottsdale": {
+      "title": "Scottsdale",
+      "tagline": "The West's Most Western Town — Luxury Meets Desert",
+      "region": "central",
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 60, "midRange": 180, "luxury": 500 },
+      "gettingThere": "Adjacent to Phoenix — 20 minutes from Sky Harbor Airport (PHX). Take the 202 or 101 freeways from the airport.",
+      "highlights": ["Old Town Scottsdale", "Taliesin West (Frank Lloyd Wright)", "McDowell Sonoran Preserve", "Scottsdale Fashion Square", "Pinnacle Peak trails", "World-class spa resorts", "Butterfly Wonderland", "OdySea Aquarium"],
+      "essentials": {
+        "gettingAround": "Free Scottsdale Trolley in Old Town area. Rental car or rideshare for McDowell Sonoran Preserve and northern Scottsdale.",
+        "airport": "Phoenix Sky Harbor International (PHX) — 20 minutes",
+        "nearestTowns": ["Phoenix (adjacent)", "Tempe (adjacent)", "Fountain Hills (20 miles northeast)"],
+        "language": "English"
+      }
+    },
+    "tucson": {
+      "title": "Tucson",
+      "tagline": "UNESCO City of Gastronomy — Where Sonoran Desert Meets Culture",
+      "region": "southern",
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 45, "midRange": 110, "luxury": 300 },
+      "gettingThere": "Fly into Tucson International Airport (TUS) or drive from Phoenix (1.5 hours south via I-10). Amtrak Sunset Limited stops in Tucson.",
+      "highlights": ["Arizona-Sonora Desert Museum", "Mission San Xavier del Bac", "Mount Lemmon Scenic Byway", "Saguaro National Park (both districts)", "Pima Air & Space Museum", "4th Avenue district", "Sabino Canyon"],
+      "essentials": {
+        "gettingAround": "Sun Tran buses and streetcar for downtown. Rental car essential for Desert Museum, Mt. Lemmon, and Saguaro NP.",
+        "airport": "Tucson International (TUS)",
+        "nearestTowns": ["Marana (25 miles northwest)", "Oro Valley (15 miles north)", "Green Valley (25 miles south)"],
+        "language": "English, Spanish widely spoken"
+      }
+    },
+    "monument-valley": {
+      "title": "Monument Valley",
+      "tagline": "The Iconic Backdrop of the American West",
+      "region": "northern",
+      "bestMonths": ["Apr", "May", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 50, "midRange": 130, "luxury": 280 },
+      "gettingThere": "Drive from Page (2.5 hours via US-98 and US-163), Flagstaff (3 hours via US-89 and US-160), or Phoenix (5 hours). Located on the Navajo Nation — Arizona/Utah border.",
+      "highlights": ["Monument Valley Navajo Tribal Park scenic drive", "The Mittens and Merrick Butte", "John Ford Point", "Navajo-guided backcountry tours", "Mystery Valley ruins", "Hunt's Mesa for sunset photography", "Forrest Gump Point on US-163"],
+      "essentials": {
+        "gettingAround": "Personal vehicle required. Self-drive 17-mile Valley Drive loop (unpaved, high-clearance vehicle recommended). Navajo-guided tours access restricted areas.",
+        "airport": "Page Municipal (PGA) — 2.5 hours, or Flagstaff Pulliam (FLG) — 3 hours",
+        "nearestTowns": ["Kayenta (23 miles south)", "Mexican Hat, UT (22 miles north)", "Page (130 miles west)"],
+        "language": "English, Navajo (Dine)"
+      }
+    },
+    "flagstaff": {
+      "title": "Flagstaff",
+      "tagline": "Arizona's Mountain Town — Pines, Peaks, and Dark Skies",
+      "region": "northern",
+      "bestMonths": ["May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 50, "midRange": 130, "luxury": 300 },
+      "gettingThere": "Drive from Phoenix (2 hours north via I-17). Fly into Flagstaff Pulliam Airport (FLG) with American Airlines from Phoenix and Dallas. Amtrak Southwest Chief stops daily.",
+      "highlights": ["Humphreys Peak (Arizona's highest at 12,633 ft)", "Lowell Observatory", "Walnut Canyon cliff dwellings", "Sunset Crater Volcano", "Wupatki National Monument", "Arizona Snowbowl", "Downtown historic Route 66", "Museum of Northern Arizona"],
+      "essentials": {
+        "gettingAround": "Mountain Line bus for downtown and NAU campus. Rental car needed for Snowbowl, Walnut Canyon, and Sunset Crater.",
+        "airport": "Flagstaff Pulliam (FLG)",
+        "nearestTowns": ["Sedona (30 miles south)", "Williams (32 miles west)", "Page (130 miles north)"],
+        "language": "English"
+      }
+    },
+    "page": {
+      "title": "Page",
+      "tagline": "Gateway to Antelope Canyon and Lake Powell",
+      "region": "northern",
+      "bestMonths": ["Mar", "Apr", "May", "Sep", "Oct", "Nov"],
+      "budgetPerDay": { "backpacker": 55, "midRange": 150, "luxury": 350 },
+      "gettingThere": "Drive from Flagstaff (2.5 hours via US-89), Grand Canyon South Rim (2.5 hours via Hwy 64 and US-89), or Phoenix (4.5 hours). Small regional airport (PGA) with limited service.",
+      "highlights": ["Horseshoe Bend", "Upper Antelope Canyon", "Lower Antelope Canyon", "Lake Powell boat tours", "Glen Canyon Dam", "Rainbow Bridge National Monument", "Wahweap Marina", "Hanging Garden"],
+      "essentials": {
+        "gettingAround": "Personal vehicle required. Antelope Canyon tours must be booked in advance through authorized Navajo tour operators. Horseshoe Bend is a 1.5-mile round-trip walk from the parking lot.",
+        "airport": "Page Municipal (PGA) — limited flights",
+        "nearestTowns": ["Big Water, UT (15 miles north)", "Kanab, UT (75 miles west)", "Flagstaff (130 miles south)"],
+        "language": "English, Navajo (Dine)"
+      }
+    },
+    "petrified-forest": {
+      "title": "Petrified Forest",
+      "tagline": "Ancient Forests Turned to Stone — 225 Million Years in the Making",
+      "region": "northern",
+      "bestMonths": ["Mar", "Apr", "May", "Sep", "Oct", "Nov"],
+      "budgetPerDay": { "backpacker": 35, "midRange": 80, "luxury": 150 },
+      "gettingThere": "Located along I-40 between Holbrook and Navajo, AZ. Drive from Flagstaff (1.5 hours east via I-40) or Phoenix (3.5 hours via I-17 and I-40). Park entrance off I-40 Exit 311 (north) or US-180 (south).",
+      "highlights": ["Painted Desert panoramic views", "Blue Mesa Trail", "Crystal Forest loop", "Newspaper Rock petroglyphs", "Agate Bridge", "Puerco Pueblo ruins", "Painted Desert Inn (historic landmark)", "Route 66 alignment"],
+      "essentials": {
+        "gettingAround": "Personal vehicle required. 28-mile park road connects the north (Painted Desert) and south (petrified logs) entrances. No public transportation within the park.",
+        "airport": "Phoenix Sky Harbor (PHX) — 3.5 hours, or Flagstaff Pulliam (FLG) — 1.5 hours",
+        "nearestTowns": ["Holbrook (26 miles west)", "Navajo (20 miles east)", "Winslow (65 miles west)"],
+        "language": "English"
+      }
+    },
+    "saguaro-national-park": {
+      "title": "Saguaro National Park",
+      "tagline": "Home of the Giant Saguaro Cactus — Symbol of the American Southwest",
+      "region": "southern",
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 200 },
+      "gettingThere": "Two districts flanking Tucson. West (Tucson Mountain District): 15 miles west of downtown Tucson. East (Rincon Mountain District): 15 miles east of downtown. Drive from Phoenix (2 hours south via I-10).",
+      "highlights": ["Signal Hill petroglyphs (west)", "Valley View Overlook (west)", "Cactus Forest Drive (east)", "Freeman Homestead Trail", "Tanque Verde Ridge Trail", "Hugh Norris Trail to Wasson Peak", "Saguaro blooms (May-June)", "Desert sunset drives"],
+      "essentials": {
+        "gettingAround": "Personal vehicle required. Each district has a scenic loop drive. Cactus Forest Drive (east) is 8 miles paved. Bajada Loop Drive (west) is 6 miles graded dirt.",
+        "airport": "Tucson International (TUS) — 30 minutes",
+        "nearestTowns": ["Tucson (15 miles from either district)"],
+        "language": "English"
+      }
+    },
+    "tombstone": {
+      "title": "Tombstone",
+      "tagline": "The Town Too Tough to Die — Relive the Wild West",
+      "region": "southern",
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 90, "luxury": 180 },
+      "gettingThere": "Drive from Tucson (1.5 hours southeast via I-10 and AZ-80) or Bisbee (25 miles north via AZ-80).",
+      "highlights": ["O.K. Corral gunfight reenactments", "Boothill Graveyard", "Bird Cage Theatre", "Tombstone Courthouse State Historic Park", "Allen Street boardwalk stroll", "Big Nose Kate's Saloon", "Tombstone Epitaph newspaper museum", "Helldorado Days festival (October)"],
+      "essentials": {
+        "gettingAround": "Compact town — walk Allen Street and surrounding blocks on foot. Personal vehicle needed to reach Tombstone from Tucson or Bisbee.",
+        "airport": "Tucson International (TUS) — 1.5 hours",
+        "nearestTowns": ["Sierra Vista (25 miles west)", "Bisbee (25 miles south)", "Tucson (70 miles northwest)"],
+        "language": "English"
+      }
+    },
+    "bisbee": {
+      "title": "Bisbee",
+      "tagline": "Arizona's Coolest Small Town — Art, History, and Copper Queen Charm",
+      "region": "southern",
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 100, "luxury": 220 },
+      "gettingThere": "Drive from Tucson (1.5 hours southeast via I-10 and AZ-80) or Tombstone (25 miles south via AZ-80). Near the Mexican border.",
+      "highlights": ["Queen Mine Tour (underground copper mine)", "Bisbee Mining & Historical Museum", "Brewery Gulch", "Lavender Pit viewpoint", "Bisbee 1000 Stairclimb (October)", "Main Street galleries and shops", "Copper Queen Hotel (historic)", "Winding staircase neighborhoods"],
+      "essentials": {
+        "gettingAround": "Explore Old Bisbee on foot — hilly with staircases between streets. Personal vehicle needed to arrive and to visit Lavender Pit viewpoint.",
+        "airport": "Tucson International (TUS) — 1.5 hours",
+        "nearestTowns": ["Tombstone (25 miles north)", "Sierra Vista (30 miles northwest)", "Douglas (24 miles southeast)"],
+        "language": "English, Spanish spoken near border"
+      }
+    }
+  },
+  "connections": {
+    "phoenix-scottsdale": { "mode": "drive", "duration": "20-30 min", "operator": "Personal vehicle / rideshare", "cost": "$10-20 rideshare" },
+    "phoenix-sedona": { "mode": "drive", "duration": "2 hours", "operator": "I-17 North to AZ-179", "cost": "$25-35 gas" },
+    "phoenix-flagstaff": { "mode": "drive", "duration": "2 hours", "operator": "I-17 North", "cost": "$25-35 gas" },
+    "phoenix-tucson": { "mode": "drive", "duration": "1.5 hours", "operator": "I-10 South", "cost": "$20-30 gas" },
+    "phoenix-grand-canyon": { "mode": "drive", "duration": "3.5 hours", "operator": "I-17 to Hwy 64", "cost": "$40-55 gas" },
+    "phoenix-page": { "mode": "drive", "duration": "4.5 hours", "operator": "I-17 to US-89", "cost": "$50-65 gas" },
+    "flagstaff-grand-canyon": { "mode": "drive", "duration": "1.5 hours", "operator": "US-180 / Hwy 64", "cost": "$15-25 gas" },
+    "flagstaff-sedona": { "mode": "drive", "duration": "45 min", "operator": "AZ-89A through Oak Creek Canyon", "cost": "$10-15 gas" },
+    "flagstaff-page": { "mode": "drive", "duration": "2.5 hours", "operator": "US-89 North", "cost": "$25-35 gas" },
+    "flagstaff-monument-valley": { "mode": "drive", "duration": "3 hours", "operator": "US-89 to US-160 to US-163", "cost": "$35-45 gas" },
+    "flagstaff-petrified-forest": { "mode": "drive", "duration": "1.5 hours", "operator": "I-40 East", "cost": "$15-25 gas" },
+    "page-monument-valley": { "mode": "drive", "duration": "2.5 hours", "operator": "US-98 to US-163", "cost": "$25-35 gas" },
+    "grand-canyon-page": { "mode": "drive", "duration": "2.5 hours", "operator": "Hwy 64 to US-89", "cost": "$25-35 gas" },
+    "tucson-tombstone": { "mode": "drive", "duration": "1.5 hours", "operator": "I-10 to AZ-80", "cost": "$15-25 gas" },
+    "tucson-bisbee": { "mode": "drive", "duration": "1.5 hours", "operator": "I-10 to AZ-80", "cost": "$15-25 gas" },
+    "tucson-saguaro-national-park": { "mode": "drive", "duration": "30 min", "operator": "Adjacent to Tucson", "cost": "$5-10 gas" },
+    "tombstone-bisbee": { "mode": "drive", "duration": "25 min", "operator": "AZ-80 South", "cost": "$5-10 gas" },
+    "sedona-grand-canyon": { "mode": "drive", "duration": "2 hours", "operator": "AZ-89A to I-40 to Hwy 64", "cost": "$25-35 gas" }
+  },
+  "travelTips": {
+    "currency": "US Dollar (USD). Credit cards widely accepted. Cash useful for Navajo Nation vendors and small-town businesses.",
+    "visaFree": "US visa policies apply. ESTA for Visa Waiver Program countries. Valid passport required for international visitors.",
+    "bestOverallMonths": "October to April for Phoenix/Tucson/southern AZ (mild winters). March to May and September to October for Grand Canyon and northern AZ. Summer is monsoon season with dramatic thunderstorms.",
+    "heatWarning": "Summer temperatures in Phoenix and Tucson regularly exceed 110°F (43°C) June through August. Carry extra water on all hikes. Heat-related illness is a serious risk.",
+    "hydration": "Carry at least 1 liter of water per hour of hiking in desert conditions. More in summer. Start hikes early morning.",
+    "navajoNation": "Monument Valley, Antelope Canyon, and parts of northern Arizona are on Navajo Nation land. Observe Navajo time (no daylight saving). Guided tours required for many sites. Photography restrictions may apply.",
+    "parkPasses": "America the Beautiful Pass ($80/year) covers Grand Canyon, Petrified Forest, and Saguaro NP entrance fees. Individual park fees are $35/vehicle."
+  }
+}
