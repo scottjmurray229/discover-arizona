@@ -1,0 +1,897 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Finer Things', url: '/finer-things/' },
+];
+
+const pageTitle = 'The Finer Things — Luxury Scottsdale Spas, Fine Dining & Premium Arizona Experiences 2026';
+const pageDescription = 'World-class Scottsdale spa resorts, Sonoran Desert hot air balloons, Grand Canyon helicopter tours, Sedona luxury retreats, championship golf, and fine dining across Arizona.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string; link?: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'spas',
+    icon: '🧖',
+    title: 'World-Class Spa Resorts',
+    gradient: 'linear-gradient(135deg, #4C1D95 0%, #E8654A 100%)',
+    items: [
+      { label: 'Sanctuary on Camelback Mountain', link: '/destinations/scottsdale/', text: 'Perched on the north slope of Camelback Mountain, this is the spa resort that puts Scottsdale on the global wellness map. The Sanctuary Spa has indoor-outdoor treatment rooms with desert mountain views, an infinity-edge pool that seems to float above Paradise Valley, and a meditation garden that\'s worth the visit alone. Rooms start at $500/night in peak season (January–April), dropping to $250–350 in summer. The restaurant, Elements, is one of the best in the state — contemporary American with a terrace overlooking the valley. Entrees $35–65.' },
+      { label: 'The Phoenician', link: '/destinations/scottsdale/', text: 'The grande dame of Scottsdale luxury — a 250-acre resort at the base of Camelback Mountain. The Centre for Well-Being spa offers everything from hot stone massages to desert-inspired body wraps using native botanicals. The 27-hole golf course is championship-caliber, and the pool complex rivals anything in Vegas. Rooms $400–900/night in peak season. Six restaurants on property, including Il Terrazzo for Italian and J&G Steakhouse by Jean-Georges Vongerichten. This is where old-money Scottsdale comes to play.' },
+      { label: 'Enchantment Resort (Sedona)', link: '/destinations/sedona/', text: 'Tucked into Boynton Canyon — one of Sedona\'s four vortex sites — Enchantment Resort is where red rock spirituality meets five-star comfort. The Mii Amo spa is regularly ranked among the top destination spas in North America — multi-day wellness programs with crystal healing, guided meditation, Native American-inspired treatments, and private hikes to energy vortexes. Rooms $500–1,200/night. The setting is otherworldly — towering red rock walls on three sides and zero light pollution for stargazing.' },
+      { label: 'L\'Auberge de Sedona', link: '/destinations/sedona/', text: 'A creekside resort on the banks of Oak Creek in the heart of Sedona. The lodge-style cottages have fireplaces and private decks overlooking the water. The spa specializes in outdoor treatments — imagine a massage on a deck above the creek with red rocks towering above you. Rooms $400–800/night. The restaurant, Cress on Oak Creek, is fine dining with creek views — locally sourced elk, trout, and produce from Arizona farms. Entrees $40–70. The stargazing program with the resort\'s resident astronomer is a must.' },
+      { label: 'Mountain Shadows (Paradise Valley)', link: '/destinations/scottsdale/', text: 'A modern boutique resort in Paradise Valley with Camelback Mountain as your literal backyard. The rooftop pool has some of the best sunset views in the Valley. The short course (par-3 championship) is perfect for a quick round without committing to a full day. Rooms $300–600/night. Hearth \'61 restaurant does elevated comfort food — their wagyu burger is famous locally. More relaxed and design-forward than the grand resorts, attracting a younger luxury crowd.' },
+    ],
+  },
+  {
+    id: 'balloon',
+    icon: '🎈',
+    title: 'Hot Air Balloon & Aerial Experiences',
+    gradient: 'linear-gradient(135deg, #E8654A 0%, #FB923C 100%)',
+    items: [
+      { label: 'Sonoran Desert Balloon Rides', text: 'The quintessential Arizona luxury experience — floating silently over the Sonoran Desert at sunrise as saguaro cacti stretch to the horizon and the Superstition Mountains glow orange. Flights launch at dawn (5:30–6am depending on season) and last 60–90 minutes. $200–350/person with most operators, including a champagne toast and breakfast upon landing. Hot Air Expeditions and Rainbow Ryders are the most established operators. Book at least 2 weeks ahead in peak season (October–April). Weather cancellations are rare in Arizona, but wind can delay launches.' },
+      { label: 'Grand Canyon Helicopter Tours', link: '/destinations/grand-canyon/', text: 'The most dramatic aerial experience in Arizona — a helicopter descending below the rim into the Grand Canyon. Tours from the South Rim run $250–400/person for 25–50 minutes. The premium option is a West Rim tour from Las Vegas that lands on the canyon floor ($400–600/person). Maverick Helicopters and Papillon are the top operators. The South Rim routes fly over the Dragon Corridor — the widest, deepest section of the canyon. Even if you\'ve stood on the rim a dozen times, seeing it from above rewrites your sense of scale.' },
+      { label: 'Sedona Helicopter Tours', link: '/destinations/sedona/', text: 'A helicopter tour over Sedona\'s red rocks is the most efficient way to see the full scope of the landscape — Cathedral Rock, Bell Rock, the vortex sites, and the Verde Valley. Tours run $150–350/person for 15–45 minutes. Guidance Air and Arizona Helicopter Adventures operate from Sedona Airport. The longer tours reach the rim of the Mogollon Rim and the ancient cliff dwellings at Palatki. The red-on-green contrast from above — red sandstone against juniper forests — is stunning in person.' },
+      { label: 'Skydiving Over the Desert', text: 'For the adrenaline crowd, tandem skydiving over the Arizona desert offers clear skies, desert panoramas, and visibility that can stretch 100+ miles on a good day. Skydive Arizona in Eloy (between Phoenix and Tucson) is one of the largest drop zones in the world — serious skydivers train here year-round. Tandem jumps start at $200–300/person with a 60-second freefall from 12,000 feet. The desert landscape from altitude is mesmerizing — flat geometric farmland gives way to rugged mountains and endless sand.' },
+    ],
+  },
+  {
+    id: 'dining',
+    icon: '🍽️',
+    title: 'Fine Dining',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #78350F 100%)',
+    items: [
+      { label: 'Binkley\'s (Cave Creek)', text: 'Kevin Binkley\'s tasting-menu restaurant in Cave Creek — 20 minutes north of Scottsdale and consistently ranked among the best restaurants in the Southwest. A 15–20 course tasting menu ($185–250/person) that changes weekly based on what\'s available from local farms and Binkley\'s own garden. Wine pairing adds $125. The dining room is intimate (30 seats), the service is impeccable without being pretentious, and the food is world-class. Reserve 3–4 weeks ahead.' },
+      { label: 'Kai (Sheraton Wild Horse Pass)', link: '/destinations/phoenix/', text: 'The only AAA Five Diamond and Forbes Five Star restaurant in Arizona — located on the Gila River Indian Community south of Phoenix. The menu is built entirely around Native American ingredients and traditions — tepary beans, cholla cactus buds, mesquite flour, and indigenous game. Entrees $55–85, tasting menu $175. The culinary team works directly with tribal farmers. Dinner at Kai is a culinary education — every dish comes with a story about the ingredient\'s cultural significance. Reservations required weeks in advance.' },
+      { label: 'Talavera (Four Seasons Scottsdale)', link: '/destinations/scottsdale/', text: 'The Four Seasons\' signature restaurant at Troon North — contemporary steakhouse with panoramic desert views from the terrace. Dry-aged steaks, a raw bar, and an outstanding Arizona wine selection. Entrees $45–85. The terrace at sunset, with the Boulder pile of Pinnacle Peak glowing red, is one of the most dramatic restaurant settings in the state. The service matches the setting — polished but warm. A proper Scottsdale power-dinner spot.' },
+      { label: 'The Mission (Scottsdale)', link: '/destinations/scottsdale/', text: 'Latin-inspired fine dining in Old Town Scottsdale — think mole-braised short ribs, tableside guacamole, and mezcal cocktails in a dramatic high-ceilinged space. Entrees $30–55. The building is a converted church, which gives it an atmosphere that most restaurants can\'t manufacture. The weekend brunch is popular and the margarita program is arguably the best in Phoenix. Not stuffy — this is the kind of place where you dress up but still have fun.' },
+      { label: 'Cafe Monarch (Scottsdale)', link: '/destinations/scottsdale/', text: 'A 40-seat prix fixe restaurant that\'s been a Scottsdale institution for over a decade. Four-course dinner $95–125/person. The menu rotates weekly — expect dishes like seared foie gras, pan-roasted duck breast with seasonal fruit reduction, and housemade desserts that are worth the calories. The wine list is curated and personal, and the chef will often come to your table. Intimate, personal, and consistently excellent. Reserve a week ahead.' },
+      { label: 'Elote Cafe (Sedona)', link: '/destinations/sedona/', text: 'Celebrity chef Jeff Smedstad\'s love letter to Mexican cuisine — no reservations, first-come first-served, and there\'s almost always a line. The signature dish is the fire-roasted elote (Mexican street corn) with spicy aioli and cotija. Smoked pork cheeks, mole, and Oaxacan-style dishes round out the menu. Entrees $25–40. The wait is typically 45–90 minutes in peak season, but the bar serves full cocktails and the patio has red rock views. Worth every minute of the wait.' },
+    ],
+  },
+  {
+    id: 'golf',
+    icon: '⛳',
+    title: 'Championship Golf',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
+    items: [
+      { label: 'TPC Scottsdale (Stadium Course)', link: '/destinations/scottsdale/', text: 'Home of the WM Phoenix Open — the biggest party in professional golf and the most attended event on the PGA Tour. The Stadium Course is a desert links masterpiece with the famous 16th hole (the "Coliseum"). Green fees $150–350 depending on season. In January–February, rates peak and tee times are scarce. Summer green fees drop to $50–100, but you\'ll be playing in 110°F heat — which is honestly fine if you hydrate, take a cart, and embrace the empty course. The Champions Course next door is less famous but equally playable.' },
+      { label: 'Troon North (Scottsdale)', link: '/destinations/scottsdale/', text: 'Two Tom Weiskopf–designed courses carved into the high Sonoran Desert north of Scottsdale. The Monument and Pinnacle courses are both ranked among the top public courses in Arizona — dramatic elevation changes, boulder-lined fairways, and views of Pinnacle Peak. Green fees $175–325 in peak season, $75–150 in summer. The Monument Course\'s signature holes use massive granite boulders as natural hazards. Arguably the most scenic golf in the Phoenix metro area.' },
+      { label: 'Sedona Golf Resort', link: '/destinations/sedona/', text: 'A championship course surrounded by Sedona\'s red rocks — every hole has a backdrop that belongs on a postcard. Green fees $100–200 depending on season and time of day. The course is well-maintained and the elevation changes add strategic interest. Not the most challenging course in Arizona, but easily the most visually stunning. Tee off early morning for the best light on the rocks and cooler temperatures. The clubhouse restaurant has solid food and panoramic views.' },
+      { label: 'We-Ko-Pa Golf Club (Fort McDowell)', text: 'Two courses on the Fort McDowell Yavapai Nation — Saguaro and Cholla — both designed by different architects with distinct personalities. Saguaro is the target-golf desert classic; Cholla is wider and more forgiving but equally scenic. Green fees $100–225. The setting is dramatic — surrounded by the Superstition Mountains and Four Peaks with minimal housing development. This is pure desert golf without the real estate distractions. Consistently rated among Arizona\'s best public courses.' },
+      { label: 'Verde Valley Wine & Golf', text: 'Combine a morning round at one of the Verde Valley\'s courses with an afternoon of wine tasting in the Cottonwood/Jerome/Cornville wine corridor. Arizona\'s wine region has exploded — 30+ tasting rooms within a 20-mile radius. Page Springs Cellars, Javelina Leap, and Alcantara Vineyards are the standouts. Tasting flights $15–25. The Syrah and Grenache varietals thrive in the high desert climate. It\'s Napa 30 years ago — small producers, no pretension, and prices that haven\'t caught up to the quality yet.' },
+    ],
+  },
+  {
+    id: 'sedona',
+    icon: '🔮',
+    title: 'Sedona Luxury Retreats',
+    gradient: 'linear-gradient(135deg, #9D174D 0%, #E8654A 50%, #FB923C 100%)',
+    items: [
+      { label: 'Vortex Experiences', link: '/destinations/sedona/', text: 'Sedona\'s four main vortex sites (Airport Mesa, Cathedral Rock, Bell Rock, Boynton Canyon) are believed to emit concentrated earth energy. Whether you believe in vortexes or not, the sites are in stunning locations. Private guided vortex tours with certified practitioners run $150–300/person for 2–3 hours — they combine the hike with meditation, energy work, and interpretive geology. The free version: just show up at any vortex site and hike. Cathedral Rock at sunset is the most dramatic.' },
+      { label: 'Private Jeep Tours', link: '/destinations/sedona/', text: 'The iconic Pink Jeep Tours are fun, but the premium experience is a private off-road tour with a naturalist guide. Pink Adventure Tours and Red Rock Western Jeep Tours offer private vehicles for $350–600 for 2–3 hours (up to 4 passengers). You choose the terrain — Broken Arrow trail for dramatic rock crawling, Soldiers Pass for ancient sinkholes, or Diamondback Gulch for backcountry. The guides know the geology, the history, and the hidden viewpoints that the group tours skip.' },
+      { label: 'Desert Botanical Garden Private Tours (Phoenix)', link: '/destinations/phoenix/', text: 'The Desert Botanical Garden in Papago Park is one of the finest in the world — 50,000+ desert plants across 140 acres. The private guided tours ($50–100/person) go deeper than the self-guided paths, with a botanist explaining Sonoran Desert ecology, Native American plant uses, and the Garden\'s conservation programs. The Flashlight Tours at night (seasonal) are atmospheric — the saguaros lit up against a dark desert sky. The Chihuly glass art installations (when running) are world-class.' },
+      { label: 'Sedona Stargazing', link: '/destinations/sedona/', text: 'Sedona is a designated International Dark Sky Community — one of few cities in the world with legal protections for dark skies. Evening stargazing programs at Enchantment Resort and L\'Auberge de Sedona use professional telescopes with expert astronomers. $50–100/person. The Milky Way is visible to the naked eye from most locations outside town. For a free experience, drive to the Crescent Moon Ranch parking area after dark — minimal light pollution and a clear southern horizon. Bring a blanket and look up.' },
+    ],
+  },
+  {
+    id: 'wine',
+    icon: '🍷',
+    title: 'Wine Tasting in Verde Valley',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    items: [
+      { label: 'Arizona\'s Wine Country', text: 'Arizona has 100+ wineries and the Verde Valley between Sedona and Jerome is the epicenter. The high-desert terroir — elevation, temperature swings, and volcanic soil — produces surprisingly complex wines. Syrah, Grenache, Mourvèdre, and Malvasia are the standout varietals. The tasting room scene is concentrated in three areas: Cottonwood\'s Old Town, Page Springs/Cornville along Oak Creek, and the old mining town of Jerome on Cleopatra Hill. A full wine tasting day can hit 8–10 rooms without driving more than 20 miles.' },
+      { label: 'Page Springs Cellars', text: 'The winery that put Arizona on the wine map — Eric Glomski was making serious wine here before anyone paid attention. The tasting room sits on Oak Creek with outdoor seating under cottonwood trees. Their Colibri (a Rhone-style red blend) and El Serrano Syrah are standouts. Tastings $15–20. The creek-side setting is beautiful and the vibe is relaxed — no appointment needed, though weekends get crowded after 2pm. This is where Arizona wine lovers start.' },
+      { label: 'Javelina Leap Vineyard', text: 'A family-owned winery in Page Springs with a tasting room that overlooks their own vineyard and Oak Creek. Known for their "Leap" wines and a playful approach — the javelina (wild peccary) theme runs throughout. Tastings $12–18. The barrel room tour ($25) is worth it for the winemaking insights. Their rosé is one of the best in the state. Smaller and more personal than Page Springs Cellars — you might end up chatting with the winemaker.' },
+      { label: 'Alcantara Vineyards', text: 'The most polished tasting room in the Verde Valley — a Tuscan-inspired estate with manicured grounds, bocce courts, and a swimming hole on the Verde River. Their Sangiovese and Petite Sirah are excellent. Tastings $18–25. They offer food pairings and vineyard tours that go deeper into the agricultural side. The setting feels transplanted from Tuscany — stone walls, cypress trees, and mountain views. Book a table for a leisurely lunch and tasting.' },
+      { label: 'Jerome Wine Trail', text: 'The former copper mining town of Jerome — clinging to the side of Cleopatra Hill at 5,000 feet — has reinvented itself with art galleries, restaurants, and tasting rooms. Caduceus Cellars (Maynard James Keenan of Tool fame), Arizona Stronghold, and Passion Cellars all have tasting rooms within walking distance. The town itself is the attraction — Victorian buildings, mine shafts, and views stretching 50 miles across the valley. Combine wine tasting with the Jerome ghost tour for a full afternoon.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="ft-hero">
+    <div class="ft-hero-gradient"></div>
+    <div class="ft-hero-noise"></div>
+    <div class="ft-hero-content">
+      <h1 class="ft-hero-title">The Finer Things</h1>
+      <p class="ft-hero-subtitle">World-class spa resorts on Camelback Mountain, hot air balloons drifting over saguaro forests at sunrise, Grand Canyon helicopter descents, championship desert golf, Sedona vortex retreats under dark skies, and Arizona wine country that's catching Napa off guard.</p>
+      <div class="ft-hero-meta">
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Topics</span>
+          <span class="ft-hero-meta-value">7</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Spa Resorts</span>
+          <span class="ft-hero-meta-value">5</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Fine Dining</span>
+          <span class="ft-hero-meta-value">6</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="ft-personal ft-reveal">
+    <div class="container-content">
+      <blockquote class="ft-personal-quote">
+        <p>Arizona surprised me. I came for the Grand Canyon and the desert landscapes, and I found a luxury travel destination that rivals anywhere in the country. Scottsdale's spa resorts are world-class without being pretentious. The dining scene stretches from a Five Diamond Native American restaurant on tribal land to a no-reservations Mexican joint in Sedona that people line up for nightly. The wine country in Verde Valley is what Napa was decades ago — small producers making serious wine at honest prices. And floating over the desert in a hot air balloon at sunrise, with nothing but saguaros and mountains below you, is one of those experiences that rewires your definition of luxury.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Facts Strip -->
+  <section class="ft-quickfacts ft-reveal">
+    <div class="container-content">
+      <div class="ft-quickfacts-bar">
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Peak Season</span>
+          <span class="ft-quickfact-value">Oct–Apr</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Resort (Luxury)</span>
+          <span class="ft-quickfact-value">$300–1,200/nt</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Fine Dining</span>
+          <span class="ft-quickfact-value">$30–85/entree</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Balloon Ride</span>
+          <span class="ft-quickfact-value">$200–350</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Tipping</span>
+          <span class="ft-quickfact-value">18–20%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="ft-quicknav ft-reveal">
+    <div class="container-content">
+      <div class="ft-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="ft-quicknav-chip">
+            <span class="ft-quicknav-icon">{t.icon}</span>
+            <span class="ft-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="ft-topic ft-reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="ft-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="ft-topic-header-inner">
+            <span class="ft-topic-icon">{topic.icon}</span>
+            <h2 class="ft-topic-title">{topic.title}</h2>
+            <span class="ft-topic-count">{topic.items.length} tips</span>
+          </div>
+        </div>
+
+        <div class="ft-tip-grid">
+          {topic.items.map((item) => (
+            <div class="ft-tip-card">
+              <h3 class="ft-tip-label">{item.label}</h3>
+              <p class="ft-tip-text" set:html={item.text} />
+              {item.link && (
+                <a href={item.link} class="ft-tip-link">Explore {item.label.split('(')[0].trim()} &rarr;</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Scott's Pro Tips -->
+  <section class="ft-protips ft-reveal">
+    <div class="container-content">
+      <div class="ft-protips-card">
+        <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
+        <div class="scott-tips">
+          <ul>
+            <li><strong>Summer Deals:</strong> Arizona luxury is a tale of two seasons. Peak season (October–April) commands premium rates, but summer (May–September) slashes prices 40–60% at the same resorts. A $600/night Scottsdale resort drops to $200. Yes, it's 110°F outside, but you're at a pool and spa — the heat becomes the bargain.</li>
+            <li><strong>Balloon Timing:</strong> Hot air balloon rides launch at dawn year-round. In summer, that means a 5am pickup but you're done before the heat hits. In winter, the 6:30am launch is more civilized. Either way, bring a light jacket — it's cooler at altitude than on the ground, especially in the morning desert air.</li>
+            <li><strong>Wine Country Strategy:</strong> Start in Cottonwood's Old Town for walkable tasting rooms, then drive to Page Springs for creek-side wineries, and finish in Jerome for sunset views. Designate a driver or book a wine tour shuttle ($75–150/person). Don't try to hit more than 5–6 rooms — palate fatigue is real.</li>
+            <li><strong>Golf in Summer:</strong> Twilight tee times (after 2pm in summer) are a fraction of peak-season rates. TPC Scottsdale drops to $50–75, Troon North to $75–100. Carry extra water, wear a hat, and take the cart. The course is empty and the sunset light on the desert is spectacular.</li>
+            <li><strong>Sedona Dining:</strong> Elote Cafe doesn't take reservations — get there by 4:30pm to get your name on the list, then walk to the nearby shops or grab a cocktail while you wait. The 45–90 minute wait is part of the Sedona experience, and the food justifies it every time.</li>
+            <li><strong>Resort Day Passes:</strong> Several Scottsdale resorts offer day passes for non-guests — pool, spa, and dining access for $50–150/person. It's a smart way to experience multiple properties without committing to a full stay at each one.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="ft-cta-section ft-reveal">
+    <div class="container-content">
+      <div class="ft-cta-card">
+        <h2 class="ft-cta-heading">Plan Your Luxury Arizona Trip</h2>
+        <p class="ft-cta-text">Tell our AI planner your dates and interests — it'll build a custom itinerary with the best resorts, dining, and premium desert experiences.</p>
+        <a href="/plan/" class="ft-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Arizona Luxury Travel Guide"
+      description="Premium resorts, fine dining, and elevated desert experiences across Arizona — packed into one PDF."
+      bullets={[
+        'Top spa resorts ranked with seasonal pricing',
+        'Complete Verde Valley wine tasting guide',
+        'Best hot air balloon and helicopter tour operators',
+        'Championship golf course guide with summer deals',
+      ]}
+      guideTag="pillar-finer-things"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="ft-crosslinks ft-reveal">
+    <div class="container-content">
+      <h3 class="ft-crosslinks-heading">Explore More</h3>
+      <div class="ft-crosslinks-grid">
+        <a href="/cuisine/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127860;</span>
+          <span class="ft-crosslink-label">Arizona Cuisine</span>
+          <span class="ft-crosslink-desc">Sonoran hot dogs, Navajo fry bread, and Tucson's UNESCO food scene</span>
+        </a>
+        <a href="/hiking/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127956;</span>
+          <span class="ft-crosslink-label">Hiking Guide</span>
+          <span class="ft-crosslink-desc">Grand Canyon trails, Sedona red rocks, and desert hikes</span>
+        </a>
+        <a href="/practical/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#128218;</span>
+          <span class="ft-crosslink-label">Practical Guide</span>
+          <span class="ft-crosslink-desc">Heat safety, driving tips, and Arizona travel essentials</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer (uses ft-reveal/ft-visible to avoid Tailwind .visible conflict) -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ftRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('ft-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.ft-reveal').forEach((el) => ftRevealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.ft-reveal').forEach((el) => el.classList.add('ft-visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .ft-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .ft-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #E8654A 40%, #D4A574 100%);
+  }
+
+  .ft-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .ft-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .ft-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .ft-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .ft-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .ft-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ft-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ft-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .ft-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: ftBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes ftBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .ft-personal {
+    padding-block: var(--space-8);
+  }
+
+  .ft-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #D4A574;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .ft-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .ft-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK FACTS STRIP
+     ================================================================ */
+  .ft-quickfacts {
+    padding: 0 0 var(--space-4);
+  }
+
+  .ft-quickfacts-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    background: var(--color-sky);
+    border-radius: 16px;
+    padding: var(--space-4) var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .ft-quickfact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .ft-quickfact-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-slate);
+  }
+
+  .ft-quickfact-value {
+    font-size: 1.05rem;
+    font-weight: var(--weight-extrabold);
+    color: var(--color-deep-night);
+  }
+
+  .ft-quickfact-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* ================================================================
+     QUICK NAV — Jump-to chips
+     ================================================================ */
+  .ft-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .ft-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .ft-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: #4A5568;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-quicknav-chip:hover {
+    background: #FDF8F0;
+    color: #E8654A;
+    transform: translateY(-2px);
+  }
+
+  .ft-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .ft-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .ft-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .ft-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .ft-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .ft-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .ft-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .ft-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .ft-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .ft-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .ft-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .ft-tip-text :global(a) {
+    color: #E8654A;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(232, 101, 74, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-tip-text :global(a:hover) {
+    text-decoration-color: #E8654A;
+  }
+
+  .ft-tip-link {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 0.8rem;
+    font-weight: var(--weight-semibold);
+    color: #E8654A;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ft-tip-link:hover {
+    color: #D4A574;
+  }
+
+  /* ================================================================
+     SCOTT'S PRO TIPS
+     ================================================================ */
+  .ft-protips {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-protips-card {
+    background: linear-gradient(135deg, #1A2332 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+  }
+
+  .ft-protips-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #D4A574;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-protips-card .scott-tips {
+    background: transparent;
+    border-left: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ft-protips-card .scott-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-protips-card .scott-tips li {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    padding-left: var(--space-4);
+    position: relative;
+  }
+
+  .ft-protips-card .scott-tips li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4A574;
+  }
+
+  .ft-protips-card .scott-tips :global(strong) {
+    color: #D4A574;
+    font-weight: var(--weight-semibold);
+  }
+
+  .ft-protips-card .scott-tips :global(a) {
+    color: #FB923C;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 146, 60, 0.4);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-protips-card .scott-tips :global(a:hover) {
+    text-decoration-color: #FB923C;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .ft-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .ft-cta-card {
+    background: linear-gradient(135deg, #E8654A 0%, #D4A574 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .ft-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .ft-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .ft-cta-button {
+    display: inline-block;
+    background: var(--color-deep-night);
+    color: #D4A574;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-cta-button:hover {
+    background: #0D1117;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .ft-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .ft-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .ft-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .ft-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: #1A2332;
+  }
+
+  .ft-crosslink-desc {
+    font-size: 0.78rem;
+    color: #4A5568;
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     SCROLL REVEAL
+     ================================================================ */
+  .ft-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ft-reveal.ft-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes ftRevealFallback {
+    to { opacity: 1; transform: none; }
+  }
+
+  .ft-reveal {
+    animation: ftRevealFallback 0s 3s forwards;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .ft-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .ft-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .ft-scroll-hint {
+      display: none;
+    }
+
+    .ft-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+
+    .ft-quickfacts-bar {
+      gap: var(--space-3);
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .ft-quickfact-divider {
+      display: none;
+    }
+
+    .ft-quickfact {
+      min-width: 80px;
+    }
+
+    .ft-personal-quote {
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .ft-protips-card {
+      padding: var(--space-5) var(--space-4);
+    }
+  }
+</style>
