@@ -31,7 +31,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 ---
 <BaseLayout
   title="AI Trip Planner — Build Your Arizona Itinerary"
-  description="Tell us your dream Arizona trip and our AI builds a custom day-by-day itinerary backed by 20+ trips of real travel experience. Real prices in PHP & USD."
+  description="Tell us your dream Arizona trip and our AI builds a custom day-by-day itinerary backed by 20+ trips of real travel experience. Real prices in USD."
 >
   <!-- ============================================================
        HERO
@@ -41,7 +41,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       <source src="/videos/pillar/plan-hero.mp4" type="video/mp4" />
     </video>
     <div class="planner-hero-gradient-overlay"></div>
-    <div class="planner-hero-eyebrow">AI-Powered &middot; Any Destination &middot; Real Prices in PHP &amp; USD &middot; <span class="free-badge-inline">Free Through June 30</span></div>
+    <div class="planner-hero-eyebrow">AI-Powered &middot; Any Destination &middot; Real Prices in USD &middot; <span class="free-badge-inline">Free Through June 30</span></div>
     <h1>Plan Your Arizona Trip</h1>
     <p>Explore the map, pick your destinations, tell us your style — and our AI builds a custom day-by-day itinerary backed by 20+ trips of real Arizona experience.</p>
   </section>
@@ -56,7 +56,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     </div>
     <div class="map-layout">
 
-      <!-- PHILIPPINES MAP -->
+      <!-- ARIZONA MAP -->
       <div class="map-container" id="mapContainer">
         <div class="map-tooltip" id="mapTooltip">
           <div class="map-tooltip-name" id="tooltipName"></div>
@@ -149,10 +149,10 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <label class="form-label" for="tripStyle">Travel style</label>
         <select class="form-select" id="tripStyle">
           <option value="">Select style...</option>
-          <option>Backpacker (&#8369;1,000-2,000/day · ~$18-$35 USD)</option>
-          <option>Budget-comfortable (&#8369;2,000-4,000/day · ~$35-$71 USD)</option>
-          <option>Mid-range (&#8369;4,000-8,000/day · ~$71-$142 USD)</option>
-          <option>Luxury (&#8369;8,000+/day · ~$142+ USD)</option>
+          <option>Budget ($50-$100/day)</option>
+          <option>Budget-comfortable ($100-$175/day)</option>
+          <option>Mid-range ($175-$300/day)</option>
+          <option>Luxury ($300+/day)</option>
         </select>
       </div>
       <div class="form-group">
@@ -170,8 +170,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     <div class="form-group" style="margin-top: 20px;">
       <label class="form-label" for="budgetSlider">Daily budget</label>
       <div class="budget-display">
-        <input type="range" class="budget-range" id="budgetSlider" min="500" max="15000" step="250" value="3000" />
-        <div class="budget-value" id="budgetDisplay">&#8369;3,000 <span class="budget-usd">(~$53 USD)</span></div>
+        <input type="range" class="budget-range" id="budgetSlider" min="50" max="500" step="25" value="150" />
+        <div class="budget-value" id="budgetDisplay">$150 <span class="budget-usd">USD/day</span></div>
       </div>
     </div>
   </div>
@@ -204,7 +204,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
   <section class="trust-section">
     <div class="trust-inner">
       <div class="trust-item-block"><div class="trust-icon">&#128506;</div><div class="trust-title">Any Destination</div><div class="trust-desc">Open-ended — plan trips to any island, city, or region in Arizona</div></div>
-      <div class="trust-item-block"><div class="trust-icon">&#128176;</div><div class="trust-title">Real Prices</div><div class="trust-desc">Every cost in PHP with USD equivalent — no guesswork</div></div>
+      <div class="trust-item-block"><div class="trust-icon">&#128176;</div><div class="trust-title">Real Prices</div><div class="trust-desc">Every cost in USD — no guesswork</div></div>
       <div class="trust-item-block"><div class="trust-icon">&#129523;</div><div class="trust-title">12 Destinations Covered</div><div class="trust-desc">Itineraries informed by Scott's real Arizona travel experience</div></div>
       <div class="trust-item-block"><div class="trust-icon">&#129309;</div><div class="trust-title">Book With Confidence</div><div class="trust-desc">Direct links to trusted hotels, tours, transport — vetted by us</div></div>
     </div>
@@ -234,9 +234,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
   const budgetDisplay = document.getElementById('budgetDisplay');
   if (slider && budgetDisplay) {
     slider.addEventListener('input', () => {
-      const php = parseInt(slider.value);
-      const usd = (php / 56.5).toFixed(0);
-      budgetDisplay.innerHTML = `\u20B1${php.toLocaleString()} <span class="budget-usd">(~$${usd} USD)</span>`;
+      const usd = parseInt(slider.value);
+      budgetDisplay.innerHTML = `$${usd.toLocaleString()} <span class="budget-usd">USD/day</span>`;
     });
   }
 
@@ -344,7 +343,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       { icon: '🏨', text: 'Finding hotels in your budget...' },
       { icon: '🍴', text: 'Picking restaurants & local eats...' },
       { icon: '🏄', text: 'Adding activities & experiences...' },
-      { icon: '💰', text: 'Calculating prices in PHP & USD...' },
+      { icon: '💰', text: 'Calculating prices in USD...' },
     ];
     container.innerHTML = `
       <div class="itinerary-loading">
@@ -499,17 +498,13 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <div class="day-num">Day ${day.dayNumber}</div>
         <div class="day-title">${escapeHtml(day.title)}</div>
         <div class="day-items">`;
-      let dayPhp = 0;
       let dayUsd = 0;
       for (const item of day.items) {
         const icon = CATEGORY_ICONS[item.category] || '';
         let priceHtml = '';
-        if (item.pricePhp) {
-          dayPhp += item.pricePhp;
-          if (item.priceUsd) dayUsd += item.priceUsd;
-          priceHtml = ` <span class="day-price">\u20B1${item.pricePhp.toLocaleString()}`;
-          if (item.priceUsd) priceHtml += ` <span class="day-price-usd">(~$${item.priceUsd} USD)</span>`;
-          priceHtml += `</span>`;
+        if (item.priceUsd) {
+          dayUsd += item.priceUsd;
+          priceHtml = ` <span class="day-price">$${item.priceUsd} USD</span>`;
         }
         let affiliateHtml = '';
         if (item.affiliateSlotId) {
@@ -532,8 +527,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
           <div class="day-desc">${escapeHtml(item.description)}${priceHtml}${affiliateHtml}</div>
         </div>`;
       }
-      if (dayPhp > 0) {
-        html += `<div class="day-subtotal">Day total: \u20B1${dayPhp.toLocaleString()} <span class="day-subtotal-usd">(~$${dayUsd} USD)</span></div>`;
+      if (dayUsd > 0) {
+        html += `<div class="day-subtotal">Day total: $${dayUsd.toLocaleString()} USD</div>`;
       }
       html += `</div></div>`;
     }
@@ -723,7 +718,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         marker.addListener('click', () => {
           const icon = { transport:'🚐', accommodation:'🏨', activity:'🏄', food:'🍴', ferry:'⛴️' }[item.category] || '';
           let priceStr = '';
-          if (item.pricePhp) priceStr = ` · ₱${item.pricePhp.toLocaleString()}`;
+          if (item.priceUsd) priceStr = ` · $${item.priceUsd} USD`;
           itinInfoWindow!.setContent(`
             <div style="font-family:Outfit,sans-serif;max-width:220px;">
               <div style="font-size:11px;font-weight:700;color:#0D7377;">Day ${day.dayNumber} · ${escapeHtml(item.time)}</div>
@@ -952,12 +947,12 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       const btn = document.getElementById('copyItinerary');
       const copyIt = currentItinerary || it;
       let text = copyIt.title + '\n' + copyIt.subtitle + '\n\n';
-      if (copyIt.totalBudget) text += `Estimated Total: \u20B1${copyIt.totalBudget.php?.toLocaleString()} (~$${copyIt.totalBudget.usd?.toLocaleString()} USD)\n\n`;
+      if (copyIt.totalBudget) text += `Estimated Total: $${copyIt.totalBudget.usd?.toLocaleString()} USD\n\n`;
       for (const day of copyIt.days) {
         text += `--- Day ${day.dayNumber}: ${day.title} ---\n`;
         for (const item of day.items) {
           text += `  ${item.time} \u2014 ${item.description}`;
-          if (item.pricePhp) text += ` (\u20B1${item.pricePhp.toLocaleString()})`;
+          if (item.priceUsd) text += ` ($${item.priceUsd})`;
           text += '\n';
         }
         text += '\n';
@@ -1030,7 +1025,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       s.dataset.border = '1';
       s.dataset.radius = '8';
       s.dataset.caption = 'Find Transport in Arizona';
-      s.dataset.sub_id = 'discoverph-plan';
+      s.dataset.sub_id = 'discoveraz-plan';
       s.dataset.domain = '12go.asia';
       widgetWrap.appendChild(s);
     }

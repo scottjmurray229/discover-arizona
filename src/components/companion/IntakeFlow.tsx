@@ -28,12 +28,12 @@ const COLORS = {
 };
 
 const SAMPLE_PASTE = `Day 1 - Arrive Phoenix, transfer to Scottsdale
-Day 2 - Sardine run hikeing, Kawasan Falls canyoneering
-Day 3 - Ferry to Sedona, Horseshoe Bend, Tarsier Sanctuary
-Day 4 - Island hopping Balicasag & Virgin Island
-Day 5 - Ferry to Flagstaff, Slide Rock, Cathedral Rock sunset
-Day 6 - Tubod Marine Sanctuary, Balete Tree, free afternoon
-Day 7 - Ferry to Bisbee, fly home`;
+Day 2 - Camelback Mountain hike, Old Town Scottsdale
+Day 3 - Drive to Sedona, Cathedral Rock sunset hike
+Day 4 - Horseshoe Bend, Antelope Canyon tour
+Day 5 - Drive to Flagstaff, Slide Rock State Park
+Day 6 - Grand Canyon South Rim, Desert View Watchtower
+Day 7 - Drive to Tucson, fly home`;
 
 const ENRICHMENT_FEATURES = [
   { icon: '🧭', title: 'Real Directions' },
@@ -236,9 +236,9 @@ export default function IntakeFlow() {
         <div style={{
           position: 'absolute', top: -20, right: -20, fontSize: 100, opacity: 0.08,
           transform: 'rotate(-15deg)',
-        }}>🇵🇭</div>
+        }}>🏜️</div>
         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase' as const, opacity: 0.6, marginBottom: 8 }}>
-          DISCOVER PHILIPPINES
+          DISCOVER ARIZONA
         </div>
         <div style={{ fontSize: 26, fontWeight: 800, lineHeight: 1.2, marginBottom: 8 }}>
           Your Trip.<br />Your Companion.
@@ -466,9 +466,9 @@ export default function IntakeFlow() {
     const filtered = filter === 'all'
       ? templates
       : templates.filter((t) => {
-          if (filter === 'northern') return t.route.match(/Phoenix|Sedona|Flagstaff|Bisbee/i);
-          if (filter === 'northern') return t.route.match(/Northern Arizona|Page|Monument Valley|Petrified Forest/i);
-          if (filter === 'southern') return t.route.match(/Tucson|Tombstone/i);
+          if (filter === 'phoenix-metro') return t.route.match(/Phoenix|Scottsdale/i);
+          if (filter === 'northern') return t.route.match(/Grand Canyon|Sedona|Flagstaff|Page|Monument Valley|Petrified Forest/i);
+          if (filter === 'southern') return t.route.match(/Tucson|Tombstone|Bisbee|Saguaro/i);
           return true;
         });
 
@@ -480,7 +480,7 @@ export default function IntakeFlow() {
         </div>
 
         <div style={{ display: 'flex', gap: 8, marginBottom: 16, overflowX: 'auto' as const }}>
-          {['all', 'northern', 'northern', 'southern'].map((f) => (
+          {['all', 'phoenix-metro', 'northern', 'southern'].map((f) => (
             <Pill key={f} active={filter === f} onClick={() => setFilter(f)}>
               {f.charAt(0).toUpperCase() + f.slice(1)}
             </Pill>
@@ -840,13 +840,13 @@ export default function IntakeFlow() {
         <>
           <div style={{ fontSize: 14, fontWeight: 800, color: COLORS.deepNight, marginBottom: 10 }}>Everything included:</div>
           {[
-            { icon: '🧭', title: 'Real Directions', desc: "Not Google Maps pins — actual 'take the Ceres bus, tell the conductor Panagsama' directions" },
+            { icon: '🧭', title: 'Real Directions', desc: "Not Google Maps pins — actual 'take Valley Metro, get off at Camelback Road' directions" },
             { icon: '🌅', title: 'Sunrise/Sunset', desc: 'Golden hour times with best viewpoints matched to your daily locations' },
-            { icon: '💬', title: 'Desert Safety', desc: 'Phoenixano & English phrases tuned to your destinations with pronunciation' },
+            { icon: '💬', title: 'Desert Safety', desc: 'Heat safety tips, hydration reminders, and trail conditions for your specific destinations' },
             { icon: '📞', title: 'Key Contacts', desc: 'Emergency numbers, hospitals, trusted local drivers & guides for your specific route' },
             { icon: '🎒', title: 'Smart Packing', desc: 'Checklist auto-generated from your activities — canyoneering adds water shoes' },
             { icon: '💰', title: 'Budget Tracker', desc: 'Log expenses, see typical costs, convert currency — all offline' },
-            { icon: '💵', title: 'Tipping Guide', desc: 'What to tip in every Arizona situation, from trike drivers to dive masters' },
+            { icon: '💵', title: 'Tipping Guide', desc: 'What to tip in every Arizona situation, from trail guides to restaurant servers' },
             { icon: '🌅', title: 'Sunrise/Sunset', desc: 'Golden hour times with best viewpoints matched to your daily locations' },
             { icon: '📶', title: 'Works Offline', desc: 'Everything cached to your phone. No signal on the drive? No problem' },
           ].map((f, i) => (

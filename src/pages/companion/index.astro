@@ -28,15 +28,15 @@ const faqItems = [
   },
   {
     question: 'What destinations do you cover?',
-    answer: 'We currently cover 20+ destinations across Arizona including Phoenix, Sedona, Flagstaff, Northern Arizona (Page & Monument Valley), Tucson, Grand Canyon, Bisbee, Tombstone, Clark, and more. Each destination has real directions, local restaurant picks, and insider tips from our personal trips.',
+    answer: 'We currently cover 12 destinations across Arizona including Phoenix, Scottsdale, Sedona, Grand Canyon, Flagstaff, Page, Monument Valley, Tucson, Tombstone, Bisbee, and more. Each destination has real directions, local restaurant picks, and insider tips from our personal trips.',
   },
 ];
 
 const features = [
-  { icon: '🧭', title: 'Real Directions', description: 'Not Google Maps pins — actual "take the Ceres bus, tell the conductor Panagsama" directions from every destination.' },
+  { icon: '🧭', title: 'Real Directions', description: 'Not Google Maps pins — actual "take Valley Metro, get off at Camelback Road" directions from every destination.' },
   { icon: '🌅', title: 'Sunrise & Sunset', description: 'Golden hour times with best viewpoints matched to your daily locations. Never miss a sunset.' },
-  { icon: '💰', title: 'Budget Tracker', description: 'Log expenses in PHP or USD, see typical costs for your destinations, and convert currency — all offline.' },
-  { icon: '💬', title: 'Desert Safety', description: 'Phoenixano and English phrases tuned to your specific destinations, with pronunciation guides.' },
+  { icon: '💰', title: 'Budget Tracker', description: 'Log expenses in USD, see typical costs for your destinations, and track your budget — all offline.' },
+  { icon: '💬', title: 'Desert Safety', description: 'Heat safety tips, hydration reminders, and trail conditions tuned to your specific destinations.' },
   { icon: '👥', title: 'Group Sharing', description: 'One purchase, up to 8 travelers. Everyone gets the full companion with real-time sync.' },
   { icon: '💵', title: 'Expense Splitter', description: 'Track shared costs, split bills, and settle up at the end of the trip. No more spreadsheets.' },
   { icon: '🎒', title: 'Smart Packing List', description: 'Auto-generated from your activities — canyoneering adds water shoes, hikeing adds reef-safe sunscreen.' },
@@ -118,8 +118,8 @@ const testimonials = [
         <div class="cp-phone-frame">
           <div class="cp-phone-screen">
             <div class="cp-phone-header">
-              <span class="cp-phone-label">DISCOVER PHILIPPINES</span>
-              <span class="cp-phone-title">Central Northern Explorer</span>
+              <span class="cp-phone-label">DISCOVER ARIZONA</span>
+              <span class="cp-phone-title">Arizona Explorer</span>
               <span class="cp-phone-meta">7 days · 3 destinations · 14 activities</span>
             </div>
             <div class="cp-phone-items">
@@ -131,9 +131,9 @@ const testimonials = [
                 </div>
               </div>
               <div class="cp-phone-item">
-                <span class="cp-phone-item-icon">🐟</span>
+                <span class="cp-phone-item-icon">🥾</span>
                 <div>
-                  <span class="cp-phone-item-title">Sardine Run Snorkeling</span>
+                  <span class="cp-phone-item-title">Camelback Mountain Hike</span>
                   <span class="cp-phone-item-tag">Directions + local tips</span>
                 </div>
               </div>
@@ -168,9 +168,9 @@ const testimonials = [
                 <span class="cp-mockup-icons">📶 🔋</span>
               </div>
               <div class="cp-mockup-header" style="background: var(--gradient-companion-hero);">
-                <span class="cp-mockup-label">DISCOVER PHILIPPINES</span>
-                <span class="cp-mockup-title">Central Northern</span>
-                <span class="cp-mockup-sub">Day 1 of 7 · Phoenix City</span>
+                <span class="cp-mockup-label">DISCOVER ARIZONA</span>
+                <span class="cp-mockup-title">Arizona Explorer</span>
+                <span class="cp-mockup-sub">Day 1 of 7 · Phoenix</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-item">
@@ -188,8 +188,8 @@ const testimonials = [
                   <div class="cp-mockup-row">
                     <span class="cp-mockup-emoji">🏨</span>
                     <div>
-                      <span class="cp-mockup-name">Check in · Quest Hotel</span>
-                      <span class="cp-mockup-tag">₱2,800/night</span>
+                      <span class="cp-mockup-name">Check in · Hotel Valley Ho</span>
+                      <span class="cp-mockup-tag">$189/night</span>
                     </div>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ const testimonials = [
                   <div class="cp-mockup-row">
                     <span class="cp-mockup-emoji">🍜</span>
                     <div>
-                      <span class="cp-mockup-name">Lunch · Larsian BBQ</span>
+                      <span class="cp-mockup-name">Lunch · Barrio Cafe</span>
                       <span class="cp-mockup-tag">Scott's pick</span>
                     </div>
                   </div>
@@ -206,9 +206,9 @@ const testimonials = [
                 <div class="cp-mockup-item">
                   <span class="cp-mockup-time">2:00 PM</span>
                   <div class="cp-mockup-row">
-                    <span class="cp-mockup-emoji">⛪</span>
+                    <span class="cp-mockup-emoji">🏛️</span>
                     <div>
-                      <span class="cp-mockup-name">Basilica del Santo Niño</span>
+                      <span class="cp-mockup-name">Heard Museum</span>
                       <span class="cp-mockup-tag">Directions + tips</span>
                     </div>
                   </div>
@@ -218,8 +218,8 @@ const testimonials = [
                   <div class="cp-mockup-row">
                     <span class="cp-mockup-emoji">🍽️</span>
                     <div>
-                      <span class="cp-mockup-name">Dinner · Casa Verde</span>
-                      <span class="cp-mockup-tag">₱350/person</span>
+                      <span class="cp-mockup-name">Dinner · Pizzeria Bianco</span>
+                      <span class="cp-mockup-tag">$25/person</span>
                     </div>
                   </div>
                 </div>
@@ -246,34 +246,34 @@ const testimonials = [
               </div>
               <div class="cp-mockup-header cp-mockup-header--teal">
                 <span class="cp-mockup-label">GETTING TO</span>
-                <span class="cp-mockup-title">Scottsdale Beach</span>
-                <span class="cp-mockup-sub">From Phoenix City · 3 hours</span>
+                <span class="cp-mockup-title">Sedona</span>
+                <span class="cp-mockup-sub">From Phoenix · 2 hours</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">1</div>
                   <div>
-                    <span class="cp-mockup-dir-title">South Bus Terminal</span>
-                    <span class="cp-mockup-dir-detail">Take a taxi or Grab to Phoenix South Bus Terminal (₱150-200). Tell the driver "South Bus."</span>
+                    <span class="cp-mockup-dir-title">Head North on I-17</span>
+                    <span class="cp-mockup-dir-detail">From Phoenix, take I-17 North toward Flagstaff. Stay in the right lane for the AZ-179 exit.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">2</div>
                   <div>
-                    <span class="cp-mockup-dir-title">Ceres Bus to Scottsdale</span>
-                    <span class="cp-mockup-dir-detail">Look for the Ceres bus with "Bato via Barili" sign. Tell the conductor "Scottsdale." ₱155, ~3 hrs.</span>
+                    <span class="cp-mockup-dir-title">Exit AZ-179 to Sedona</span>
+                    <span class="cp-mockup-dir-detail">Take exit 298 for AZ-179 North. Drive through the Village of Oak Creek — red rocks start appearing.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">3</div>
                   <div>
-                    <span class="cp-mockup-dir-title">Tricycle to Panagsama</span>
-                    <span class="cp-mockup-dir-detail">At Scottsdale town, take a tricycle to Panagsama Beach. ₱50 per person, 10 minutes.</span>
+                    <span class="cp-mockup-dir-title">Arrive in Uptown Sedona</span>
+                    <span class="cp-mockup-dir-detail">AZ-179 merges into AZ-89A. Park at the public lot on Jordan Road — free and central.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-tip">
                   <span class="cp-mockup-tip-icon">💡</span>
-                  <span class="cp-mockup-tip-text">Leave before 7 AM to avoid traffic through Naga.</span>
+                  <span class="cp-mockup-tip-text">Leave before 7 AM to avoid Phoenix rush hour on I-17.</span>
                 </div>
               </div>
               <div class="cp-mockup-tabs">
@@ -298,8 +298,8 @@ const testimonials = [
               </div>
               <div class="cp-mockup-header cp-mockup-header--gold">
                 <span class="cp-mockup-label">BUDGET TRACKER</span>
-                <span class="cp-mockup-title">Day 3 · Scottsdale</span>
-                <span class="cp-mockup-sub">₱4,250 spent · $76 USD</span>
+                <span class="cp-mockup-title">Day 3 · Sedona</span>
+                <span class="cp-mockup-sub">$185 spent today</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-budget-bar">
@@ -309,34 +309,34 @@ const testimonials = [
                 <div class="cp-mockup-expense">
                   <span class="cp-mockup-emoji">🏨</span>
                   <div>
-                    <span class="cp-mockup-name">Chief Mau Resort</span>
+                    <span class="cp-mockup-name">Lantern Light Inn</span>
                     <span class="cp-mockup-tag">Accommodation</span>
                   </div>
-                  <span class="cp-mockup-amount">₱1,800</span>
+                  <span class="cp-mockup-amount">$95</span>
                 </div>
                 <div class="cp-mockup-expense">
-                  <span class="cp-mockup-emoji">🐟</span>
+                  <span class="cp-mockup-emoji">🥾</span>
                   <div>
-                    <span class="cp-mockup-name">Sardine Run Tour</span>
+                    <span class="cp-mockup-name">Jeep Tour · Red Rocks</span>
                     <span class="cp-mockup-tag">Activity</span>
                   </div>
-                  <span class="cp-mockup-amount">₱1,500</span>
+                  <span class="cp-mockup-amount">$55</span>
                 </div>
                 <div class="cp-mockup-expense">
                   <span class="cp-mockup-emoji">🍜</span>
                   <div>
-                    <span class="cp-mockup-name">Lunch · Pleasure Point</span>
+                    <span class="cp-mockup-name">Lunch · Elote Cafe</span>
                     <span class="cp-mockup-tag">Food</span>
                   </div>
-                  <span class="cp-mockup-amount">₱650</span>
+                  <span class="cp-mockup-amount">$22</span>
                 </div>
                 <div class="cp-mockup-expense">
-                  <span class="cp-mockup-emoji">🛺</span>
+                  <span class="cp-mockup-emoji">⛽</span>
                   <div>
-                    <span class="cp-mockup-name">Tricycle rides (×3)</span>
+                    <span class="cp-mockup-name">Gas · rental car</span>
                     <span class="cp-mockup-tag">Transport</span>
                   </div>
-                  <span class="cp-mockup-amount">₱300</span>
+                  <span class="cp-mockup-amount">$13</span>
                 </div>
               </div>
               <div class="cp-mockup-tabs">
@@ -348,7 +348,7 @@ const testimonials = [
             </div>
           </div>
           <h3 class="cp-carousel-title">Budget Tracker</h3>
-          <p class="cp-carousel-desc">Log expenses, see typical costs, convert PHP/USD — all offline.</p>
+          <p class="cp-carousel-desc">Log expenses, see typical costs, track your budget — all offline.</p>
         </div>
 
         <!-- 4. Desert Safety -->
@@ -360,30 +360,30 @@ const testimonials = [
                 <span class="cp-mockup-icons">📶 🔋</span>
               </div>
               <div class="cp-mockup-header cp-mockup-header--coral">
-                <span class="cp-mockup-label">LOCAL PHRASES</span>
-                <span class="cp-mockup-title">Phoenixano (Bisaya)</span>
-                <span class="cp-mockup-sub">For your Northern destinations</span>
+                <span class="cp-mockup-label">DESERT SAFETY</span>
+                <span class="cp-mockup-title">Heat & Trail Tips</span>
+                <span class="cp-mockup-sub">For your Arizona destinations</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Maayong buntag!</div>
-                  <div class="cp-mockup-phrase-eng">Good morning!</div>
-                  <div class="cp-mockup-phrase-say">ma-AH-yong boon-TAG</div>
+                  <div class="cp-mockup-phrase-local">Carry 1 liter per hour</div>
+                  <div class="cp-mockup-phrase-eng">Minimum water for desert hiking</div>
+                  <div class="cp-mockup-phrase-say">More in summer heat</div>
                 </div>
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Pila ni?</div>
-                  <div class="cp-mockup-phrase-eng">How much is this?</div>
-                  <div class="cp-mockup-phrase-say">PEE-la nee</div>
+                  <div class="cp-mockup-phrase-local">Hike before 10 AM</div>
+                  <div class="cp-mockup-phrase-eng">Avoid peak sun hours (10 AM - 4 PM)</div>
+                  <div class="cp-mockup-phrase-say">Start at sunrise in summer</div>
                 </div>
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Asa ang Panagsama?</div>
-                  <div class="cp-mockup-phrase-eng">Where is Panagsama?</div>
-                  <div class="cp-mockup-phrase-say">AH-sa ang pa-nag-SA-ma</div>
+                  <div class="cp-mockup-phrase-local">Watch for flash floods</div>
+                  <div class="cp-mockup-phrase-eng">Never enter slot canyons if rain is forecast</div>
+                  <div class="cp-mockup-phrase-say">Check weather before Antelope Canyon</div>
                 </div>
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Salamat kaayo!</div>
-                  <div class="cp-mockup-phrase-eng">Thank you very much!</div>
-                  <div class="cp-mockup-phrase-say">sa-LA-mat ka-AH-yo</div>
+                  <div class="cp-mockup-phrase-local">Sun protection is essential</div>
+                  <div class="cp-mockup-phrase-eng">SPF 50+, hat, sunglasses at all times</div>
+                  <div class="cp-mockup-phrase-say">Reapply every 2 hours</div>
                 </div>
               </div>
               <div class="cp-mockup-tabs">
@@ -395,7 +395,7 @@ const testimonials = [
             </div>
           </div>
           <h3 class="cp-carousel-title">Desert Safety</h3>
-          <p class="cp-carousel-desc">Phoenixano & English phrases matched to your destinations with pronunciation.</p>
+          <p class="cp-carousel-desc">Heat safety tips, hydration reminders, and trail conditions for every destination.</p>
         </div>
 
         <!-- 5. Group Sharing -->
@@ -444,11 +444,11 @@ const testimonials = [
                 </div>
                 <div class="cp-mockup-group-stats">
                   <div class="cp-mockup-stat">
-                    <span class="cp-mockup-stat-val">₱12,400</span>
+                    <span class="cp-mockup-stat-val">$1,240</span>
                     <span class="cp-mockup-stat-label">Group total</span>
                   </div>
                   <div class="cp-mockup-stat">
-                    <span class="cp-mockup-stat-val">₱2,067</span>
+                    <span class="cp-mockup-stat-val">$207</span>
                     <span class="cp-mockup-stat-label">Per person</span>
                   </div>
                 </div>
