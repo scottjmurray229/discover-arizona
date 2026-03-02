@@ -1,0 +1,454 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Arizona Festival Calendar', url: '/festivals/' },
+];
+
+const pageTitle = 'Arizona Festival Calendar 2026 — Events Worth Planning Your Trip Around';
+const pageDescription = "From the world's largest gem show in Tucson to Sedona's art and film scene — Arizona hosts some of the Southwest's most distinctive festivals. Here's what's worth your time and when.";
+
+const festivals = [
+  {
+    month: 'Jan',
+    monthIndex: 0,
+    name: 'Fiesta Bowl & College Football Playoff',
+    location: 'Glendale (State Farm Stadium)',
+    dates: 'January 1 (and CFP dates vary)',
+    description: 'The Fiesta Bowl is one of college football\'s premier events — New Year\'s Day in the desert, 72,000 fans, and the kind of tailgate culture that takes over the entire Phoenix metro. When Arizona hosts College Football Playoff games, the energy ratchets up further. Scottsdale fills with fans from both programs the week before, making it an entire experience rather than just a game. Tickets from $150 to $800+ depending on matchup.',
+    tag: 'Major Event',
+    gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3A 100%)',
+  },
+  {
+    month: 'Jan',
+    monthIndex: 1,
+    name: 'Tucson Gem, Mineral & Fossil Showcase',
+    location: 'Tucson (multiple venues across the city)',
+    dates: 'Late January – mid February (2+ weeks)',
+    description: 'The world\'s largest gem and mineral show — and it\'s not close. Over 250 individual shows at venues across Tucson simultaneously, drawing 60,000+ buyers, dealers, and collectors from 100+ countries. The main show at the Tucson Convention Center is polished and family-friendly. The parking lot shows, hotel room pop-ups, and warehouse venues around Kino Boulevard are where the real treasure hunting happens. You can spend $5 on a quartz point or $50,000 on a museum-grade specimen. Free entry to most shows.',
+    tag: 'World\'s Largest',
+    gradient: 'linear-gradient(135deg, #7B4F9E 0%, #C084FC 100%)',
+  },
+  {
+    month: 'Feb',
+    monthIndex: 1,
+    name: 'Sedona International Film Festival',
+    location: 'Sedona',
+    dates: 'Late February (8 days)',
+    description: 'An intimate film festival in one of the most cinematically beautiful settings on earth — red rock canyon walls as your backdrop for eight days of independent film, panels, and parties. The festival draws about 100 films, several celebrity guests, and an audience that\'s genuinely passionate about cinema rather than just there to be seen. Screenings at the Mary D. Fisher Theatre and other Sedona venues. Passes from $150; individual screenings $12–18. Combine with hiking the red rocks at sunrise.',
+    tag: 'Arts & Culture',
+    gradient: 'linear-gradient(135deg, #C05299 0%, #E8654A 100%)',
+  },
+  {
+    month: 'Feb',
+    monthIndex: 1,
+    name: 'Scottsdale Arts Festival',
+    location: 'Downtown Scottsdale',
+    dates: 'Mid-March (3 days)',
+    description: 'One of the top-rated fine arts festivals in the country, held on the beautifully walkable Scottsdale Civic Center Mall. Over 170 juried artists from across the nation display paintings, sculpture, jewelry, photography, and ceramics. The setting is excellent — fountains, public art, and Old Town Scottsdale steps away. Live music throughout the weekend. Admission around $10; free for children. The spring timing means perfect weather for wandering outdoor galleries.',
+    tag: 'Fine Arts',
+    gradient: 'linear-gradient(135deg, #FF6B6B 0%, #FFA726 100%)',
+  },
+  {
+    month: 'Mar',
+    monthIndex: 2,
+    name: 'Tempe Festival of the Arts',
+    location: 'Downtown Tempe (Mill Avenue)',
+    dates: 'Late March (3 days) — also early December',
+    description: 'One of the largest outdoor art festivals in the Southwest, filling Mill Avenue in Tempe with 200+ artists, live entertainment, and street food. ASU students and locals mix with collectors browsing the gallery-quality work. The spring show benefits from cool weather and the energy of a college town throwing itself a party. Free admission. Mill Avenue has excellent restaurants and bars for post-gallery wandering. The December show has holiday energy but the spring show has better weather.',
+    tag: 'Free Entry',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+  },
+  {
+    month: 'Mar',
+    monthIndex: 2,
+    name: 'Phoenix Film Festival',
+    location: 'Phoenix (Harkins Camelview at Fashion Square)',
+    dates: 'April (9 days)',
+    description: 'Phoenix\'s largest film festival showcases independent films from around the world across nine days of screenings, panels, and awards. Strong mix of feature films, documentaries, and shorts across multiple screens. The festival punches above its weight for talent — industry guests attend and Q&As are accessible and genuine. Individual tickets around $14; festival passes from $75. April weather in Phoenix is ideal — warm evenings, cool theaters, perfect excuse to spend all day watching films.',
+    tag: 'Film',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+  },
+  {
+    month: 'Sep',
+    monthIndex: 8,
+    name: 'Flagstaff Festival of Science',
+    location: 'Flagstaff',
+    dates: 'Late September – early October (10 days)',
+    description: 'Flagstaff is a genuine science city — home to Lowell Observatory (where Pluto was discovered), multiple research institutions, and Northern Arizona University. The Festival of Science showcases the region\'s scientific depth with public lectures, lab tours, forest ecology walks, and star parties at observatories. Most events are free. The elevation (7,000 feet) means autumn temperatures are crisp and comfortable while Phoenix is still baking. Dark sky tours during the festival are exceptional.',
+    tag: 'Science & Nature',
+    gradient: 'linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%)',
+  },
+  {
+    month: 'Jan',
+    monthIndex: 0,
+    name: 'Arizona Renaissance Festival',
+    location: 'Gold Canyon (east of Phoenix)',
+    dates: 'Weekends February – March (7 weekends)',
+    description: 'One of the largest Renaissance festivals in the country runs for seven straight weekends in the desert outside Phoenix. Over 2,000 costumed performers, artisans, jousting knights, and food vendors transform a purpose-built village into a genuinely immersive experience. The cast is enormous and the production values are high — this is not a small local fair. Arrive early, stay late, eat a turkey leg. Tickets around $25 adults, $15 children. Costume encouraged but not required.',
+    tag: 'Family',
+    gradient: 'linear-gradient(135deg, #6A1B9A 0%, #AB47BC 100%)',
+  },
+  {
+    month: 'Jan',
+    monthIndex: 2,
+    name: 'Native Trails Powwow (Heard Museum)',
+    location: 'Phoenix (Heard Museum)',
+    dates: 'Late February – early March (weekend)',
+    description: 'The Heard Museum World Championship Hoop Dance Contest is the centerpiece of this annual powwow — the finest Native American hoop dancers in the world compete using hoops to create elaborate animal and nature shapes in mid-performance. The museum\'s collection of Native art is world-class; the powwow weekend adds music, food, and community that brings everything to life. The Heard Museum is a genuine destination on its own; plan the full day.',
+    tag: 'Cultural Heritage',
+    gradient: 'linear-gradient(135deg, #D97706 0%, #FBBF24 100%)',
+  },
+];
+
+const months = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+
+<style>
+  .fest-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 var(--space-6) 60px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #7B2D00 0%, #C05229 50%, #8B4513 100%);
+  }
+
+  .fest-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+  }
+
+  .fest-hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(123, 45, 0, 0.92) 0%, rgba(123, 45, 0, 0.3) 60%, transparent 100%);
+  }
+
+  .fest-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+  }
+
+  .fest-hero-eyebrow {
+    font-size: 0.72rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #FFA726;
+    margin-bottom: var(--space-3);
+  }
+
+  .fest-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.15;
+    margin: 0 0 var(--space-4);
+  }
+
+  .fest-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.6;
+    margin: 0 0 var(--space-6);
+    max-width: 600px;
+  }
+
+  .fest-hero-meta {
+    display: flex;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .fest-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .fest-hero-meta-label { font-size: 0.68rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .fest-hero-meta-value { font-size: 1.4rem; font-weight: var(--weight-bold); color: #fff; }
+
+  .fest-personal { padding-block: var(--space-8); }
+  .fest-personal-quote {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #E8654A;
+    background: var(--color-sky, #fff8f3);
+    border-radius: 0 12px 12px 0;
+  }
+  .fest-personal-quote p { font-size: var(--text-body, 1.05rem); color: var(--color-heading, #1a2332); line-height: 1.7; font-style: italic; margin-bottom: var(--space-3); }
+  .fest-personal-quote cite { font-size: 0.85rem; color: #E8654A; font-weight: var(--weight-semibold); font-style: normal; }
+
+  .fest-section { padding: var(--space-6) 0 var(--space-10); }
+  .fest-section-heading { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); margin: 0 0 var(--space-2); text-align: center; }
+  .fest-section-sub { font-size: 1rem; color: var(--color-slate, #5a6a7a); text-align: center; margin: 0 0 var(--space-8); }
+
+  .fest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .fest-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--color-white, #fff);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .fest-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+
+  .fest-card-header {
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .fest-card-tag { display: inline-block; font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); backdrop-filter: blur(4px); padding: 3px 10px; border-radius: 20px; margin-bottom: var(--space-2); width: fit-content; }
+  .fest-card-name { font-size: 1.15rem; font-weight: var(--weight-bold); color: #fff; line-height: 1.3; margin: 0 0 4px; }
+  .fest-card-location { font-size: 0.78rem; color: rgba(255,255,255,0.75); font-weight: var(--weight-medium); }
+
+  .fest-card-body { padding: var(--space-4) var(--space-5) var(--space-5); flex: 1; display: flex; flex-direction: column; gap: var(--space-3); }
+
+  .fest-card-dates { display: flex; align-items: center; gap: var(--space-2); font-size: 0.8rem; font-weight: var(--weight-semibold); color: #C05229; }
+  .fest-card-dates::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #C05229; flex-shrink: 0; }
+
+  .fest-card-desc { font-size: 0.88rem; color: var(--color-body, #3d4d5e); line-height: 1.65; flex: 1; }
+
+  .fest-tips { padding: var(--space-8) 0; background: linear-gradient(135deg, #7B2D00 0%, #C05229 100%); }
+  .fest-tips-inner { max-width: 820px; margin: 0 auto; padding: 0 var(--space-6); }
+  .fest-tips-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-6); text-align: center; }
+  .fest-tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4); }
+  .fest-tip-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: var(--space-4) var(--space-5); }
+  .fest-tip-icon { font-size: 1.5rem; margin-bottom: var(--space-2); }
+  .fest-tip-title { font-size: 0.9rem; font-weight: var(--weight-bold); color: #fff; margin-bottom: var(--space-2); }
+  .fest-tip-text { font-size: 0.82rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+  .fest-cta-section { padding: var(--space-8) 0; }
+  .fest-cta-card { background: linear-gradient(135deg, #7B2D00 0%, #C05229 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .fest-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .fest-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .fest-cta-button { display: inline-block; background: #FFA726; color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .fest-cta-button:hover { background: #E65100; transform: translateY(-2px); }
+
+  .fest-crosslinks { padding: 0 0 var(--space-10); }
+  .fest-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); text-align: center; margin: 0 0 var(--space-4); }
+  .fest-crosslinks-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); max-width: 640px; margin: 0 auto; }
+  .fest-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white, #fff); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .fest-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .fest-crosslink-icon { font-size: 1.8rem; }
+  .fest-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); }
+  .fest-crosslink-desc { font-size: 0.78rem; color: var(--color-slate, #5a6a7a); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .fest-crosslinks-grid, .fest-hero-meta { grid-template-columns: 1fr; }
+    .fest-grid { grid-template-columns: 1fr; }
+    .fest-hero { padding: 0 var(--space-4) 40px; min-height: 55vh; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+
+  <!-- Hero -->
+  <header class="fest-hero">
+    <video class="fest-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/festivals-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="fest-hero-gradient"></div>
+    <div class="fest-hero-content">
+      <p class="fest-hero-eyebrow">Arizona Events & Festivals</p>
+      <h1 class="fest-hero-title">Arizona Festival Calendar 2026</h1>
+      <p class="fest-hero-subtitle">The world's largest gem show, Sedona's film festival in red rock country, Native cultural powwows, and college football under winter sun — Arizona's events are as varied as its landscapes.</p>
+      <div class="fest-hero-meta">
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Events</span>
+          <span class="fest-hero-meta-value">9</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Peak Season</span>
+          <span class="fest-hero-meta-value">Jan – Apr</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Best For</span>
+          <span class="fest-hero-meta-value">Arts, Culture</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal Intro -->
+  <section class="fest-personal reveal">
+    <div class="container-content">
+      <blockquote class="fest-personal-quote">
+        <p>Arizona's festival season runs counter-intuitively to everywhere else in the country — January through April is peak time, not summer. When the rest of the U.S. is buried in snow, Arizona is hosting the world's largest gem show, outdoor art festivals in perfect 72°F weather, and spring training crowds filling every hotel from Scottsdale to Mesa. The Tucson Gem Show alone is worth flying in for if you're at all interested in rocks, fossils, jewelry, or just watching dealers from 100 countries do business out of parking lots and hotel rooms. Don't sleep on January in Arizona.</p>
+        <cite>— Scott Murray, Discover Arizona</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Festival Cards -->
+  <section class="fest-section reveal">
+    <div class="container-content">
+      <h2 class="fest-section-heading">Arizona's Top Festivals & Events</h2>
+      <p class="fest-section-sub">Winter and spring are the sweet spots — perfect weather, the largest outdoor events in the Southwest.</p>
+      <div class="fest-grid">
+        {festivals.map((fest) => (
+          <div class="fest-card reveal">
+            <div class="fest-card-header" style={`background: ${fest.gradient};`}>
+              {fest.tag && <span class="fest-card-tag">{fest.tag}</span>}
+              <h3 class="fest-card-name">{fest.name}</h3>
+              <div class="fest-card-location">{fest.location}</div>
+            </div>
+            <div class="fest-card-body">
+              <div class="fest-card-dates">{fest.dates}</div>
+              <p class="fest-card-desc">{fest.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips -->
+  <section class="fest-tips reveal">
+    <div class="fest-tips-inner">
+      <h2 class="fest-tips-heading">Scott's Arizona Festival Tips</h2>
+      <div class="fest-tips-grid">
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#128142;</div>
+          <div class="fest-tip-title">Tucson Gem Show: go to the parking lots</div>
+          <p class="fest-tip-text">The convention center show is the most polished but not the most interesting. The real action is at the parking lot and hotel shows around Kino Boulevard and the Holidome — hundreds of vendors selling direct, prices negotiable, specimens you won't see in any store.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127774;</div>
+          <div class="fest-tip-title">January – April is Arizona's best weather</div>
+          <p class="fest-tip-text">Highs of 65–78°F, virtually no rain, cool evenings. Every outdoor festival is better in this window. Summer is for residents; winter is when Arizona becomes genuinely pleasant for everyone.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127916;</div>
+          <div class="fest-tip-title">Sedona Film Festival: book early</div>
+          <p class="fest-tip-text">The Mary D. Fisher Theatre is small and popular screenings sell out. Buy passes or individual tickets online before you arrive. The Q&As after screenings are genuinely good — filmmakers who chose Sedona over Sundance tend to be passionate people.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127960;</div>
+          <div class="fest-tip-title">Renaissance Festival: go on a weekday</div>
+          <p class="fest-tip-text">Weekend crowds can be massive. If you can swing a weekday visit during the 7-week run, you'll have more space to actually interact with performers. Costume is encouraged — about 40% of the crowd dresses up.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127944;</div>
+          <div class="fest-tip-title">Fiesta Bowl: book 6+ months out</div>
+          <p class="fest-tip-text">Scottsdale hotels sell out fast for Fiesta Bowl weekend. If you're planning a college football trip to Arizona, look at both the game tickets and accommodation simultaneously — the two are inseparable planning challenges.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127752;</div>
+          <div class="fest-tip-title">Flagstaff in fall: totally different Arizona</div>
+          <p class="fest-tip-text">The Festival of Science is in late September when Flagstaff's aspens are turning gold and temperatures are in the 60s. It feels nothing like Phoenix — it's a mountain town at 7,000 feet and the festival reflects that scientific, outdoorsy community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="fest-cta-section reveal">
+    <div class="container-content">
+      <div class="fest-cta-card">
+        <h2 class="fest-cta-heading">Plan Your Arizona Festival Trip</h2>
+        <p class="fest-cta-text">Let our AI travel planner build a custom Arizona itinerary around the festivals you want to attend — combining events with hiking, wine country, and the best of the Southwest.</p>
+        <a href="/plan/" class="fest-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "When is the Tucson Gem Show and how do I attend?", answer: "The Tucson Gem, Mineral & Fossil Showcase runs approximately late January through mid-February across 250+ individual shows at venues around the city. The main show at the Tucson Convention Center (TGMS) requires registration but is free. Dozens of the most interesting shows in hotel parking lots and warehouses near Kino Boulevard are also free and open to the public. A rental car helps for getting between venues." },
+    { question: "What are the best festivals in Scottsdale?", answer: "The Scottsdale Arts Festival (mid-March, Civic Center Mall) is the marquee event — 170+ juried artists over three days with excellent food and music. Barrett-Jackson auto auction (January) draws car enthusiasts worldwide. Spring training (February–March) brings MLB teams to Scottsdale Stadium and nearby Cactus League parks, making the whole city a sports festival from February through March." },
+    { question: "Is the Sedona Film Festival worth attending?", answer: "Yes, especially if you're already planning a Sedona trip. The festival runs about 8 days in late February with 100+ films across multiple venues. The setting in red rock country is extraordinary. The Mary D. Fisher Theatre is the main venue — small, intimate, and excellent for Q&As with filmmakers. Individual screenings run $12–18; passes from $150. February is peak Sedona season so book accommodation early." },
+    { question: "What Native American cultural events can I attend in Arizona?", answer: "The Heard Museum World Championship Hoop Dance Contest (late Feb/early March, Phoenix) is the most accessible — the finest hoop dancers in North America compete over a weekend at one of the world's best Native American art museums. The Navajo Nation Fair (Window Rock, early September) is another major event. Several pueblos host public dances throughout the year — check the Arizona Office of Tourism for current schedules." },
+    { question: "What's the Arizona Renaissance Festival like?", answer: "It's one of the country's largest Renaissance festivals — running 7 consecutive weekends from February through March in Gold Canyon, east of Phoenix. Purpose-built permanent village with 2,000+ costumed performers, jousting, artisan vendors, period food, and immersive entertainment. Go in costume (about 40% of visitors do), go on a weekday for smaller crowds, and plan for a full day. Tickets around $25 adults." },
+    { question: "Which Arizona festivals are free to attend?", answer: "The Tempe Festival of the Arts (Mill Avenue, late March) has free admission with 200+ artists. The Scottsdale Arts Festival is $10 admission but many people enjoy the surrounding area for free. Much of the Tucson Gem Show — especially parking lot and warehouse shows — is free. The Flagstaff Festival of Science has many free public events. Phoenix spring training games are inexpensive ($15–30) and a great value day out." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get the Arizona Festival Planning Guide"
+      description="Month-by-month breakdown of Arizona's best events with tips, logistics, and how to combine festivals with hiking and wine country."
+      bullets={[
+        'All major festivals with exact dates and venues',
+        'Tucson Gem Show insider map — which shows to hit first',
+        'Spring training guide — best stadiums and how to get tickets',
+        'Tips for combining Sedona, Phoenix, and Tucson in one trip',
+      ]}
+      guideTag="pillar-festivals-arizona"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="fest-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="fest-crosslinks-heading">Keep Exploring Arizona</h3>
+      <div class="fest-crosslinks-grid">
+        <a href="/hiking/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127956;</span>
+          <span class="fest-crosslink-label">Hiking Guide</span>
+          <span class="fest-crosslink-desc">Best trails from Sedona to the Grand Canyon to Saguaro</span>
+        </a>
+        <a href="/destinations/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127965;</span>
+          <span class="fest-crosslink-label">All Destinations</span>
+          <span class="fest-crosslink-desc">Every Arizona destination explored with honest reviews</span>
+        </a>
+        <a href="/cuisine/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127790;</span>
+          <span class="fest-crosslink-label">Arizona Food</span>
+          <span class="fest-crosslink-desc">Sonoran Mexican, Native cuisine, and the Scottsdale dining scene</span>
+        </a>
+        <a href="/practical/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#128663;</span>
+          <span class="fest-crosslink-label">Getting Around</span>
+          <span class="fest-crosslink-desc">Car rental, road trips, and navigating the state</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
