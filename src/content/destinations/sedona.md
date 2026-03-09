@@ -70,7 +70,7 @@ affiliatePicks:
     type: activity
     price: "$5/day or $15/week"
     personalNote: "Required for all Coconino National Forest trailhead parking. Buy it before you arrive at a convenience store or the ranger station — the kiosks at trailheads can have lines."
-    affiliateUrl: "https://www.amazon.com/s?k=sedona+red+rock+pass&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=sedona+red+rock+pass&tag=discoverphili-20"
 faqItems:
   - question: "Is Sedona worth visiting?"
     answer: "Yes — the red rock landscape is genuinely extraordinary and the density of hiking, art, dining, and wellness experiences in a small area is remarkable. Go in spring or fall, get up for Cathedral Rock sunrise, and you will understand why people return annually."

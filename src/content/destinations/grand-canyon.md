@@ -70,7 +70,7 @@ affiliatePicks:
     type: activity
     price: "$40-70"
     personalNote: "Non-negotiable for inner canyon hiking. Carry 1 liter per hour of hiking — dehydration is the leading cause of canyon rescues ($500+ fee)."
-    affiliateUrl: "https://www.amazon.com/s?k=hydration+pack+3+liter+hiking&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=hydration+pack+3+liter+hiking&tag=discoverphili-20"
     badge: "Safety Essential"
 faqItems:
   - question: "Is the Grand Canyon worth visiting?"

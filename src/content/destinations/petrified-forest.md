@@ -70,7 +70,7 @@ affiliatePicks:
     type: activity
     price: "$30-50"
     personalNote: "Backcountry hiking in Petrified Forest requires carrying all water in — there are no water sources in the wilderness areas. A filter is useful for emergency backup."
-    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discoverphili-20"
 faqItems:
   - question: "Is Petrified Forest worth visiting?"
     answer: "Yes, especially combined with the Painted Desert drive — the 28-mile park road through both sections takes 2-3 hours and is genuinely remarkable. The petrified wood logs and the Painted Desert color bands are unlike anything in the Southwest. It is an underrated park that rewards the detour off I-40."

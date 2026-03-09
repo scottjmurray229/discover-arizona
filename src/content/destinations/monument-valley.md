@@ -70,7 +70,7 @@ affiliatePicks:
     type: activity
     price: "$20-60"
     personalNote: "The desert light and dust at Monument Valley require polarized lenses. The sandstone reflection and haze are intense — polarized lenses improve both driving safety and photography."
-    affiliateUrl: "https://www.amazon.com/s?k=polarized+sunglasses+uv400+driving&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=polarized+sunglasses+uv400+driving&tag=discoverphili-20"
 faqItems:
   - question: "Is Monument Valley worth visiting?"
     answer: "Yes — it is one of the most iconic landscapes in America and it genuinely exceeds expectations in person. The scale of the Mittens and Merrick Butte is difficult to grasp from photographs. A guided tour into the restricted areas adds layers of Navajo cultural significance that make it far more than a photo opportunity."

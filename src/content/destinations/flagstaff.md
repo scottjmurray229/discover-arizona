@@ -69,7 +69,7 @@ affiliatePicks:
     type: activity
     price: "$30-80"
     personalNote: "Humphreys Peak Trail gains 3,300 feet to Arizona's highest point (12,633 ft). Poles make the steep descent significantly more manageable and safer on loose scree."
-    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible+lightweight&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible+lightweight&tag=discoverphili-20"
 faqItems:
   - question: "Is Flagstaff worth visiting?"
     answer: "Yes — Flagstaff is one of the most underrated small cities in the US. At 7,000 feet in the ponderosa pines below Arizona's highest peaks, it has a completely different character from the low desert. Excellent hiking, a vibrant downtown, dark sky stargazing, the Grand Canyon 80 miles away, and skiing in winter make it a year-round destination."

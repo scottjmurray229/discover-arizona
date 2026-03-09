@@ -71,7 +71,7 @@ affiliatePicks:
     type: activity
     price: "$15-25"
     personalNote: "Essential for Phoenix desert hiking April through October. You can lose 1-2 liters of sweat per hour in summer heat. Electrolytes prevent the cramping and headaches that pure water cannot."
-    affiliateUrl: "https://www.amazon.com/s?k=liquid+iv+electrolyte+packets&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=liquid+iv+electrolyte+packets&tag=discoverphili-20"
 faqItems:
   - question: "Is Phoenix worth visiting?"
     answer: "Yes, especially October through April. Phoenix delivers world-class resorts, excellent food, Camelback Mountain hiking, the Desert Botanical Garden, and a thriving arts district. It is not a place for summer — June through September is genuinely extreme heat (110°F+). In winter, it is one of the best cities in the US for outdoor dining and outdoor activity."

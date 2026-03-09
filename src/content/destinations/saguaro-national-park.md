@@ -71,7 +71,7 @@ affiliatePicks:
     type: activity
     price: "$15-25"
     personalNote: "Desert hiking in April-October requires electrolyte management. Saguaro's exposed trails in the heat can drain you quickly — carry both water and electrolytes."
-    affiliateUrl: "https://www.amazon.com/s?k=electrolyte+packets+hiking+desert&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=electrolyte+packets+hiking+desert&tag=discoverphili-20"
 faqItems:
   - question: "Is Saguaro National Park worth visiting?"
     answer: "Yes — it is the only national park that exists for a single species of plant, and the saguaro cactus forest is genuinely extraordinary. Giant saguaros up to 200 years old and 50 feet tall create a landscape unique to the Sonoran Desert. The proximity to Tucson makes it easy to incorporate into any Arizona trip."

@@ -70,7 +70,7 @@ affiliatePicks:
     type: activity
     price: "$30-50"
     personalNote: "Useful for Saguaro National Park backcountry hiking where water sources exist but quality is uncertain. Also great as backup on longer desert trail hikes."
-    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discoverphili-20"
 faqItems:
   - question: "Is Tucson worth visiting?"
     answer: "Yes — Tucson is one of the most underrated cities in the Southwest. The Sonoran Desert culture, Saguaro National Park (in two sections flanking the city), the Arizona-Sonora Desert Museum, Mission San Xavier, excellent Mexican food, and the University of Arizona arts scene make it a substantial destination."

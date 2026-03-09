@@ -71,7 +71,7 @@ affiliatePicks:
     type: activity
     price: "$15-25"
     personalNote: "Desert UV at 1,100 feet is intense year-round. Even in January, an hour on a golf course or resort pool will burn without strong protection."
-    affiliateUrl: "https://www.amazon.com/s?k=sunscreen+spf+50+face+body&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=sunscreen+spf+50+face+body&tag=discoverphili-20"
 faqItems:
   - question: "Is Scottsdale worth visiting?"
     answer: "Yes if you want a high-quality, comfortable desert resort experience. Old Town is genuinely excellent for food and galleries. The resorts are world-class. Hiking on Camelback and McDowell Sonoran Preserve is superb. It is expensive but delivers at that price point."
