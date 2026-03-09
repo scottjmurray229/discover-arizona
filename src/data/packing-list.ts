@@ -23,6 +23,19 @@ export const ARIZONA_CONFIG: PackingConfig = {
   plugType: 'Type A/B',
   plugVoltage: '120V',
   affiliateTag: 'discoverphili-20',
+  seasons: [
+    { value: 'summer', label: 'Summer / Hot Season' },
+    { value: 'winter', label: 'Mild / Cool Season' },
+    { value: 'shoulder', label: 'Shoulder Season' },
+  ],
+  activities: [
+    { value: 'hiking', label: 'Hiking', icon: '🥾' },
+    { value: 'city-walk', label: 'City Exploring', icon: '🚶' },
+    { value: 'surfing', label: 'Beach / Water', icon: '🏄' },
+    { value: 'photography', label: 'Photography', icon: '📸' },
+    { value: 'nightlife', label: 'Nightlife', icon: '🍹' },
+    { value: 'camping', label: 'Camping', icon: '⛺' },
+  ],
   destinationEssentials: ARIZONA_ESSENTIALS,
   gearRecommendations: ARIZONA_GEAR_RECOMMENDATIONS,
 };
