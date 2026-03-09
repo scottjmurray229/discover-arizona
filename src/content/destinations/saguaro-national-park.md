@@ -3,7 +3,7 @@ title: "Saguaro National Park"
 description: "Two districts flanking Tucson protect the densest saguaro cactus forests on Earth, offering world-class desert hiking, ancient petroglyphs, and close encounters with the iconic symbol of the American West."
 heroVideo: ""
 heroImage: ""
-tagline: "Kingdom of the Giant Cactus"
+tagline: "The saguaro cactus grows only in this corner of the world — these two-armed giants take 150 years to grow their first arm and the oldest ones here predate Arizona statehood in 1912"
 region: southern
 bestMonths:
   - November

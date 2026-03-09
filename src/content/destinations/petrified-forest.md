@@ -3,7 +3,7 @@ title: "Petrified Forest National Park"
 description: "A surreal landscape of ancient trees turned to gemstone, painted badlands in every shade of red and purple, and one of the densest concentrations of petroglyphs in the American Southwest."
 heroVideo: ""
 heroImage: ""
-tagline: "Ancient Forests Turned to Stone"
+tagline: "225-million-year-old trees turned to quartz crystal scattered across the Painted Desert — utterly flat, vast, and alien in a way that the canyon parks never quite manage"
 region: northern
 bestMonths:
   - March

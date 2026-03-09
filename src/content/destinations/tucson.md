@@ -3,7 +3,7 @@ title: "Tucson"
 description: "Explore Tucson, Arizona's UNESCO City of Gastronomy. From the towering saguaros of Saguaro National Park to the rich culinary heritage of the Sonoran borderlands, discover why Tucson is one of America's most underrated cities."
 heroVideo: ""
 heroImage: ""
-tagline: "City of Gastronomy"
+tagline: "A UNESCO Creative City of Gastronomy — the Sonoran hot dog alone is worth the drive, the desert hiking is world-class, and Saguaro National Park wraps both ends of the city in giant cactus forest"
 region: southern
 bestMonths:
   - October

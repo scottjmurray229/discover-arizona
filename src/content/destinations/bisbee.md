@@ -3,7 +3,7 @@ title: "Bisbee"
 description: "A former copper mining boomtown turned vibrant arts colony, tucked into the Mule Mountains of southeastern Arizona with colorful Victorian architecture, underground mine tours, and one of the best small-town art scenes in the American West."
 heroVideo: ""
 heroImage: ""
-tagline: "Queen of the Copper Camps"
+tagline: "A Victorian copper mining town in the Mule Mountains that artists discovered in the 1970s and never left — a thousand steps connecting neighborhoods, a mine tour, and Arizona most atmospheric historic hotel"
 region: southern
 bestMonths:
   - October

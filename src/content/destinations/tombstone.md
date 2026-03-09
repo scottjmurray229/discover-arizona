@@ -3,7 +3,7 @@ title: "Tombstone"
 description: "The legendary Wild West town where Wyatt Earp and Doc Holliday made history at the O.K. Corral, still alive with daily gunfight reenactments, saloons, and silver mining heritage on the high desert plains of southeastern Arizona."
 heroVideo: ""
 heroImage: ""
-tagline: "The Town Too Tough to Die"
+tagline: "The OK Corral gunfight lasted 31 seconds on October 26, 1881, and this town has been telling that story ever since with period reenactments, Bird Cage Theatre, and Boot Hill Cemetery"
 region: southern
 bestMonths:
   - October

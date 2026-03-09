@@ -3,7 +3,7 @@ title: "Monument Valley"
 description: "Experience Monument Valley Navajo Tribal Park, the landscape that defined the American West. Towering sandstone buttes, guided Navajo tours, and some of the most iconic scenery on Earth await in this sacred Navajo land on the Arizona-Utah border."
 heroVideo: ""
 heroImage: ""
-tagline: "The Iconic American West"
+tagline: "Every John Ford Western ever filmed used this landscape — the Mittens and Merrick Butte are Navajo Nation land and Navajo-led tours bring knowledge that no outside ranger can replicate"
 region: northern
 bestMonths:
   - April
