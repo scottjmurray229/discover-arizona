@@ -3,6 +3,14 @@ title: "Saguaro National Park"
 description: "Two districts flanking Tucson protect the densest saguaro cactus forests on Earth, offering world-class desert hiking, ancient petroglyphs, and close encounters with the iconic symbol of the American West."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Giant saguaro cacti silhouetted against an orange desert sunset, Arizona"
 tagline: "The saguaro cactus grows only in this corner of the world — these two-armed giants take 150 years to grow their first arm and the oldest ones here predate Arizona statehood in 1912"
 region: southern
@@ -121,7 +129,7 @@ The saguaro cactus grows naturally only in the Sonoran Desert, which covers part
 
 What makes the park genuinely special, beyond the cacti themselves, is the richness of the Sonoran Desert ecosystem. This is the most biologically diverse desert in North America. On a single morning hike, I spotted a Gila woodpecker nesting inside a saguaro cavity, a roadrunner darting across the trail, a family of javelinas rooting through prickly pear, and a Harris's hawk perched on a saguaro arm scanning for prey. The park is alive in a way that challenges every assumption about deserts being barren.
 
-## Things to Do
+## What Are the Top Things to Do in Saguaro National Park?
 
 **Cactus Forest Loop Drive** in the East District is an 8-mile one-way paved road that winds through some of the densest saguaro forest in the park. Several pullouts offer short trail access and photo opportunities. The road is flat and popular with cyclists, especially in the early morning. No entrance fee for the loop drive is needed beyond the standard $25 park pass.
 
@@ -137,7 +145,7 @@ What makes the park genuinely special, beyond the cacti themselves, is the richn
 
 **Arizona-Sonora Desert Museum**, adjacent to the West District on Kinney Road, is not part of the park but is an essential companion visit. Part zoo, part botanical garden, part natural history museum, it provides context for everything you see in the park. The raptor free-flight demonstration is unforgettable. Admission is $24 for adults.
 
-## Where to Stay
+## Where Should I Stay in Saguaro National Park?
 
 There is no lodging inside the park. Tucson, which wraps around both districts, is your base.
 
@@ -147,7 +155,7 @@ There is no lodging inside the park. Tucson, which wraps around both districts, 
 
 **Luxury seekers** should look at Hacienda del Sol Guest Ranch Resort in the Catalina foothills, with rooms and casitas from $300 set against stunning mountain views. The Canyon Ranch wellness resort, also in the foothills, starts around $500 per night all-inclusive with spa treatments, fitness classes, and gourmet meals.
 
-## Where to Eat
+## What Should I Eat in Saguaro National Park?
 
 Tucson was designated a UNESCO City of Gastronomy in 2015 — the first city in the United States to earn that distinction. The food scene here is exceptional.
 

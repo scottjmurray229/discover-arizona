@@ -3,6 +3,14 @@ title: "Page"
 description: "A small desert town on the Arizona-Utah border where sculpted sandstone canyons, turquoise water, and engineering marvels converge at the edge of Lake Powell."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Horseshoe Bend's emerald Colorado River curving below towering sandstone cliffs near Page, Arizona"
 tagline: "Antelope Canyon light beams through narrow sandstone slots, Horseshoe Bend 270-degree river curve 1,000 feet below, Lake Powell blue reservoir — all within 20 miles of one small Arizona town"
 region: northern
@@ -120,7 +128,7 @@ Page sits at the center of a geological showcase that took millions of years to 
 
 What also sets Page apart is the involvement of the Navajo Nation. Upper and Lower Antelope Canyon both sit on Navajo land and can only be visited with authorized Navajo tour guides. This adds a cultural dimension that elevates the experience beyond simple sightseeing — the guides share stories about the formations, the history of their people, and the spiritual significance of these places.
 
-## Things to Do
+## What Are the Top Things to Do in Page?
 
 **Upper Antelope Canyon** is the one you have seen in a thousand photographs — soaring sandstone walls with shafts of light pouring down from above during midday. Tours are operated by several authorized Navajo companies including Adventurous Antelope Canyon Tours and Antelope Canyon Navajo Tours. Standard tours run about $60 per person and last approximately 1.5 hours. Photographer tours with longer access and tripod permissions cost $100+. Book well in advance, especially for the 11:00 AM to 1:00 PM time slots when the light beams are strongest (late March through early October).
 
@@ -134,7 +142,7 @@ What also sets Page apart is the involvement of the Navajo Nation. Upper and Low
 
 **Wahweap Overlook and Chains Area** offer free and uncrowded desert hiking with sweeping views of Lake Powell's hoodoos and coves. These are not marked trails, so bring GPS and plenty of water.
 
-## Where to Stay
+## Where Should I Stay in Page?
 
 **Budget travelers** should check out the Debbie's Hideaway hostel or look into camping at Wahweap Campground near the marina, where tent sites start around $26 per night with lake views. The Lone Rock Beach primitive camping area on the Utah side is free with some seasonal restrictions.
 
@@ -142,7 +150,7 @@ What also sets Page apart is the involvement of the Navajo Nation. Upper and Low
 
 **Luxury seekers** have fewer options in Page itself, but the Amangiri resort is just 25 miles away across the Utah border near Canyon Point. Rooms start around $2,500 a night, but if your budget allows, it is one of the most stunning luxury properties in the American West. In Page proper, the Lake Powell Resort at Wahweap Marina has lakefront rooms starting around $250 in shoulder season.
 
-## Where to Eat
+## What Should I Eat in Page?
 
 **Big John's Texas BBQ** on North Navajo Drive is a Page institution. The brisket and pulled pork are smoked on-site, portions are enormous, and the sweet tea is dangerously good. Plates run $14–$22.
 

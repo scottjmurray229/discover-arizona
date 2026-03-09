@@ -3,6 +3,14 @@ title: "Tombstone"
 description: "The legendary Wild West town where Wyatt Earp and Doc Holliday made history at the O.K. Corral, still alive with daily gunfight reenactments, saloons, and silver mining heritage on the high desert plains of southeastern Arizona."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Historic OK Corral street and wooden storefronts of Tombstone, Arizona"
 tagline: "The OK Corral gunfight lasted 31 seconds on October 26, 1881, and this town has been telling that story ever since with period reenactments, Bird Cage Theatre, and Boot Hill Cemetery"
 region: southern
@@ -119,7 +127,7 @@ On October 26, 1881, the Gunfight at the O.K. Corral lasted approximately 30 sec
 
 What makes Tombstone special today is the remarkable preservation of its historic core. Allen Street is closed to automobile traffic and maintained as a living history district. The original 1882 Tombstone Courthouse is now a state park. The Bird Cage Theatre has been left essentially untouched since it closed in 1889, with bullet holes still visible in the walls and ceiling. This is not a recreation or a theme park — these are the actual buildings where these events occurred.
 
-## Things to Do
+## What Are the Top Things to Do in Tombstone?
 
 **O.K. Corral** is the main attraction, and for good reason. The site preserves the actual lot where the Earps and Doc Holliday faced the Clantons and McLaurys. Life-sized figures are positioned where each participant stood. Gunfight reenactments take place daily at 2:00 PM (check the schedule, as additional shows run on busy days). Admission to the corral and reenactment is $12 for adults. The adjacent Historama offers a narrated presentation about the gunfight.
 
@@ -135,7 +143,7 @@ What makes Tombstone special today is the remarkable preservation of its histori
 
 **Tombstone Silver Mine Tour** takes you underground into the Good Enough Mine, one of the original silver mines that built the town. The 45-minute guided tour descends into the mine shaft and covers the geology, mining techniques, and the daily life of 1880s miners. Tours run about $15 per person.
 
-## Where to Stay
+## Where Should I Stay in Tombstone?
 
 **Budget travelers** will find Tombstone affordable by Arizona standards. The Tombstone Monument Ranch, styled as an Old West guest ranch about three miles south of town, has bunkhouse rooms starting around $80. For true budget travelers, Tombstone Territories RV Park offers tent sites starting at $20 per night.
 
@@ -143,7 +151,7 @@ What makes Tombstone special today is the remarkable preservation of its histori
 
 **Luxury seekers** will find Tombstone's options limited. The nicest rooms in town are at the Tombstone Monument Ranch in their private suites ($150–$200), or you can base yourself in Bisbee (25 miles south) at the Bisbee Grand Hotel or Copper Queen Hotel and day-trip to Tombstone.
 
-## Where to Eat
+## What Should I Eat in Tombstone?
 
 **Big Nose Kate's Saloon** serves solid bar food alongside its drinks. The burgers and pulled pork sandwiches are decent, and the ambiance makes up for any culinary shortcomings. Meals run $10–$16.
 

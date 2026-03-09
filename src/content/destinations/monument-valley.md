@@ -3,6 +3,14 @@ title: "Monument Valley"
 description: "Experience Monument Valley Navajo Tribal Park, the landscape that defined the American West. Towering sandstone buttes, guided Navajo tours, and some of the most iconic scenery on Earth await in this sacred Navajo land on the Arizona-Utah border."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Iconic sandstone mittens rising from the rust-red plain of Monument Valley, Arizona"
 tagline: "Every John Ford Western ever filmed used this landscape — the Mittens and Merrick Butte are Navajo Nation land and Navajo-led tours bring knowledge that no outside ranger can replicate"
 region: northern
@@ -124,7 +132,7 @@ Director John Ford filmed seven movies here between 1938 and 1964, establishing 
 
 But what truly makes Monument Valley special is the Navajo connection. This isn't a landscape preserved behind glass. Navajo families live here, raise livestock, and have deep cultural and spiritual ties to these formations. The guided tours, led by Navajo operators, offer access to parts of the valley closed to self-guided visitors — and more importantly, they share stories and cultural context that transform the experience from sightseeing into something more meaningful.
 
-## Things to Do
+## What Are the Top Things to Do in Monument Valley?
 
 **Valley Drive** is a 17-mile unpaved loop road that winds through the park, passing 11 numbered viewpoints with the most iconic formations. The road is rough and sandy in places but manageable in a regular passenger car if you drive carefully and slowly (15-20 mph). High-clearance vehicles handle it more comfortably. Allow 2-3 hours for the full loop with photo stops. The road is included with the $8 per person entry fee.
 
@@ -140,7 +148,7 @@ But what truly makes Monument Valley special is the Navajo connection. This isn'
 
 **Cultural Demonstrations** are often available near the visitor center and at various stops along Valley Drive, where Navajo artisans demonstrate traditional weaving, jewelry-making, and other crafts. Purchasing directly from these artisans supports the local community and ensures authenticity.
 
-## Where to Stay
+## Where Should I Stay in Monument Valley?
 
 **The View Hotel** is the only hotel inside the tribal park, and the name delivers. Every room faces the valley, with floor-to-ceiling windows framing the Mittens. Standard rooms run $200-350 per night depending on season. Premium cabins with private balconies start around $300-400. The sunrise views from your room are worth every penny. Book well in advance for spring and fall dates — this place fills up months ahead.
 
@@ -150,7 +158,7 @@ But what truly makes Monument Valley special is the Navajo connection. This isn'
 
 For budget travelers, **The View Campground** adjacent to The View Hotel has tent sites from $25 per night and RV sites from $45, with the same incredible valley views. **Goulding's Campground** has sites from $25-45 with full hookups available. Both fill up quickly in peak season — reserve ahead.
 
-## Where to Eat
+## What Should I Eat in Monument Valley?
 
 Dining options near Monument Valley are limited but serviceable. Plan accordingly and don't expect a culinary destination.
 

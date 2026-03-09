@@ -3,6 +3,14 @@ title: "Tucson"
 description: "Explore Tucson, Arizona's UNESCO City of Gastronomy. From the towering saguaros of Saguaro National Park to the rich culinary heritage of the Sonoran borderlands, discover why Tucson is one of America's most underrated cities."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Saguaro-lined desert hillside with Santa Catalina Mountains, Tucson, Arizona"
 tagline: "A UNESCO Creative City of Gastronomy — the Sonoran hot dog alone is worth the drive, the desert hiking is world-class, and Saguaro National Park wraps both ends of the city in giant cactus forest"
 region: southern
@@ -122,7 +130,7 @@ The food, first and foremost. Tucson's UNESCO City of Gastronomy designation rec
 
 Beyond the food, Tucson has an authenticity that comes from being a real, lived-in city rather than a resort destination. The University of Arizona brings academic and cultural energy. The proximity to Mexico (Nogales is just 65 miles south) creates a truly binational atmosphere. And the arts and music scene, especially along Fourth Avenue and the downtown warehouse district, has a scrappy, independent character I find genuinely appealing.
 
-## Things to Do
+## What Are the Top Things to Do in Tucson?
 
 **Saguaro National Park** is divided into two districts straddling the city. The Tucson Mountain District (west) is the more accessible, with the Bajada Loop Drive winding through dense saguaro forests — the concentration of cacti here is staggering. The Rincon Mountain District (east) is larger and wilder, with the Cactus Forest Scenic Loop Drive and trailheads leading into the backcountry. Entry is $25 per vehicle, valid for 7 days at both districts. I recommend the Valley View Overlook Trail (0.8 miles round trip) in the west district for a quick immersion, and the Tanque Verde Ridge Trail in the east district for a more challenging full-day hike.
 
@@ -138,7 +146,7 @@ Beyond the food, Tucson has an authenticity that comes from being a real, lived-
 
 **Hotel Congress** downtown is both a venue and an attraction. This 1919 hotel hosted the capture of John Dillinger in 1934, and today it's the center of Tucson's live music scene. The Club Congress venue hosts national and local acts, and the downstairs Cup Cafe serves excellent breakfast and cocktails. Free to wander through; show tickets vary.
 
-## Where to Stay
+## Where Should I Stay in Tucson?
 
 **Arizona Inn** is a Tucson institution, a 1930 resort with lush gardens, clay tennis courts, and a refined but unfussy atmosphere. Rooms start around $200-350 per night. The pink stucco buildings and manicured grounds feel like old Arizona at its most gracious. The on-site restaurant is reliably good.
 
@@ -150,7 +158,7 @@ Beyond the food, Tucson has an authenticity that comes from being a real, lived-
 
 For budget travelers, **Roadrunner Hostel & Inn** near Fourth Avenue has dorm beds from $25-30 and private rooms from $60-80. The **Catalina State Park** campground north of town has sites from $20-30 with stunning mountain views.
 
-## Where to Eat
+## What Should I Eat in Tucson?
 
 **El Charro Cafe** claims to be the oldest Mexican restaurant in the United States, operating since 1922. The carne seca (sun-dried beef) is their signature, and the cheese crisps and green corn tamales are excellent. Entrees run $13-22. The original downtown location on Court Avenue has the most atmosphere.
 

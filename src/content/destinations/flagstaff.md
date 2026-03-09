@@ -3,6 +3,14 @@ title: "Flagstaff"
 description: "A mountain town at 7,000 feet where Route 66 heritage meets Northern Arizona's pine forests, world-class stargazing, and year-round outdoor adventure just 80 miles south of the Grand Canyon."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Ponderosa pine forest and snow-capped San Francisco Peaks above Flagstaff, Arizona"
 tagline: "A ponderosa pine mountain town at 7,000 feet — Route 66 nostalgia, the observatory where Pluto was discovered, serious craft beer culture, and Grand Canyon South Rim exactly one hour south"
 region: northern
@@ -119,7 +127,7 @@ Flagstaff is one of the few places in Arizona where you will need a jacket in Ju
 
 The town also sits squarely on Historic Route 66, and the neon-lit stretch of downtown still feels like a time capsule. Add Northern Arizona University's youthful energy, a craft brewery scene that punches well above its weight, and proximity to half a dozen national monuments, and you have a base camp that can anchor an entire week of exploration.
 
-## Things to Do
+## What Are the Top Things to Do in Flagstaff?
 
 **Lowell Observatory** is the crown jewel. Founded in 1894, this is where Clyde Tombaugh discovered Pluto in 1930. The Giovale Open Deck Observatory houses a 14-inch reflecting telescope that is open to the public most evenings. Admission runs $18 for adults. The interactive exhibits inside the Steele Visitor Center are excellent, and the solar viewing sessions during the day are surprisingly engaging.
 
@@ -133,7 +141,7 @@ The town also sits squarely on Historic Route 66, and the neon-lit stretch of do
 
 **Historic Route 66 Downtown** is best explored on foot. Start at the Flagstaff Visitor Center in the restored 1926 train depot, wander past the Orpheum Theater and the Monte Vista Hotel, and duck into the independently owned shops and galleries along San Francisco Street.
 
-## Where to Stay
+## Where Should I Stay in Flagstaff?
 
 **Budget travelers** should look at the Grand Canyon International Hostel on South San Francisco Street. Dorm beds start around $35 a night, and the location is right in the historic downtown core. The DuBeau Hostel on West Phoenix Avenue is another solid option with private rooms starting near $60.
 
@@ -141,7 +149,7 @@ The town also sits squarely on Historic Route 66, and the neon-lit stretch of do
 
 **Luxury seekers** should book the Little America Hotel Flagstaff, set on 500 acres of ponderosa forest with rooms from $250 in summer. The rooms are oversized, the French toast at the on-site restaurant is legendary, and the property has a half-mile nature trail that feels worlds away from the highway. The Inn at 410, a beautifully restored 1907 home, offers nine themed suites starting around $300 with gourmet breakfast included.
 
-## Where to Eat
+## What Should I Eat in Flagstaff?
 
 **Brix Restaurant & Wine Bar** on North San Francisco Street is my top pick for a proper dinner. The menu leans seasonal and locally sourced, with dishes like elk tenderloin and wood-fired pizzas. Entrees run $22–$42.
 

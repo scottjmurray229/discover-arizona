@@ -3,6 +3,14 @@ title: "Sedona"
 description: "Discover Sedona's iconic red rock formations, energy vortex sites, world-class hiking trails, and vibrant arts scene. Plan your trip to Arizona's most beautiful desert town with practical tips and honest recommendations."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Cathedral Rock's red sandstone spires rising above Oak Creek, Sedona, Arizona"
 tagline: "Red rock formations glowing in the afternoon light, energy vortexes drawing seekers from around the world, excellent Southwestern cuisine, and the best small-airport approach view in the United States"
 region: northern
@@ -124,7 +132,7 @@ The geology is genuinely remarkable. Those red formations — Cathedral Rock, Be
 
 Then there are the vortex sites. Sedona has four primary vortex locations — Airport Mesa, Cathedral Rock, Bell Rock, and Boynton Canyon — where many visitors report feeling a palpable energy or heightened sense of awareness. Whether you're a believer or a skeptic, these sites happen to coincide with some of the best viewpoints in town, so the hike is worthwhile regardless.
 
-## Things to Do
+## What Are the Top Things to Do in Sedona?
 
 **Cathedral Rock Trail** is the signature Sedona hike — a steep 1.2-mile scramble up slickrock that rewards you with 360-degree views of the entire red rock landscape. It's short but intense, with some sections requiring hands-on scrambling. Get there before 7 AM to beat the crowds and catch the morning light. Free with a Red Rock Pass ($5/day) at the trailhead parking.
 
@@ -142,7 +150,7 @@ Then there are the vortex sites. Sedona has four primary vortex locations — Ai
 
 **Chapel of the Holy Cross** is a striking modernist chapel built into the red rock buttes south of town. Designed by sculptor and architect Marguerite Brunswig Staude and completed in 1956, it offers incredible views and a moment of quiet reflection. Free admission; open daily 9 AM to 5 PM.
 
-## Where to Stay
+## Where Should I Stay in Sedona?
 
 **Enchantment Resort** in Boynton Canyon is the top luxury option, set dramatically at the base of towering red rock walls. Rooms start around $400 per night in peak season, and the Mii Amo spa on the property is consistently ranked among the best in the country. The setting alone is worth a splurge.
 
@@ -154,7 +162,7 @@ Then there are the vortex sites. Sedona has four primary vortex locations — Ai
 
 For budget travelers, **Rancho Sedona RV Park** has tent sites from $45 per night right along Oak Creek, and the **Sedona Village Lodge** in the Village of Oak Creek offers basic clean rooms from about $90.
 
-## Where to Eat
+## What Should I Eat in Sedona?
 
 **Elote Cafe** is the restaurant that put Sedona on the culinary map. Chef Jeff Smedstad's menu focuses on Mexican-inspired dishes — the fire-roasted elote (street corn) and smoked brisket enchiladas are legendary. Entrees run $18-35. No reservations; put your name in starting at 4:30 PM and expect a wait, especially on weekends. It's worth every minute.
 

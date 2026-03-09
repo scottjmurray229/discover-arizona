@@ -3,6 +3,14 @@ title: "Bisbee"
 description: "A former copper mining boomtown turned vibrant arts colony, tucked into the Mule Mountains of southeastern Arizona with colorful Victorian architecture, underground mine tours, and one of the best small-town art scenes in the American West."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Colorful Victorian mining-town architecture cascading down Tombstone Canyon, Bisbee, Arizona"
 tagline: "A Victorian copper mining town in the Mule Mountains that artists discovered in the 1970s and never left — a thousand steps connecting neighborhoods, a mine tour, and Arizona most atmospheric historic hotel"
 region: southern
@@ -123,7 +131,7 @@ Then something unexpected happened. Artists, musicians, and counterculture types
 
 What makes Bisbee truly special is the physical setting. The town is built into Tombstone Canyon and Mule Pass Gulch, with houses clinging to hillsides so steep that many can only be reached by climbing public staircases. There are no chain restaurants, no strip malls, and no traffic lights. The entire historic district is a National Historic Landmark. Walking the streets of Bisbee feels less like visiting a town and more like exploring a vertical village that evolved organically over a century and a half.
 
-## Things to Do
+## What Are the Top Things to Do in Bisbee?
 
 **Copper Queen Mine Tour** is the signature Bisbee experience. You don a yellow hard hat, a headlamp, and a rain slicker, then ride a mine train 1,500 feet into the side of a mountain. A retired miner guides you through the dark, damp tunnels, explaining the extraction process and the brutal working conditions that miners endured. The temperature underground is a constant 47 degrees regardless of the season. Tours depart several times daily from the Queen Mine Tour Building on Dart Road. Tickets are $16 for adults. Reservations are strongly recommended.
 
@@ -139,7 +147,7 @@ What makes Bisbee truly special is the physical setting. The town is built into 
 
 **St. Patrick's Church**, built in 1917 on a hillside above town, is worth the climb for its stained glass windows and the panoramic view from the churchyard. The church is open to visitors during daylight hours.
 
-## Where to Stay
+## Where Should I Stay in Bisbee?
 
 **Budget travelers** have solid options in Bisbee. The Shady Dell Vintage Trailer Court on Old Douglas Road rents restored 1950s travel trailers starting around $75 per night — sleeping in a polished Airstream with a black-and-white TV playing old westerns is a uniquely Bisbee experience. The Jonquil Motel on Tombstone Canyon Road offers clean, basic rooms from $65.
 
@@ -147,7 +155,7 @@ What makes Bisbee truly special is the physical setting. The town is built into 
 
 **Luxury seekers** can book the premium suites at the Copper Queen ($180–$250) or look into private vacation rentals in restored Victorian homes on the hillsides. The Letson Loft Hotel on Main Street offers upscale boutique rooms in a converted historic building starting around $170, with modern amenities and exposed brick.
 
-## Where to Eat
+## What Should I Eat in Bisbee?
 
 **Cafe Roka** on Main Street is Bisbee's finest restaurant and one of the best dining experiences in southern Arizona. The four-course prix fixe menu changes regularly and might include roasted beet salad, butternut squash soup, pan-seared duck breast, and chocolate ganache torte. Dinner runs $35–$50 per person. Open Thursday through Saturday; reservations essential.
 

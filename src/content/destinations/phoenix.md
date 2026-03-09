@@ -3,6 +3,14 @@ title: "Phoenix"
 description: "Explore Phoenix, Arizona's sprawling capital city in the heart of the Sonoran Desert. From world-class museums and desert hiking to vibrant arts districts and incredible Mexican food, discover why the Valley of the Sun is a year-round destination."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Downtown Phoenix skyline at dusk with desert mountain backdrop, Arizona"
 tagline: "Spring training baseball, the Desert Botanical Garden, world-class Sonoran Mexican food, and 325 days of sunshine — visit October through April to understand why so many people choose to stay"
 region: phoenix-metro
@@ -125,7 +133,7 @@ The food scene has exploded in recent years, driven by the city's proximity to M
 
 There's also a youthful creative energy centered around downtown and the Roosevelt Row arts district that feels distinctly different from the resort-and-golf culture of nearby Scottsdale. Phoenix is grittier, more diverse, and more interesting than its reputation suggests.
 
-## Things to Do
+## What Are the Top Things to Do in Phoenix?
 
 **Camelback Mountain** is the iconic Phoenix hike. The Echo Canyon Trail on the east side is the most popular route — 1.2 miles to the 2,704-foot summit with 1,280 feet of elevation gain. It's steep, exposed, and involves some rock scrambling, but the 360-degree views of the entire valley from the top are extraordinary. Start before 6 AM in cooler months to avoid crowds; the trail closes when temperatures hit dangerous levels in summer. Free; parking is extremely limited, so arrive early or take a rideshare.
 
@@ -141,7 +149,7 @@ There's also a youthful creative energy centered around downtown and the Rooseve
 
 **Papago Park** offers easy hiking with distinctive red-rock butte formations. The Hole-in-the-Rock trail is a short, family-friendly hike to a geological formation with views across the park to downtown. The park also contains the Phoenix Zoo and the Desert Botanical Garden. Free admission to the park itself.
 
-## Where to Stay
+## Where Should I Stay in Phoenix?
 
 **The Biltmore** (Arizona Biltmore, a Waldorf Astoria Resort) is Phoenix's grand historic resort, originally designed by Albert Chase McArthur with Frank Lloyd Wright consultation. Rooms start around $300-500 per night in peak winter season. The architecture alone is worth a visit, even if you don't stay — the geometric concrete block design is iconic.
 
@@ -153,7 +161,7 @@ There's also a youthful creative energy centered around downtown and the Rooseve
 
 For camping, **Usery Mountain Regional Park** east of Mesa has tent and RV sites from $25-30 per night with stunning Superstition Mountain views.
 
-## Where to Eat
+## What Should I Eat in Phoenix?
 
 **Barrio Cafe** on 16th Street is chef Silvana Salcido Esparza's flagship, serving elevated Mexican cuisine that's been nationally recognized for over two decades. The chile en nogada and cochinita pibil are phenomenal. Entrees run $18-30. Reservations recommended.
 

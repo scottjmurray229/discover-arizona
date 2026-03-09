@@ -3,6 +3,14 @@ title: "Grand Canyon"
 description: "Explore the Grand Canyon, one of the Seven Natural Wonders of the World. From South Rim overlooks to backcountry trails and Colorado River rafting, discover everything you need to plan your Arizona adventure."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Layered red rock cliffs dropping to the Colorado River, Grand Canyon South Rim, Arizona"
 tagline: "A mile deep, 10 miles wide, and 277 miles long — photographs cannot capture the actual scale and standing at the rim for the first time genuinely stops people mid-sentence"
 region: northern
@@ -125,7 +133,7 @@ The South Rim is where most visitors go, and for good reason. It's open year-rou
 
 What really makes this place special is how it changes throughout the day. The canyon at 6 AM, bathed in soft pink light, is an entirely different landscape than the harsh midday sun, which is different again from the deep purple shadows of sunset. I've learned to build my entire schedule around those golden hours.
 
-## Things to Do
+## What Are the Top Things to Do in Grand Canyon?
 
 **Bright Angel Trail** is the most popular corridor trail and the one I recommend for first-time canyon hikers. The trailhead sits right next to Bright Angel Lodge on the South Rim. Most day hikers turn around at the 1.5-Mile Resthouse or the 3-Mile Resthouse — going all the way to the river and back in a single day is strongly discouraged by the park service and genuinely dangerous in warm weather. Budget about 3-4 hours round trip to the 1.5-Mile Resthouse.
 
@@ -141,7 +149,7 @@ What really makes this place special is how it changes throughout the day. The c
 
 **Rim Trail** stretches 13 miles along the South Rim from Hermits Rest to South Kaibab Trailhead. Large sections are paved and wheelchair-accessible. It's the most relaxing way to experience multiple overlooks without the commitment of an inner canyon hike.
 
-## Where to Stay
+## Where Should I Stay in Grand Canyon?
 
 **El Tovar Hotel** is the grand dame of South Rim lodging, a 1905 log-and-stone lodge perched right on the canyon's edge. Rooms run $250-500 per night depending on the season. The canyon-side rooms are worth the premium — waking up to that view is unforgettable. Book through Xanterra 12-13 months ahead.
 
@@ -155,7 +163,7 @@ What really makes this place special is how it changes throughout the day. The c
 
 For budget travelers, **Mather Campground** on the South Rim has sites for $18 per night (reservable at recreation.gov up to 6 months ahead), and **Desert View Campground** is first-come, first-served at $12 per night.
 
-## Where to Eat
+## What Should I Eat in Grand Canyon?
 
 **El Tovar Dining Room** is the best restaurant in the park, serving dishes like wild salmon and elk stew with canyon views. Dinner entrees run $25-50. Reservations are essential — book as soon as your trip dates are confirmed.
 

@@ -3,6 +3,14 @@ title: "Scottsdale"
 description: "Discover Scottsdale, Arizona's premier resort city. From Old Town galleries and world-class spas to championship golf courses and rugged desert preserves, explore the best of the West's most western town."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Desert Botanical Garden pathways lined with saguaros and blooming cacti, Scottsdale, Arizona"
 tagline: "Old Town galleries, Frank Lloyd Wright Taliesin West, the finest resort spa concentration in the American West, and a food scene that consistently surprises visitors expecting desert mediocrity"
 region: phoenix-metro
@@ -127,7 +135,7 @@ Then there's the resort culture. Scottsdale has one of the highest concentration
 
 And from mid-February through March, Cactus League spring training transforms the city into baseball's unofficial capital, with 15 Major League teams playing across the greater Phoenix metro area.
 
-## Things to Do
+## What Are the Top Things to Do in Scottsdale?
 
 **Old Town Scottsdale** is the walkable historic core, stretching roughly from Scottsdale Road to Goldwater Boulevard between Indian School Road and Second Street. The western side has art galleries and jewelry shops; the eastern side has restaurants, bars, and nightlife. Stop by the Scottsdale Museum of the West ($15 admission) for a well-curated look at western American art and history. The bronze sculptures along Main Street are free to admire. Plan 2-3 hours to explore properly.
 
@@ -143,7 +151,7 @@ And from mid-February through March, Cactus League spring training transforms th
 
 **Cactus League Spring Training** runs mid-February through late March, with games at Scottsdale Stadium (San Francisco Giants), Salt River Fields at Talking Stick (Arizona Diamondbacks and Colorado Rockies), and other venues around the valley. Tickets run $15-60 depending on seating. The atmosphere is relaxed and festive — grab a beer, sit in the outfield grass, and watch baseball in perfect weather.
 
-## Where to Stay
+## Where Should I Stay in Scottsdale?
 
 **Sanctuary on Camelback Mountain** is an intimate luxury resort tucked into the north slope of Camelback Mountain, with casita-style rooms starting around $500-800 per night in peak season. The infinity-edge pool overlooking Paradise Valley is one of the most photographed hotel amenities in Arizona. The on-site elements restaurant is excellent.
 
@@ -157,7 +165,7 @@ And from mid-February through March, Cactus League spring training transforms th
 
 For budget travelers, **Extended Stay America** and **Motel 6 Scottsdale** offer functional rooms from $60-90 per night, though they lack the character of the boutique options.
 
-## Where to Eat
+## What Should I Eat in Scottsdale?
 
 **FnB Restaurant** on North Scottsdale Road is chef Charleen Badman's vegetable-forward gem, and it's my favorite restaurant in Scottsdale. The wood-roasted vegetables are transcendent — genuinely some of the best vegetable cookery I've encountered. The wine list is natural-leaning and excellent. Dishes run $16-35. Reservations essential.
 

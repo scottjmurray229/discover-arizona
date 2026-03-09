@@ -3,6 +3,14 @@ title: "Petrified Forest National Park"
 description: "A surreal landscape of ancient trees turned to gemstone, painted badlands in every shade of red and purple, and one of the densest concentrations of petroglyphs in the American Southwest."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English (Spanish widely spoken)"
+  bestTime: "September–November, March–May"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-7 (MST, no daylight saving)"
+  emergencyNumber: "911"
 heroAlt: "Colorful ancient petrified logs scattered across the Painted Desert, Arizona"
 tagline: "225-million-year-old trees turned to quartz crystal scattered across the Painted Desert — utterly flat, vast, and alien in a way that the canyon parks never quite manage"
 region: northern
@@ -120,7 +128,7 @@ The park protects one of the largest concentrations of petrified wood on Earth. 
 
 But petrified wood is only half the story. The northern section of the park encompasses a sweeping stretch of the Painted Desert, where eroded badlands display layers of siltstone and mudstone in reds, purples, grays, and whites. The park also contains over 600 archaeological sites, including petroglyphs, pueblo ruins, and evidence of human habitation stretching back over 13,000 years.
 
-## Things to Do
+## What Are the Top Things to Do in Petrified Forest National Park?
 
 **The Park Road** runs 28 miles from the north entrance (off I-40) to the south entrance (off US-180), with more than 15 pullouts, overlooks, and short trails along the way. You can drive the entire road in under an hour, but plan for at least three to four hours to actually see the park.
 
@@ -136,7 +144,7 @@ But petrified wood is only half the story. The northern section of the park enco
 
 **Route 66 Alignment** passes through the park near the midpoint. A 1932 Studebaker marks the spot where the original Mother Road crossed what is now parkland. It is a subtle monument, but for Route 66 enthusiasts, standing on the old alignment in the middle of the Painted Desert is a powerful moment.
 
-## Where to Stay
+## Where Should I Stay in Petrified Forest National Park?
 
 There is no lodging inside the park. The nearest town with hotels is **Holbrook**, about 25 miles west on I-40.
 
@@ -146,7 +154,7 @@ There is no lodging inside the park. The nearest town with hotels is **Holbrook*
 
 **Luxury seekers** are best served by staying in Flagstaff or Sedona and making Petrified Forest a day trip. La Posada in Winslow is the most upscale option within reasonable driving distance.
 
-## Where to Eat
+## What Should I Eat in Petrified Forest National Park?
 
 Options near the park are limited, so plan accordingly.
 
