@@ -49,7 +49,68 @@ relatedDestinations:
   - tucson
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Andaz Scottsdale Resort"
+    type: hotel
+    price: "$350-600/night"
+    personalNote: "Design-forward luxury resort near Old Town with exceptional pool scene and spa. The casitas and fire pits create a genuine desert atmosphere that the chain resorts miss."
+    affiliateUrl: "https://www.booking.com/hotel/us/andaz-scottsdale-resort.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Scottsdale Food Tour"
+    type: tour
+    price: "$75-100/person"
+    personalNote: "Old Town Scottsdale has one of the best restaurant scenes in the Southwest — a food tour is the efficient way to cover it. Tacos, cheese, wine, and excellent guiding through the district."
+    affiliateUrl: "https://www.getyourguide.com/scottsdale-l567/food-tour-t67890/?partner_id=IVN6IQ3"
+    badge: "Best Intro"
+  - name: "Hot Air Balloon Ride over Sonoran Desert"
+    type: tour
+    price: "$200-275/person"
+    personalNote: "Morning balloon over the saguaro desert — the classic Scottsdale bucket-list experience. Hot air rises quickly in the desert morning. Champagne landing is standard. Book well ahead for December-March."
+    affiliateUrl: "https://www.getyourguide.com/scottsdale-l567/hot-air-balloon-t78901/?partner_id=IVN6IQ3"
+  - name: "Sunscreen SPF 50+ (face + body)"
+    type: activity
+    price: "$15-25"
+    personalNote: "Desert UV at 1,100 feet is intense year-round. Even in January, an hour on a golf course or resort pool will burn without strong protection."
+    affiliateUrl: "https://www.amazon.com/s?k=sunscreen+spf+50+face+body&tag=discovermore-20"
+faqItems:
+  - question: "Is Scottsdale worth visiting?"
+    answer: "Yes if you want a high-quality, comfortable desert resort experience. Old Town is genuinely excellent for food and galleries. The resorts are world-class. Hiking on Camelback and McDowell Sonoran Preserve is superb. It is expensive but delivers at that price point."
+  - question: "Best time to visit Scottsdale?"
+    answer: "October through April, with February-March the absolute peak for weather, golf, and resort ambiance. Spring training baseball brings 25 MLB teams to the metro. May transitions quickly to summer heat. June through September is hot resort season — reduced prices but 110°F days require an entirely different travel strategy."
+  - question: "How many days in Scottsdale?"
+    answer: "Two to three days. Day one: Old Town galleries and dinner, Camelback Mountain sunset. Day two: resort day or McDowell Sonoran Preserve hiking. Day three: day trip to Sedona (2 hours) or the Desert Botanical Garden in Phoenix."
+  - question: "Is Scottsdale safe?"
+    answer: "Very safe. One of the safest large cities in Arizona. Old Town is polished and well-patrolled. Standard precautions for any city apply. Summer heat is the primary safety concern — same rules as Phoenix: no hiking above 95°F."
+  - question: "Scottsdale on a budget?"
+    answer: "Budget $100-140/day — challenging in peak season. Off-season (June-September) cuts accommodation by 40-60%. The McDowell Sonoran Preserve hiking is free and excellent. Old Town restaurant lunch is significantly cheaper than dinner. Consider staying in Tempe or Mesa and commuting to Scottsdale for the day."
+  - question: "What is Scottsdale known for?"
+    answer: "Luxury golf resorts (40+ courses nearby). Old Town Scottsdale galleries and nightlife. Camelback Mountain and Echo Canyon Trail. The Barrett-Jackson car auction in January. Spring training baseball. World-class spa culture. One of the top 10 restaurant cities in the Southwest."
+  - question: "Do I need a car in Scottsdale?"
+    answer: "Yes. Scottsdale has no meaningful public transit and destinations are spread across a large area. Car rental is essential. Old Town itself is walkable once you park."
+  - question: "Best things to do in Scottsdale?"
+    answer: "Old Town galleries and dining, Camelback Mountain hike (Echo Canyon Trail, early morning), McDowell Sonoran Preserve, hot air balloon at sunrise, Taliesin West Frank Lloyd Wright campus, spring training games (Feb-March), Scottsdale Museum of Contemporary Art, and a resort spa day."
+scottTips:
+  logistics: "Fly into Phoenix Sky Harbor (PHX), 15 minutes from Scottsdale by car or rideshare. Scottsdale has no commercial airport. Car rental at PHX is the easiest option."
+  bestTime: "February-March for the best resort experience and spring training. October-November for warm days without summer prices. Summer (June-September) for dramatically reduced rates if heat doesn't bother you."
+  gettingAround: "Car essential. Old Town is compact and walkable once you park. Rideshare works well within Scottsdale and to Phoenix destinations."
+  money: "One of Arizona's more expensive destinations. Peak season resort rates ($200-700/night) are significant. Off-season cuts this dramatically. The best hikes are free."
+  safety: "Heat safety same as Phoenix — no mid-day desert hiking above 95°F. Camelback's Echo Canyon Trail requires permits on peak season weekends."
+  packing: "Sun protection is non-negotiable even in winter. Evening layers for outdoor dining (desert nights cool fast). Comfortable walking shoes for Old Town. Golf attire if you are playing."
+  localCulture: "Scottsdale is Arizona's wealthiest city and the culture reflects that — polished, service-oriented, and comfortable. The spring training culture in February-March creates a fun baseball-mixed-with-resort atmosphere. Old Town's gallery scene is serious and substantial."
 ---
+
+Scottsdale is Phoenix's upscale neighbor — golf resorts, luxury spas, vibrant Old Town dining and galleries, and the base for Camelback Mountain hiking, budget $100-500/day, best October through April for the famous resort season.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/scottsdale-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #d4a017, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Old Town and Red Rock</div>
+    <p class="ib-text">Scottsdale's Old Town galleries and Camelback Mountain hiking are within minutes of each other — a small city that punches well above its weight in food, art, and outdoor experience.</p>
+  </div>
+</div>
 
 Scottsdale has a reputation as a playground for the wealthy — and that reputation isn't entirely unearned. This is a city of world-class resorts, $400-a-round golf courses, and restaurants where a steak dinner can run into triple digits. But what I've found across several visits is that Scottsdale is considerably more layered than the luxury veneer suggests. Behind the spa culture and resort pools, there's an authentic western heritage, a desert preserve system that rivals any in the state, and a creative food and art scene that stands on its own merits.
 
@@ -109,22 +170,4 @@ For budget travelers, **Extended Stay America** and **Motel 6 Scottsdale** offer
 
 **Hula's Modern Tiki** in the Arts District serves creative Pacific Rim cuisine alongside tropical cocktails. The poke bowls ($16) and coconut shrimp ($15) are reliably good, and the tiki bar atmosphere is genuinely fun without being cheesy.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Logistics & Getting There** — Fly into Phoenix Sky Harbor (PHX) and take a rideshare to Scottsdale — it's about $15-25 depending on where in Scottsdale you're heading. If you're combining Scottsdale with a Sedona or Grand Canyon trip, rent a car; otherwise, rideshares and the free Scottsdale Trolley can handle most tourist needs within Old Town.
-
-**Best Time to Visit** — November through March is the prime season with perfect 65-80°F weather, but also peak pricing. The WM Phoenix Open in February and spring training in February-March are the busiest and most expensive periods. For the best value with great weather, try early November or late March. Summer is scorching (110°F-plus) but resort rates plummet — if you can stay poolside, it's a legitimate budget play.
-
-**Getting Around** — The free Scottsdale Trolley runs through Old Town, the Waterfront, and the Arts District. Beyond that, rideshares are the most practical option. The McDowell Sonoran Preserve trailheads require a vehicle. Scottsdale is not a walking city outside of Old Town — distances between areas are significant.
-
-**Money & ATMs** — ATMs are plentiful at Chase, Wells Fargo, and Bank of America branches throughout the city. Scottsdale is pricier than Phoenix — expect to spend 20-30% more on dining and accommodation. Resort fees ($30-50/night) are common at larger hotels, so factor those into your budget.
-
-**Safety & Health** — Scottsdale is generally very safe. The main risks are sun-related: heat exhaustion, sunburn, and dehydration. Always carry water on hikes. For the nightlife-oriented Entertainment District on weekends, use rideshares rather than driving — DUI enforcement is aggressive in Arizona. Scottsdale HonorHealth Osborn Medical Center is the closest hospital to Old Town.
-
-**Packing Essentials** — Bring resort-casual clothing if you plan on dining at upscale restaurants — collared shirts and closed-toe shoes are appreciated though rarely required. Hiking shoes for the preserve, swimwear for the resort pools, sunscreen and a hat for everything else. If you're visiting for nightlife, Scottsdale's bars and clubs are dressier than the rest of the valley.
-
-**Local Culture & Etiquette** — Scottsdale has a distinct identity from Phoenix — locals take the distinction seriously, so don't call it "part of Phoenix." The Thursday ArtWalk (7-9 PM) is a community tradition, not just a tourist event — show up, support local artists, and engage. Tipping 18-20% is standard. At resorts, tip valet ($3-5), bellhops ($2-5/bag), and housekeeping ($3-5/night).
-
-</div>

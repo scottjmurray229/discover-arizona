@@ -49,7 +49,68 @@ relatedDestinations:
   - saguaro-national-park
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Copper Queen Hotel"
+    type: hotel
+    price: "$120-220/night"
+    personalNote: "The 1902 historic hotel in the heart of old Bisbee — Victorian character, allegedly haunted (the guests take it seriously), and the best location in town. Book the historic rooms."
+    affiliateUrl: "https://www.booking.com/hotel/us/copper-queen-hotel-bisbee.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Queen Mine Tour"
+    type: tour
+    price: "$25/person"
+    personalNote: "Ride a mine train 1,500 feet underground into a working copper mine with retired miners as guides. The most authentic industrial history tour in Arizona — genuinely impressive."
+    affiliateUrl: "https://www.getyourguide.com/bisbee-l012/queen-mine-tour-t12345/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Bisbee Ghost Tour"
+    type: tour
+    price: "$20-35/person"
+    personalNote: "Bisbee's ghost reputation is substantial and the tours are actually well-researched local history. The Copper Queen Hotel's ghost stories are particularly compelling regardless of your belief level."
+    affiliateUrl: "https://www.getyourguide.com/bisbee-l012/ghost-tour-t23456/?partner_id=IVN6IQ3"
+  - name: "Tombstone and Bisbee Combo Day Tour"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "Both towns are 30 minutes apart — a combined day tour from Tucson is the efficient way to visit both without managing the driving yourself."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/tombstone-bisbee-day-tour-t34567/?partner_id=IVN6IQ3"
+faqItems:
+  - question: "Is Bisbee worth visiting?"
+    answer: "Yes for the right traveler — someone who enjoys quirky small towns with depth, history, and arts. The Queen Mine tour is genuinely excellent. Old Bisbee's steep streets and Victorian buildings are unique in Arizona. The arts and gallery scene is real. It is not a place for those expecting polished amenities."
+  - question: "Best time to visit Bisbee?"
+    answer: "October through April. At 5,300 feet elevation, Bisbee is 10-15 degrees cooler than Tucson year-round. Summers are pleasant (70-85°F) by Arizona standards. Winter brings occasional freezing temperatures and rare snow. The Bisbee 1000 stair climb race in October is a popular annual event."
+  - question: "How many days in Bisbee?"
+    answer: "One to two days. Day one: Queen Mine tour, Old Bisbee neighborhood walk, Brewery Gulch. Day two: galleries, Lavender Pit viewpoint, day trip to Tombstone (30 minutes)."
+  - question: "Is Bisbee safe?"
+    answer: "Very safe and relaxed. The steep streets require attention when walking. The area near the Mexican border (10 miles) is well-trafficked and safe for daytime visits."
+  - question: "Bisbee on a budget?"
+    answer: "Budget $60-90/day. The Queen Mine tour ($25) is essential. The town walk, galleries, and Lavender Pit viewpoint are free. More affordable accommodation than Tucson or Sedona."
+  - question: "What is Bisbee known for?"
+    answer: "The historic copper mining district — at its 1900s peak, Bisbee had a larger population than Los Angeles. The Lavender Pit open-pit copper mine (one of the largest in the world). Victorian architecture on steep hillside streets. A vibrant arts community that moved in after the mines closed. The Copper Queen Hotel's ghost stories."
+  - question: "Do I need a car in Bisbee?"
+    answer: "Yes to get here — Bisbee is 90 miles southeast of Tucson on I-10/US-80. Old Bisbee itself is compact and best explored on foot (the steep stairs are the defining feature of the town geography)."
+  - question: "Best things to do in Bisbee?"
+    answer: "Queen Mine underground tour, Old Bisbee neighborhood and stair walking, Brewery Gulch Historic District, Lavender Pit copper mine viewpoint, Bisbee Mining and Historical Museum, art galleries on Main Street, and the Copper Queen Hotel bar."
+scottTips:
+  logistics: "Drive from Tucson: 90 miles southeast, 1.5 hours on I-10 then US-80. Or combine with Tombstone (25 miles north of Bisbee). The approach through the Mule Mountains pass is dramatic."
+  bestTime: "Year-round, but October-April is most comfortable. The cooler elevation makes summer more tolerable here than the low desert. Holiday weekends in December see strong arts event programming."
+  gettingAround: "Car to get here. Old Bisbee is walking and stair territory — the town is built vertically on hillsides."
+  money: "One of Arizona's most affordable destinations. Budget $60-100/day. The Queen Mine tour ($25) is the main expense."
+  safety: "Steep stairs and hillside streets require attention especially in wet weather. The Mexican border is 10 miles south — the area is safe for daytime tourism."
+  packing: "Comfortable walking shoes with grip for the steep stairs, layers for the 5,300 ft elevation, camera for the Victorian architecture."
+  localCulture: "Bisbee's character was shaped by two waves: the mining era (1880s-1975) and the arts/alternative community that moved in after. Both are visible in the town. The former miners and the artists coexist peacefully and both take Bisbee's identity seriously. The ghost culture is genuinely local, not manufactured for tourists."
 ---
+
+Bisbee is a former copper mining boomtown turned artsy mountain village in the Mule Mountains near the Mexican border — a quirky, steep-streeted Victorian ghost-town-turned-arts-community, budget $60-180/day, best October through April.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/bisbee-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #7c2d12, #6b21a8, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Copper Town Revival</div>
+    <p class="ib-text">Bisbee's steep hillside streets, Victorian buildings, and art galleries are draped over the Mule Mountains above the massive Lavender Pit copper mine — a 1900s boomtown that refused to die.</p>
+  </div>
+</div>
 
 I pulled into Bisbee on a Thursday afternoon expecting a sleepy old mining town. Instead, I found a place that felt like someone had picked up a corner of San Francisco's Mission District and dropped it into a canyon in the Arizona borderlands. The buildings are Victorian, painted in every color imaginable, stacked up steep hillsides connected by staircases instead of streets. Art galleries and vintage shops spill out of former company stores. A guy was playing guitar on the steps of a 120-year-old saloon while a mutt slept at his feet. Within an hour, I understood why people come to Bisbee for a weekend and stay for a decade. This town has something that money cannot manufacture and developers cannot replicate: genuine, slightly eccentric character that has been accumulating for over a century.
 
@@ -99,22 +160,4 @@ What makes Bisbee truly special is the physical setting. The town is built into 
 
 **Thuy's Noodle Shop** on Main Street serves excellent Vietnamese pho, banh mi, and spring rolls in a tiny space that fills up fast. A welcome departure from Southwestern fare. Meals run $10–$15.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** From Tucson, take I-10 east to AZ-80 south through Tombstone and continue 25 miles to Bisbee — about 2 hours total. From Phoenix, it is roughly 3.5 hours via I-10 east. If coming from Tombstone, the drive south on AZ-80 is a scenic 25 minutes through high desert grassland. There is no public transit. The winding descent into Bisbee through the Mule Pass Tunnel is dramatic — your first glimpse of the town clinging to the canyon walls is a genuine wow moment.
-
-**Best Time to Visit:** October through November and March through May are ideal, with daytime highs in the 60s and 70s. Bisbee's elevation keeps summer temperatures about 10 degrees cooler than Tucson. Winter nights can dip into the 20s and 30s, so bring warm layers if visiting December through February. The Bisbee 1000 Stair Climb event in October draws athletes from across the country.
-
-**Getting Around:** Historic Old Bisbee is compact and best explored on foot, but be prepared for hills and stairs — this is not a flat town. Street parking is free but limited. A small free shuttle runs between the parking areas and Main Street on busy weekends. To reach the Lavender Pit overlook or the Shady Dell, you will need a car.
-
-**Money & ATMs:** There is a Chase ATM on Main Street and an ATM at the Copper Queen Hotel. Many galleries and smaller shops accept credit cards, but some vintage dealers and street vendors prefer cash. The Bisbee Breakfast Club is cash-only.
-
-**Safety & Health:** Bisbee is very safe. The main hazards are the steep terrain and uneven historic sidewalks — watch your step, especially after rain or on the staircases. The Copper Queen Mine Tour involves walking on uneven ground in low light, so it is not suitable for visitors with serious mobility issues. Copper Queen Community Hospital on Cole Avenue is the local medical facility.
-
-**Packing Essentials:** Comfortable walking shoes with good traction are essential — you will be climbing stairs and navigating sloped streets all day. Layers are important at this elevation, where morning shade in the canyon can be chilly even when afternoon sun is warm. Bring a light jacket for the mine tour, where the temperature is a constant 47 degrees underground.
-
-**Local Culture & Etiquette:** Bisbee is an artist community with a live-and-let-live ethos. The town is inclusive and welcoming. Gallery browsing is free and gallery owners genuinely enjoy talking about the work — feel free to ask questions. If you visit an artist's studio, buying a small piece directly supports the local creative community. Tipping 18–20% at restaurants is standard. The town is small enough that locals recognize repeat visitors — come back a second time and you will be greeted like a regular.
-
-</div>

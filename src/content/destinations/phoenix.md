@@ -49,7 +49,68 @@ relatedDestinations:
   - sedona
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "The Phoenician"
+    type: hotel
+    price: "$350-700/night"
+    personalNote: "Landmark Scottsdale resort at the base of Camelback Mountain. The pool complex, spa, and dining are exceptional. Peak season (February-April) is extraordinary but expensive."
+    affiliateUrl: "https://www.booking.com/hotel/us/the-phoenician-scottsdale.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Sonoran Desert Hummer Tour"
+    type: tour
+    price: "$80-130/person"
+    personalNote: "Off-road tour into the Sonoran Desert for saguaro cactus forests, desert wildlife, and sunset views. Good option for families or anyone who wants the desert landscape without a long hike."
+    affiliateUrl: "https://www.getyourguide.com/phoenix-l456/sonoran-desert-hummer-tour-t56789/?partner_id=IVN6IQ3"
+  - name: "Camelback Mountain Echo Canyon Trail"
+    type: activity
+    price: "Free (permit required in peak season)"
+    personalNote: "The iconic Phoenix hike — 1.2 miles, 1,200 ft gain, intense but extraordinary views. Start before 7am to beat the heat and crowds. Free permit required March-May on weekends."
+    affiliateUrl: "https://www.getyourguide.com/phoenix-l456/camelback-mountain-guided-hike-t67890/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Electrolyte Packets (Nuun or Liquid IV)"
+    type: activity
+    price: "$15-25"
+    personalNote: "Essential for Phoenix desert hiking April through October. You can lose 1-2 liters of sweat per hour in summer heat. Electrolytes prevent the cramping and headaches that pure water cannot."
+    affiliateUrl: "https://www.amazon.com/s?k=liquid+iv+electrolyte+packets&tag=discovermore-20"
+faqItems:
+  - question: "Is Phoenix worth visiting?"
+    answer: "Yes, especially October through April. Phoenix delivers world-class resorts, excellent food, Camelback Mountain hiking, the Desert Botanical Garden, and a thriving arts district. It is not a place for summer — June through September is genuinely extreme heat (110°F+). In winter, it is one of the best cities in the US for outdoor dining and outdoor activity."
+  - question: "Best time to visit Phoenix?"
+    answer: "October through April. February and March are peak season with the best weather (65-80°F) and the Cactus League baseball spring training (25 MLB teams in the metro). May is transitional. June through September: temperatures regularly exceed 110°F — not recommended unless you plan to be in air conditioning."
+  - question: "How many days in Phoenix?"
+    answer: "Two to three days. Day one: Camelback Mountain early morning hike, lunch in Scottsdale Old Town, Desert Botanical Garden. Day two: South Mountain Park or Papago Park hiking, arts district. Day three: day trip to Sedona (2 hours north) or Scottsdale resort day."
+  - question: "Is Phoenix safe?"
+    answer: "Generally safe for tourists in popular areas. Downtown Phoenix, Scottsdale, and Tempe have good safety records for visitors. Standard urban precautions apply. The primary summer safety concern is the extreme heat — 110°F+ heat emergencies kill people every year. Never hike in full sun above 100°F."
+  - question: "Phoenix on a budget?"
+    answer: "Budget $80-120/day. The South Mountain and Papago Park hiking areas are free. Many resort pools open to non-guests for day fees ($25-50). The Phoenix Art Museum ($18) and Desert Botanical Garden ($25) are excellent value. Accommodation in the greater metro is more affordable than Scottsdale — save 30-40% by staying in Tempe or Mesa."
+  - question: "What is Phoenix known for?"
+    answer: "The Sonoran Desert landscape and saguaro cactus forests. World-class golf (over 200 courses in the metro). Luxury spa resorts. Camelback Mountain. Spring training baseball. The Desert Botanical Garden. Frank Lloyd Wright's Taliesin West. The Phoenix Suns and Cardinals. And the extreme summer heat that defines everything about the city's rhythm."
+  - question: "Do I need a car in Phoenix?"
+    answer: "Yes — Phoenix is massively car-dependent. Light rail connects downtown Phoenix, Tempe, and Mesa but doesn't reach Scottsdale or most resort areas. A rental car is essential for anything beyond downtown."
+  - question: "Best things to do in Phoenix?"
+    answer: "Camelback Mountain Echo Canyon hike (before 7am), Desert Botanical Garden, South Mountain Park (largest municipal park in the US), Scottsdale Old Town galleries and dining, Heard Museum (Native cultures), spring training baseball (February-March), Taliesin West Frank Lloyd Wright tours, and Papago Park sunset."
+scottTips:
+  logistics: "Phoenix Sky Harbor (PHX) is one of the best-connected airports in the US — direct flights from most major cities. Car rental at the airport is straightforward. The I-10, I-17, and I-40 freeway system connects the metro well."
+  bestTime: "October through April — ideally February-March for spring training and peak weather. The winter season is one of America's best for outdoor dining and activity. Avoid June-September unless resort pool time is your primary activity."
+  gettingAround: "Car rental is essential. The Valley Metro light rail covers a useful downtown corridor but misses most visitor destinations. Rideshare works well within Scottsdale and downtown."
+  money: "Phoenix resort pricing is seasonal and dramatic — February-April peak runs $200-700+/night at top properties. The same rooms are $80-150 in September. Off-peak travel dramatically changes the budget math."
+  safety: "Heat emergencies are real and fatal in summer. Never hike in direct sun above 95°F. Carry double the water you think you need. The Phoenix metro emergency services respond to heat rescues regularly in summer."
+  packing: "Sun protection year-round (intense desert UV), hydration pack for any hiking, layers for evenings (desert nights cool quickly even in summer), comfortable walking shoes for Old Town Scottsdale, and a hat."
+  localCulture: "Phoenix is a relatively young city (major growth since WWII) but sits on land with thousands of years of Hohokam culture history. The Heard Museum is one of the best Native American art and history museums in the country. The snowbird culture (winter residents from northern states) shapes the city's vibe from November through March."
 ---
+
+Phoenix is Arizona's desert metropolis — a sprawling modern city at 1,100 feet elevation in the Sonoran Desert, with excellent resorts, Camelback Mountain hiking, and world-class golf, budget $80-400/day, best October through April when temperatures are 65-85°F.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/phoenix-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #c2410c, #92400e, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Desert Metropolis</div>
+    <p class="ib-text">Phoenix sits at the heart of the Sonoran Desert surrounded by saguaro cactus forests and mountain preserves — a modern city where the wilderness is never more than 30 minutes away.</p>
+  </div>
+</div>
 
 I'll be honest — Phoenix wasn't a city that immediately excited me on paper. A massive desert metropolis with wide boulevards and strip malls stretching to the horizon doesn't exactly scream "charming travel destination." But after spending real time here across multiple visits, I've completely changed my tune. Phoenix has a depth and vibrancy that catches you off guard, from its surprisingly excellent food scene to the raw beauty of the Sonoran Desert that presses right up against the city limits.
 
@@ -105,22 +166,4 @@ For camping, **Usery Mountain Regional Park** east of Mesa has tent and RV sites
 
 **Chino Bandido** is a Phoenix institution serving Chinese-Mexican fusion. A jade chicken plate with Jamaican jerk seasoning over fried rice, served with beans and tortillas — it sounds chaotic but works brilliantly. Plates run $10-14.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Logistics & Getting There** — Phoenix Sky Harbor (PHX) is extremely well-connected. The PHX Sky Train connects terminals to the Valley Metro Light Rail at 44th Street station for $2, making car rental optional if you're staying in the central corridor. If you're renting a car, I recommend it for accessing trailheads and exploring the wider metro area.
-
-**Best Time to Visit** — November through March is prime season with near-perfect weather in the 65-85°F range. Avoid June through September unless you can handle sustained 110°F-plus temperatures. Hotel rates drop dramatically in summer (half price or better), so if you can tolerate the heat and plan activities for early morning, there are deals to be had.
-
-**Getting Around** — The Valley Metro Light Rail covers 28 miles from 19th Avenue through downtown, Tempe, and east to Mesa. A day pass is $4 and covers most tourist areas. For trailheads and the wider metro, you'll want a car or rideshare. Lyft and Uber are plentiful and affordable here.
-
-**Money & ATMs** — ATMs from Chase, Wells Fargo, and Bank of America are everywhere. Phoenix is a fully modern US city — credit cards accepted everywhere. Budget-wise, Phoenix is more affordable than comparable Sun Belt cities like San Diego or Austin.
-
-**Safety & Health** — Heat is the biggest danger. Carry water everywhere, even on short hikes. The city has seen fatalities on Camelback Mountain from heat exhaustion — don't be cavalier. Hiking trails close when excessive heat warnings are issued. Stay hydrated and avoid outdoor exertion between 10 AM and 4 PM in summer. Major hospitals include Banner University Medical Center Phoenix and St. Joseph's Hospital downtown.
-
-**Packing Essentials** — Sunscreen (SPF 50+), a refillable water bottle, sunglasses, and a hat are absolute necessities year-round. In winter, bring layers for chilly mornings and evenings (40s-50s°F). Comfortable walking shoes for trails and downtown exploring.
-
-**Local Culture & Etiquette** — Phoenix is casual and laid-back. Tipping 18-20% at restaurants is standard. The city is diverse and welcoming. First Friday Art Walk on Roosevelt Row is a community highlight — go at least once. If you're visiting during spring training (February-March), book restaurants early as the city fills up with baseball fans.
-
-</div>

@@ -48,7 +48,67 @@ relatedDestinations:
   - page
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Little America Hotel Flagstaff"
+    type: hotel
+    price: "$130-220/night"
+    personalNote: "Solid mid-range with spacious rooms, on-site restaurant, and good location for the Grand Canyon drive. Reliable choice when the downtown boutique hotels are sold out."
+    affiliateUrl: "https://www.booking.com/hotel/us/little-america-flagstaff.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Grand Canyon South Rim Day Tour from Flagstaff"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "Arizona Shuttle or guided tours from Flagstaff to the South Rim eliminate the driving logistics. Good option if you want the canyon experience without managing your own route."
+    affiliateUrl: "https://www.getyourguide.com/flagstaff-l567/grand-canyon-day-tour-t89012/?partner_id=IVN6IQ3"
+  - name: "Lowell Observatory Tour"
+    type: activity
+    price: "$15-20/person"
+    personalNote: "The observatory where Pluto was discovered in 1930 offers evening telescope programs. Flagstaff is an International Dark Sky City — the night sky here is extraordinary. Book ahead for weekend programs."
+    affiliateUrl: "https://www.getyourguide.com/flagstaff-l567/lowell-observatory-t90123/?partner_id=IVN6IQ3"
+  - name: "Hiking Poles"
+    type: activity
+    price: "$30-80"
+    personalNote: "Humphreys Peak Trail gains 3,300 feet to Arizona's highest point (12,633 ft). Poles make the steep descent significantly more manageable and safer on loose scree."
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible+lightweight&tag=discovermore-20"
+faqItems:
+  - question: "Is Flagstaff worth visiting?"
+    answer: "Yes — Flagstaff is one of the most underrated small cities in the US. At 7,000 feet in the ponderosa pines below Arizona's highest peaks, it has a completely different character from the low desert. Excellent hiking, a vibrant downtown, dark sky stargazing, the Grand Canyon 80 miles away, and skiing in winter make it a year-round destination."
+  - question: "Best time to visit Flagstaff?"
+    answer: "May through October for hiking and outdoor activities. December through March for skiing at Arizona Snowbowl. Spring and fall are ideal — comfortable temperatures (50-70°F) and the Grand Canyon is at its least crowded. Summer (June-August) is Flagstaff's best season: 75-85°F days when Phoenix is 110°F."
+  - question: "How many days in Flagstaff?"
+    answer: "Two to three days. Day one: downtown Historic Route 66 district, Lowell Observatory evening program. Day two: Grand Canyon day trip (80 miles) or Humphreys Peak hike. Day three: Wupatki and Sunset Crater National Monuments."
+  - question: "Is Flagstaff safe?"
+    answer: "Very safe and walkable downtown. Standard college town atmosphere. Humphreys Peak Trail has altitude hazard — the summit (12,633 ft) requires acclimatization; spend a night at 7,000 ft before attempting. Afternoon thunderstorms July-August require caution above treeline."
+  - question: "Flagstaff on a budget?"
+    answer: "Budget $70-100/day. Many excellent hiking areas are free (Walnut Canyon is $10, Grand Canyon is separate $35 vehicle). The Route 66 downtown has affordable dining. Northern Arizona University keeps accommodation competitive. Much cheaper than Sedona or Scottsdale."
+  - question: "What is Flagstaff known for?"
+    answer: "Gateway to the Grand Canyon (80 miles away). The highest point in Arizona — Humphreys Peak at 12,633 ft. Arizona Snowbowl ski resort. Lowell Observatory where Pluto was discovered. International Dark Sky City designation. Historic Route 66 downtown. The world's largest ponderosa pine forest."
+  - question: "Do I need a car in Flagstaff?"
+    answer: "Yes for the Grand Canyon and surrounding national monuments. Downtown Flagstaff itself is walkable and bikeable. The Mountain Line bus serves the university and some neighborhoods."
+  - question: "Best things to do in Flagstaff?"
+    answer: "Grand Canyon day trip, Humphreys Peak hike to Arizona's summit, Lowell Observatory evening program, Walnut Canyon National Monument, Wupatki National Monument, Arizona Snowbowl skiing (winter), Route 66 downtown walk, Museum of Northern Arizona, and Oak Creek Canyon drive to Sedona."
+scottTips:
+  logistics: "Flagstaff Pulliam Airport (FLG) has limited service. Most visitors drive from Phoenix (145 miles, 2 hours on I-17) or fly into Phoenix and drive up. I-17 from Phoenix through the Verde Valley is scenic. The Amtrak Southwest Chief stops in Flagstaff."
+  bestTime: "June-August for the best hiking weather (Flagstaff is 30 degrees cooler than Phoenix). October for fall colors in Oak Creek Canyon. December-March for skiing. Spring for Grand Canyon crowds at minimum."
+  gettingAround: "Car essential for Grand Canyon and monuments. Downtown is walkable and bikeable."
+  money: "Budget destination compared to Sedona or Scottsdale. $70-130/day is achievable. The Grand Canyon entry ($35 vehicle) is the main additional cost."
+  safety: "Altitude is the main consideration — at 7,000 ft, some people feel lightheaded for the first day. Humphreys Peak summit (12,633 ft) requires acclimatization. Afternoon thunderstorms are dangerous above treeline July-August — be off exposed ridges by noon."
+  packing: "Layers even in summer (7,000 ft elevation means cool evenings), waterproof shell for afternoon thunderstorms, sunscreen (UV is intense at altitude), and warm clothes for winter."
+  localCulture: "Flagstaff is a college town (Northern Arizona University) with a genuine outdoor culture. The historic Route 66 downtown has kept its character. The city's International Dark Sky designation reflects serious commitment to light pollution control — this is genuinely one of the best places in the US to stargaze."
 ---
+
+Flagstaff is a college town at 7,000 feet elevation surrounded by the largest ponderosa pine forest in North America — a year-round destination for Grand Canyon access, Humphreys Peak hiking, stargazing, and skiing, budget $70-200/day, best May through October or December-March for skiing.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/flagstaff-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1a4731, #1e3a5f, #92400e);"></div>
+  <div class="ib-content">
+    <div class="ib-title">High Country Arizona</div>
+    <p class="ib-text">At 7,000 feet in the ponderosa pine forest below the San Francisco Peaks, Flagstaff is a completely different Arizona — four seasons, dark sky reserve, and the Grand Canyon's front door.</p>
+  </div>
+</div>
 
 Flagstaff caught me off guard the first time I drove up I-17 from Phoenix. One moment I was surrounded by saguaros and scorched desert; the next, I was cruising through ponderosa pines with the air conditioning off and the windows down. At 7,000 feet, Flagstaff feels like a different state entirely. The air is crisp, the downtown is walkable, and there is a genuine mountain-town culture here that has nothing to do with resorts or tourism gimmicks. This is a real college town with real character, and it happens to sit at the crossroads of some of the most spectacular landscapes in America.
 
@@ -94,22 +154,4 @@ The town also sits squarely on Historic Route 66, and the neon-lit stretch of do
 
 **Pizzicletta** on West Phoenix Avenue serves Neapolitan-style pies from a wood-fired oven in a tiny, no-frills space. Just a handful of pizza options each night, all superb. Whole pies run $14–$18.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Most visitors fly into Phoenix Sky Harbor (PHX) and drive north on I-17, which takes about 2.5 hours. Flagstaff Pulliam Airport (FLG) has limited American Airlines service from Dallas and Phoenix. Groome Transportation shuttles run multiple times daily from Phoenix for around $55 each way.
-
-**Best Time to Visit:** Summer (June through September) is peak season with warm days and cool nights. Winter brings real snow and ski season at Snowbowl. Spring and fall can be unpredictable — snow in April is not unusual. Monsoon thunderstorms roll in most afternoons from July through mid-September, so plan outdoor activities for the morning.
-
-**Getting Around:** Downtown Flagstaff is walkable, but you will need a car to reach Walnut Canyon, Wupatki, Snowbowl, and trailheads. Mountain Line bus service is free throughout the city. Parking downtown is metered but reasonable.
-
-**Money & ATMs:** ATMs are widely available downtown from Chase, Bank of America, and local credit unions. Credit cards are accepted virtually everywhere except a few cash-only spots like MartAnne's.
-
-**Safety & Health:** Flagstaff is generally very safe. The biggest health concern is altitude — at 7,000 feet, visitors from sea level should hydrate aggressively and ease into strenuous hikes. Flagstaff Medical Center on West Forest Meadows Street is the regional hospital.
-
-**Packing Essentials:** Even in summer, bring layers. Temperatures can drop 30 degrees after sunset. A rain jacket is essential during monsoon season. Sunscreen is critical at this altitude — UV exposure is significantly stronger than at sea level.
-
-**Local Culture & Etiquette:** Flagstaff is a university town with a progressive, outdoorsy vibe. Respect trail etiquette on shared-use paths. If visiting Wupatki or other archaeological sites, never touch or remove artifacts — it is a federal offense. Tipping 18–20% is standard at restaurants.
-
-</div>

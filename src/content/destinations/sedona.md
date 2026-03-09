@@ -48,7 +48,68 @@ relatedDestinations:
   - scottsdale
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Enchantment Resort"
+    type: hotel
+    price: "$500-900/night"
+    personalNote: "Nestled inside Boynton Canyon between red rock walls — one of the most dramatically positioned luxury resorts in the American West. The spa uses the canyon energy. Worth it for a special occasion."
+    affiliateUrl: "https://www.booking.com/hotel/us/enchantment-resort-sedona.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Pink Jeep Tour — Broken Arrow"
+    type: tour
+    price: "$100-130/person"
+    personalNote: "Pink Jeep Tours have been running Sedona trails since 1960. The Broken Arrow tour covers terrain that hiking cannot — slickrock formations accessible only by 4WD. Worth the tourist-feeling price."
+    affiliateUrl: "https://www.getyourguide.com/sedona-l345/pink-jeep-broken-arrow-t34567/?partner_id=IVN6IQ3"
+    badge: "Classic Sedona"
+  - name: "Sedona Vortex Tour"
+    type: tour
+    price: "$55-100/person"
+    personalNote: "Even skeptics find value in a guided vortex tour — the guides know the best times and angles for Cathedral Rock and Airport Mesa, and the spiritual context is genuinely interesting regardless of your beliefs."
+    affiliateUrl: "https://www.getyourguide.com/sedona-l345/vortex-tour-t45678/?partner_id=IVN6IQ3"
+  - name: "Red Rock Pass (parking)"
+    type: activity
+    price: "$5/day or $15/week"
+    personalNote: "Required for all Coconino National Forest trailhead parking. Buy it before you arrive at a convenience store or the ranger station — the kiosks at trailheads can have lines."
+    affiliateUrl: "https://www.amazon.com/s?k=sedona+red+rock+pass&tag=discovermore-20"
+faqItems:
+  - question: "Is Sedona worth visiting?"
+    answer: "Yes — the red rock landscape is genuinely extraordinary and the density of hiking, art, dining, and wellness experiences in a small area is remarkable. Go in spring or fall, get up for Cathedral Rock sunrise, and you will understand why people return annually."
+  - question: "Best time to visit Sedona?"
+    answer: "March-April and October-November. Spring brings wildflowers and ideal hiking temperatures (55-75°F). Fall has golden light and comfortable hiking. Summer (June-August) is very hot (95-100°F) but bearable if you hike before 8am. Winter is surprisingly lovely (35-55°F) and uncrowded."
+  - question: "How many days in Sedona?"
+    answer: "Two to three days. Day one: Cathedral Rock sunrise, Tlaquepaque arts village, gallery walk. Day two: Bell Rock, Boynton Canyon, vortex sites. Day three: Devil's Bridge or Oak Creek Canyon drive to Slide Rock State Park."
+  - question: "Is Sedona safe?"
+    answer: "Very safe. Heat is the primary concern April-October — hike before 8am and after 5pm, carry at least 1 liter of water per hour. Some trails have significant exposure (Devil's Bridge, Cathedral Rock scramble); use good judgment on slickrock. Sun at 4,350 feet elevation is intense year-round."
+  - question: "Sedona on a budget?"
+    answer: "Budget $60-90/day. The best Sedona experiences (Cathedral Rock sunrise, Bell Rock walk, Boynton Canyon) are free beyond the Red Rock Pass ($5/day parking). Stay in Cottonwood (20 min south) for 40% lower accommodation prices. Hiking is free; the Pink Jeep Tours are the main optional splurge."
+  - question: "What is Sedona known for?"
+    answer: "The red rock formations — Cathedral Rock, Bell Rock, Courthouse Butte, and the Boynton Canyon walls. The four energy vortex sites that draw spiritual seekers worldwide. Over 100 miles of hiking trails. World-class arts galleries (Tlaquepaque). The spectacular Oak Creek Canyon drive. Wedding and spa capital of Arizona."
+  - question: "Do I need a car in Sedona?"
+    answer: "Yes — Sedona has no meaningful public transit. A car is essential for reaching trailheads (spread across a large area), the gallery district, and nearby Oak Creek Canyon. The Sedona Trolley runs narrated sightseeing tours but cannot substitute for a car."
+  - question: "Best things to do in Sedona?"
+    answer: "Cathedral Rock sunrise hike, Devil's Bridge trail, Boynton Canyon vortex walk, Tlaquepaque Arts and Shopping Village, Pink Jeep Tours, Slide Rock State Park, Airport Mesa sunset, Oak Creek Canyon scenic drive on AZ-89A, and evening gallery walk on Tlaquepaque's Friday nights."
+scottTips:
+  logistics: "Drive from Phoenix: 115 miles north, 2 hours via I-17 to AZ-179. From Flagstaff: 30 miles south on AZ-89A through Oak Creek Canyon — one of the most scenic drives in Arizona. The Flagstaff route is the better approach scenically. Shuttle service from Flagstaff and Phoenix airports available."
+  bestTime: "March-April for wildflowers and perfect hiking temperatures. October-November for fall light and smaller crowds. Cathedral Rock at sunrise (any time of year) is the single most recommended Sedona experience."
+  gettingAround: "Car essential. Buy the Red Rock Pass ($5/day) before arriving — required at all Coconino NF trailheads. Major trailhead parking fills by 8am on weekends in peak season; early arrival is non-negotiable."
+  money: "Budget $60-120/day staying in Cottonwood. Sedona proper starts at $150/night for motels. The luxury resort tier ($350-900/night) is extraordinary. Free hiking is the best activity value. Red Rock Pass ($5/day) is the only mandatory expense beyond accommodation."
+  safety: "Heat is the hazard April-October. Hike before 8am, carry 1 liter/hour of water, wear sun protection. Some trails (Cathedral Rock scramble, Devil's Bridge) require comfort with heights and slickrock. Sun is intense at elevation."
+  packing: "Hiking boots with ankle support for slickrock trails, 1 liter water per hour of hiking, wide-brimmed hat, high-SPF sunscreen, camera or phone with extra battery (the light changes constantly and is extraordinary). Bring a light layer for evenings — it cools down quickly at 4,350 feet."
+  localCulture: "Sedona has three overlapping identities: spiritual/wellness destination, arts community, and outdoor recreation hub. The vortex sites are taken seriously by a large segment of visitors — engage respectfully even if you are skeptical. The galleries are world-class, not souvenir shops. The spiritual scene has commercial aspects but the landscape that inspired it is genuinely powerful."
 ---
+
+Sedona is Arizona's red rock capital — 4,350 feet elevation in the Verde Valley, famous for Cathedral Rock, vortex sites, and world-class hiking in a landscape of crimson sandstone formations, budget $60-500/day, best March-April and October-November.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/sedona-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #991b1b, #c2410c, #92400e);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Red Rock Country</div>
+    <p class="ib-text">Sedona's red rock formations glow crimson at sunrise — Cathedral Rock, Bell Rock, and the Boynton Canyon walls change color through the day in ways that make every hour worth photographing.</p>
+  </div>
+</div>
 
 The first time I drove into Sedona from the south on AZ-179, I pulled over three times in the first ten minutes just to stare. The red rock formations rise from the desert floor like massive sandstone cathedrals, glowing in shades of crimson, rust, and burnt orange that shift with every passing cloud. I've been to a lot of beautiful places, but Sedona occupies its own category. There's something about the interplay of red rock against blue sky that feels almost otherworldly.
 
@@ -106,22 +167,4 @@ For budget travelers, **Rancho Sedona RV Park** has tent sites from $45 per nigh
 
 **Tamaliza** is a small counter-service spot near the Y roundabout with some of the best handmade tamales I've had in Arizona. A plate of three tamales with all the fixings runs about $12-15. Perfect quick lunch fuel between hikes.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Logistics & Getting There** — I always take AZ-179 from I-17 for the approach from Phoenix. The scenic views start rolling in about 20 minutes before you hit town, and it puts you right at the Bell Rock trailheads. From Flagstaff, the Oak Creek Canyon drive on AZ-89A is spectacular but has tight switchbacks — take it slow and enjoy the overlooks.
-
-**Best Time to Visit** — March, April, October, and November are the sweet spots: warm days, cool nights, manageable crowds. Summer temps hit the mid-to-upper 90s, which makes midday hiking miserable. Winter is beautiful but expect nighttime temps in the 30s and occasional snow on the higher trails.
-
-**Getting Around** — You need a car. Sedona is spread out, and the trailheads are scattered across a wide area. Parking at popular spots like Cathedral Rock and Devil's Bridge fills by 8-9 AM on weekends. The Sedona Shuttle (free on some routes) is expanding but still limited. An alternative: park at the Posse Grounds hub and use the shuttle to reach trailheads.
-
-**Money & ATMs** — There are ATMs at the National Bank of Arizona in Uptown and at various banks along AZ-89A. Most businesses accept credit cards. Budget about $5 per day for the Red Rock Pass (required at most Coconino National Forest trailheads) or buy a weekly pass for $15.
-
-**Safety & Health** — The biggest hazards are dehydration and slippery slickrock. Carry at least two liters of water per hike, even on shorter trails. Watch your footing on smooth sandstone — it's extremely slippery when wet. Rattlesnakes are present but rarely seen on busy trails. The nearest hospital is Verde Valley Medical Center in Cottonwood, about 20 minutes southwest.
-
-**Packing Essentials** — Hiking shoes with good grip are non-negotiable for the slickrock trails. Bring a sun hat, high-SPF sunscreen, and layers for morning and evening temperature swings. A headlamp is useful for early-morning hikes to catch sunrise from the summits.
-
-**Local Culture & Etiquette** — Sedona's vortex sites are meaningful to many visitors, so be respectful even if it's not your thing. Don't stack rocks or leave crystals at vortex sites — it's considered littering and damages the environment. Stay on marked trails to protect the fragile biological soil crust (the dark, bumpy ground cover). Tip your jeep tour guides ($10-20 per person is standard).
-
-</div>

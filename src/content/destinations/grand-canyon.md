@@ -48,7 +48,69 @@ relatedDestinations:
   - page
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "El Tovar Hotel"
+    type: hotel
+    price: "$250-500/night"
+    personalNote: "The 1905 log-and-stone lodge right on the South Rim edge. The canyon-side rooms justify the premium. Book through Xanterra 12-13 months ahead — it sells out."
+    affiliateUrl: "https://www.booking.com/hotel/us/el-tovar.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Grand Canyon Helicopter Tour"
+    type: tour
+    price: "$250-350/person"
+    personalNote: "Papillon or Maverick, 25-45 min flight over the canyon. Book the longer flight — the extra time over the inner canyon is worth the difference. Launch from Tusayan."
+    affiliateUrl: "https://www.getyourguide.com/grand-canyon-l234/helicopter-tour-t12345/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Grand Canyon Antelope Canyon Combo Tour"
+    type: tour
+    price: "$150-250/person"
+    personalNote: "Combine Grand Canyon with Antelope Canyon and Horseshoe Bend in a single tour from Flagstaff or Sedona. The most efficient way to hit multiple iconic sites."
+    affiliateUrl: "https://www.getyourguide.com/flagstaff-l567/grand-canyon-antelope-combo-t23456/?partner_id=IVN6IQ3"
+  - name: "Hydration Pack (3L)"
+    type: activity
+    price: "$40-70"
+    personalNote: "Non-negotiable for inner canyon hiking. Carry 1 liter per hour of hiking — dehydration is the leading cause of canyon rescues ($500+ fee)."
+    affiliateUrl: "https://www.amazon.com/s?k=hydration+pack+3+liter+hiking&tag=discovermore-20"
+    badge: "Safety Essential"
+faqItems:
+  - question: "Is the Grand Canyon worth visiting?"
+    answer: "Yes — it is one of the few places that genuinely exceeds expectations. Every photograph undersells the scale. The canyon is 277 miles long, up to 18 miles wide, and over a mile deep. Stand on the rim for five minutes and your perception of geological time is permanently altered."
+  - question: "Best time to visit the Grand Canyon?"
+    answer: "March through May and October for the ideal combination of comfortable temperatures, smaller crowds, and clear skies. Summer (June-August) is brutally hot in the inner canyon (115°F at Phantom Ranch) and crowded on the rim. Winter brings snow to the rim — stunning but some facilities are limited. North Rim closes mid-October to mid-May."
+  - question: "How many days at the Grand Canyon?"
+    answer: "Minimum two days. Day one: South Rim overlooks (Mather Point sunrise, Rim Trail walk, Yavapai Geology Museum). Day two: inner canyon hike (Bright Angel to 1.5-Mile Resthouse and back). Three to four days allows a Hermit Road shuttle day and deeper inner canyon exploration."
+  - question: "Is the Grand Canyon safe?"
+    answer: "The rim is very safe. Inner canyon hiking requires serious preparation — dehydration and heat exhaustion are common. The park service strongly discourages rim-to-river-and-back in a single day. Carry 1 liter of water per hour of hiking, bring salty snacks, turn around at the 1.5-Mile Resthouse on day hikes. Rescues cost $500+."
+  - question: "Grand Canyon on a budget?"
+    answer: "Park entry is $35/vehicle for 7 days (America the Beautiful Pass $80/year covers this and every other federal site — worth it if you visit 2+ parks). Mather Campground is $18/night. The free shuttle buses eliminate parking stress. Budget $50-80/day including camping and simple meals."
+  - question: "What is the Grand Canyon known for?"
+    answer: "One of the Seven Natural Wonders of the World. 277 miles of canyon carved by the Colorado River, up to a mile deep. Two billion years of geological history exposed in the layered canyon walls. Bright Angel Trail, Phantom Ranch, the North and South Rims, helicopter tours, Colorado River rafting, and mule rides to the canyon floor."
+  - question: "Do I need a car at the Grand Canyon?"
+    answer: "Yes to get here — the South Rim is 80 miles from Flagstaff, 230 miles from Phoenix. Once at the park, the free shuttle buses make personal vehicles unnecessary for most South Rim sightseeing. In summer, driving is actively discouraged due to parking limitations."
+  - question: "Best things to do at the Grand Canyon?"
+    answer: "Sunrise at Mather Point or Yavapai Observation Station, Bright Angel Trail hike to the 1.5 or 3-Mile Resthouse, Rim Trail walk to Desert View Watchtower, helicopter tour from Tusayan, Hermit Road shuttle to overlooks, Colorado River rafting (3-16 days), and mule ride to Phantom Ranch."
+scottTips:
+  logistics: "Fly into Phoenix (PHX) and drive 230 miles north (3.5-4 hours via I-17 to US-180). Or fly into Flagstaff (FLG) and drive 80 miles north. Arizona Shuttle runs from Flagstaff to South Rim ($35 each way). In summer, arrive before 9am — parking lots fill completely by mid-morning."
+  bestTime: "March-May and October are ideal. Heat is the defining safety issue April through October — inner canyon hiking must start before 8am and end before noon on hot days. North Rim closes mid-October to mid-May."
+  gettingAround: "Free shuttle buses run the South Rim routes from March through November — use them, parking is nightmarish in summer. The Kaibab/Rim (Orange) and Hermit Road (Red) routes cover the essential overlooks."
+  money: "$35 vehicle entry (7 days). America the Beautiful annual pass ($80) pays off if you visit two or more federal sites. In-park lodging is premium; Tusayan outside the entrance has more affordable chain options."
+  safety: "Heat is the primary hazard April-October. Carry 1 liter of water per hour of hiking — no exceptions. Salty snacks maintain electrolytes. Do not attempt rim-to-river-and-back in a single day. Rangers strongly discourage it and rescues cost $500+."
+  packing: "1 liter water per hour of hiking (hydration pack strongly recommended), wide-brimmed hat, high-SPF sunscreen, layered clothing (rim can be 40°F cooler than inner canyon), sturdy hiking boots, headlamp for pre-sunrise starts."
+  localCulture: "The Grand Canyon is sacred to multiple Native American tribes including the Havasupai, Hualapai, Navajo, and Hopi. Respect all posted restrictions. Do not stack rocks (cairns confuse trail navigation). The canyon is not a race; uphill hikers have right of way."
 ---
+
+The Grand Canyon is one of the Seven Natural Wonders of the World — 277 miles long, a mile deep, and 5 million years of geology exposed in layered canyon walls — South Rim is open year-round, budget $50-400/day, best March through May and October.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/grand-canyon-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #d97706, #7c2d12);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Nature's Greatest Masterpiece</div>
+    <p class="ib-text">The Colorado River carved this mile-deep chasm over 5 million years — 277 miles of canyon walls that no photograph has ever captured accurately.</p>
+  </div>
+</div>
 
 I've stood on the edge of the Grand Canyon four times now, and every single visit hits me like the first. You drive through flat ponderosa forest, round a curve, and suddenly the earth drops away into a chasm so vast your brain genuinely struggles to process the scale. It's 277 miles long, up to 18 miles wide, and over a mile deep. Two billion years of geological history are stacked in those colorful bands of rock, and no photograph — not even the best one you've ever seen — comes close to capturing what it feels like to stand there in person.
 
@@ -106,22 +168,4 @@ For budget travelers, **Mather Campground** on the South Rim has sites for $18 p
 
 **We Cook Pizza and Pasta** in Tusayan is an unpretentious spot serving surprisingly good pizza and Italian dishes for $12-20 per person. It's the best casual option outside the park.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Logistics & Getting There** — Fly into Phoenix Sky Harbor (PHX), rent a car, and drive north about 3.5 hours. Alternatively, fly into Flagstaff Pulliam (FLG) and drive 80 miles north. Arizona Shuttle runs daily service from Flagstaff to the South Rim for about $35 each way. In summer, arrive before 9 AM or the parking lots fill up completely.
-
-**Best Time to Visit** — March through May and October are ideal. Summer brings crushing heat in the inner canyon (115°F-plus at Phantom Ranch) and monsoon thunderstorms. Winter brings snow on the rim which is stunning but limits some trails. The North Rim closes entirely from mid-October to mid-May.
-
-**Getting Around** — Free park shuttle buses are your best friend. The Hermit Road (Red) Route runs to eight overlooks along the west rim, and the Kaibab Rim (Orange) Route connects the visitor center to the South Kaibab Trailhead. A personal vehicle is fine but parking is a serious challenge in peak season.
-
-**Money & ATMs** — There's a Chase ATM at Market Plaza near the general store. The park accepts credit cards at all lodges and restaurants. Carry some cash for tipping tour guides and for the few cash-only vending spots.
-
-**Safety & Health** — The number one rescue scenario is hikers going too far down and not having the energy to climb back up. The canyon is an inverted mountain — the hard part is the return trip. Do not attempt rim-to-river-and-back in a single day. Drink a minimum of one liter of water per hour when hiking in warm weather. The nearest full hospital is Flagstaff Medical Center, about 80 miles south.
-
-**Packing Essentials** — Layers are critical: the rim can be 40°F cooler than the inner canyon. Bring sturdy hiking boots (not sandals), a wide-brimmed hat, high-SPF sunscreen, and electrolyte packets. A headlamp is essential if you're doing any early morning or late afternoon trail time.
-
-**Local Culture & Etiquette** — This is sacred land to multiple Native American tribes, including the Havasupai, Hualapai, Navajo, and Hopi. Respect all posted signs about restricted areas. Do not stack rocks (cairns) — they serve as trail markers and unofficial ones create dangerous confusion. Pack out everything you bring in. The canyon is not a race; give uphill hikers the right of way on trails.
-
-</div>

@@ -48,7 +48,68 @@ relatedDestinations:
   - petrified-forest
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "The View Hotel"
+    type: hotel
+    price: "$250-400/night"
+    personalNote: "The only hotel inside Monument Valley Navajo Tribal Park — every room faces the Mittens. Sunrise from the observation deck with the buttes glowing red is incomparable. Book months ahead."
+    affiliateUrl: "https://www.booking.com/hotel/us/the-view-hotel-monument-valley.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Monument Valley Navajo Guided Jeep Tour"
+    type: tour
+    price: "$70-150/person"
+    personalNote: "The Valley Drive's restricted areas and sacred sites are only accessible by Navajo-guided tours. The guides share stories and context that transform the landscape from scenery into a living place."
+    affiliateUrl: "https://www.getyourguide.com/monument-valley-l789/navajo-guided-jeep-tour-t34567/?partner_id=IVN6IQ3"
+    badge: "Most Valuable"
+  - name: "Monument Valley Sunrise Photography Tour"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "Guided photography tour during the golden hour before and after sunrise. The light on the Mittens at dawn is extraordinary — professional guides position you for the best shots."
+    affiliateUrl: "https://www.getyourguide.com/monument-valley-l789/sunrise-photography-tour-t45678/?partner_id=IVN6IQ3"
+  - name: "Polarized Sunglasses (UV 400)"
+    type: activity
+    price: "$20-60"
+    personalNote: "The desert light and dust at Monument Valley require polarized lenses. The sandstone reflection and haze are intense — polarized lenses improve both driving safety and photography."
+    affiliateUrl: "https://www.amazon.com/s?k=polarized+sunglasses+uv400+driving&tag=discovermore-20"
+faqItems:
+  - question: "Is Monument Valley worth visiting?"
+    answer: "Yes — it is one of the most iconic landscapes in America and it genuinely exceeds expectations in person. The scale of the Mittens and Merrick Butte is difficult to grasp from photographs. A guided tour into the restricted areas adds layers of Navajo cultural significance that make it far more than a photo opportunity."
+  - question: "Best time to visit Monument Valley?"
+    answer: "April-May and September-October. Spring and fall offer ideal temperatures (60-80°F) and the best light. Summer (June-August) is hot (95-110°F) but the thunderstorm clouds create dramatic photography. Winter is cold but uncrowded, with possible snow on the buttes."
+  - question: "How many days at Monument Valley?"
+    answer: "One to two days. Day one: the 17-mile Valley Drive (self-guided, $8 fee), visitor center, Wildcat Trail around the West Mitten (3 miles, free, Navajo permit required). Day two: guided jeep tour into restricted areas, sunrise or sunset photography session."
+  - question: "Is Monument Valley safe?"
+    answer: "Very safe. The Valley Drive is accessible by standard passenger cars except in wet weather when the dirt road can be impassable. Off the Valley Drive, you must have a Navajo guide. Rattlesnakes are present — watch where you step. Summer heat requires hydration."
+  - question: "Monument Valley on a budget?"
+    answer: "Budget $60-90/day. Park entry is $8/person, $20/vehicle maximum. The Valley Drive self-tour is included. The Wildcat Trail requires a permit ($5/person) but is the best free hiking option. Staying at Goulding's Lodge (just outside the park, $150-250/night) is significantly cheaper than The View Hotel."
+  - question: "What is Monument Valley known for?"
+    answer: "The iconic red sandstone Mitten Buttes — the most recognizable Western landscape in American cinema (John Ford, John Wayne, countless westerns and car commercials were filmed here). Sacred Navajo homeland. One of the most photographed places on Earth. The contrast of red sand, blue sky, and ancient stone formations."
+  - question: "Do I need a car at Monument Valley?"
+    answer: "Yes — Monument Valley is remote. Drive from Flagstaff (180 miles, 2.5 hours north on US-89), from Page (95 miles), or from Moab Utah (90 miles south). A car is required for the Valley Drive."
+  - question: "Best things to do at Monument Valley?"
+    answer: "Valley Drive self-guided tour (17 miles, includes the classic Mittens viewpoints), guided Navajo jeep tour into restricted areas, Wildcat Trail sunrise walk, John Ford's Point viewpoint (the most iconic vantage), and cultural programs at the Navajo visitor center."
+scottTips:
+  logistics: "Drive from Flagstaff: 180 miles north on US-89 (2.5 hours). From Page/Antelope Canyon: 95 miles, 1.5 hours. From Moab, Utah: 90 miles south. The US-163 approach from Kayenta delivers the classic Forrest Gump point view."
+  bestTime: "April-May and September-October for best temperatures and light. Sunrise and sunset are the essential shooting times — plan your Valley Drive for those windows. A night at The View Hotel positions you perfectly."
+  gettingAround: "Car required for getting here and for the Valley Drive. Guided tours into restricted areas provide transport."
+  money: "Park entry $8/person, $20/vehicle maximum — very affordable. The View Hotel ($250-400) is premium but unique. Goulding's Lodge outside the park is the budget alternative ($150-250)."
+  safety: "Valley Drive is gravel and dirt — impassable when wet. Do not enter beyond the Valley Drive without a Navajo guide (prohibited and disrespectful). Rattlesnakes are present; watch your step on the Wildcat Trail."
+  packing: "Camera with a tripod for low-light sunrise/sunset shots, polarized sunglasses, sun protection, water (no services on the Valley Drive), and a light windbreaker (the desert gets cold quickly at night)."
+  localCulture: "Monument Valley is the living Navajo Nation homeland, not a national park. The guides are not performers — they are people sharing the history and meaning of their family's land. Listen carefully. Photography of Navajo people requires permission. The restricted areas are restricted for genuine cultural reasons."
 ---
+
+Monument Valley is the iconic red sandstone mitten buttes of the Navajo Nation — the most recognizable American Western landscape, on the Arizona-Utah border, budget $60-200/day, best April-May and September-October, accessible by car with guided tours into the valley.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/monument-valley-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #b45309, #92400e, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">The Mittens</div>
+    <p class="ib-text">The West Mitten, East Mitten, and Merrick Butte rise 400-1,000 feet from the desert floor — the most recognizable landscape in American cinema, still sacred Navajo homeland.</p>
+  </div>
+</div>
 
 I've seen Monument Valley in dozens of movies — John Ford westerns, Forrest Gump, countless car commercials — and I still wasn't prepared for what it looks like in person. You're driving north on US-163 from Kayenta, and the flat desert stretches endlessly in every direction. Then, almost without warning, the buttes begin to appear on the horizon like ancient sentinels. By the time you reach the tribal park overlook, where West Mitten Butte, East Mitten Butte, and Merrick Butte stand in formation against a vast desert sky, you understand why this landscape has represented the American West in the global imagination for nearly a century.
 
@@ -102,22 +163,4 @@ Dining options near Monument Valley are limited but serviceable. Plan accordingl
 
 For self-catering, the **Kayenta Bashas'** supermarket (about 25 miles south) is the closest full grocery store. Stock up on water, snacks, and lunch supplies before heading into the park.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Logistics & Getting There** — Monument Valley is remote. The nearest major airports are in Flagstaff (3 hours) and Phoenix (5 hours). I recommend building it into a multi-day northern Arizona loop: Phoenix to Flagstaff to Grand Canyon to Page to Monument Valley and back. Fill your gas tank in Kayenta — fuel options are sparse and more expensive in the immediate park area.
-
-**Best Time to Visit** — April, May, September, and October offer the best balance of comfortable temperatures and dramatic light. Summer brings temperatures above 95°F with little shade. Winter can drop below freezing with occasional snow, which makes for dramatic photography but uncomfortable touring. Monsoon season (July-August) brings afternoon thunderstorms that can make Valley Drive impassable.
-
-**Getting Around** — You'll need your own vehicle to reach Monument Valley. Within the park, you can drive the Valley Drive loop yourself or take a guided tour. If your rental car is a standard sedan, drive slowly and carefully on Valley Drive — the ruts and sand can be challenging. For guided tours, the operators provide their own vehicles and access restricted areas you can't reach independently.
-
-**Money & ATMs** — There's limited ATM access near Monument Valley. The nearest reliable ATMs are in Kayenta at the Wells Fargo inside the Bashas' supermarket. Carry cash for the park entry fee ($8/person), Navajo artisan vendors, and tipping tour guides. The View Hotel accepts credit cards.
-
-**Safety & Health** — Carry ample water — at least 2 liters per person per day, more if hiking. The elevation (5,564 feet) and dry air cause dehydration faster than you'd expect. Cell service is unreliable to nonexistent, so tell someone your plans before heading into the park. Stay on marked roads and trails; venturing off-road on Navajo land is illegal without a guide. The nearest medical facility is Kayenta Health Center, a small Indian Health Service hospital about 25 miles south.
-
-**Packing Essentials** — Bring layers: desert temperatures swing 30-40 degrees between day and night. A windbreaker is useful — the valley can be gusty. Pack sunscreen, sunglasses, a hat, and a bandana or buff for dust on Valley Drive. If you're serious about photography, a polarizing filter is essential for those deep blue skies, and a tripod for sunrise/sunset shots.
-
-**Local Culture & Etiquette** — This is Navajo land, and respect is paramount. Always ask permission before photographing Navajo people or their property. Do not climb on any formations or enter areas marked as restricted — these may be culturally sacred sites. Purchase crafts directly from Navajo artisans rather than from off-reservation shops. Tip your Navajo tour guides generously ($15-20 per person is appropriate for a half-day tour). The Navajo greeting is "Ya'at'eeh" (hello) — using it is appreciated.
-
-</div>

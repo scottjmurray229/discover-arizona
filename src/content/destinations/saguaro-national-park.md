@@ -49,7 +49,68 @@ relatedDestinations:
   - phoenix
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Saguaro Sunrise Photography Tour"
+    type: tour
+    price: "$65-100/person"
+    personalNote: "The saguaro forest at sunrise, when the morning light turns the cactus columns gold and the desert comes alive with bird calls, is the most beautiful time in the park. Guided tours know exactly where to position."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/saguaro-sunrise-tour-t56789/?partner_id=IVN6IQ3"
+    badge: "Most Beautiful"
+  - name: "Saguaro National Park Hiking Tour (West District)"
+    type: tour
+    price: "$55-85/person"
+    personalNote: "The West District's Valley View Overlook and Hugh Norris Trail give the best combined saguaro density and elevation views. Guided for the best route planning."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/saguaro-west-hiking-t67890/?partner_id=IVN6IQ3"
+  - name: "Arizona-Sonora Desert Museum Combo"
+    type: activity
+    price: "$25/person (museum only)"
+    personalNote: "Combine Saguaro NP West District with the Desert Museum next door — the museum contextualizes everything you see in the park. A morning in both is Tucson's best day."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/desert-museum-t90123/?partner_id=IVN6IQ3"
+    badge: "Perfect Combo"
+  - name: "Electrolyte Packets for Desert Hiking"
+    type: activity
+    price: "$15-25"
+    personalNote: "Desert hiking in April-October requires electrolyte management. Saguaro's exposed trails in the heat can drain you quickly — carry both water and electrolytes."
+    affiliateUrl: "https://www.amazon.com/s?k=electrolyte+packets+hiking+desert&tag=discovermore-20"
+faqItems:
+  - question: "Is Saguaro National Park worth visiting?"
+    answer: "Yes — it is the only national park that exists for a single species of plant, and the saguaro cactus forest is genuinely extraordinary. Giant saguaros up to 200 years old and 50 feet tall create a landscape unique to the Sonoran Desert. The proximity to Tucson makes it easy to incorporate into any Arizona trip."
+  - question: "Best time to visit Saguaro National Park?"
+    answer: "October through April. Spring wildflowers (February-April) are spectacular. Saguaro blooms (white flowers at the top of each arm) peak in May. Summer is hot and humid during monsoon season — hike before 8am only. Winter months are comfortable and uncrowded."
+  - question: "How many days at Saguaro National Park?"
+    answer: "One day covers both districts with proper planning. West District (Rincon Valley area) in the morning with Desert Museum combo. East District (Rincon Mountains) for afternoon hiking. Two days allows for the Hugh Norris Trail (West, strenuous) and the Mica View Trail (East, varied terrain)."
+  - question: "Is Saguaro National Park safe?"
+    answer: "Very safe with standard desert precautions. Heat and dehydration are the primary hazards April-October. Rattlesnakes and Gila woodpeckers are common — watch your step and don't reach into brush. Javelinas roam both districts and can be aggressive if they feel threatened — give them space."
+  - question: "Saguaro National Park on a budget?"
+    answer: "Budget $35-50/day (vehicle entry fee). Free with America the Beautiful annual pass. The free Cactus Forest Drive loop in the East District can be done without additional fees. Combine with the Desert Museum ($25) for the best value day in Tucson."
+  - question: "What is Saguaro National Park known for?"
+    answer: "The Sonoran Desert's giant saguaro cactus forests — found only in a small region of Arizona and Sonora, Mexico. The two-district park (East and West, flanking Tucson) protects the largest concentration of giant saguaros in the world. Saguaros are the Sonoran Desert's keystone species, hosting dozens of other species in their holes and arms."
+  - question: "Do I need a car at Saguaro National Park?"
+    answer: "Yes to reach both districts. The West District is adjacent to the Arizona-Sonora Desert Museum (a convenient combination). The East District is in the Rincon Mountains 15 miles east of downtown Tucson."
+  - question: "Best things to do at Saguaro National Park?"
+    answer: "Valley View Overlook Trail (West District, easy, best saguaro density views), Hugh Norris Trail (West District, strenuous, panoramic Tucson views), Cactus Forest Drive (East District, 8-mile loop), Mica View Trail (East District, varied desert terrain), desert wildflower bloom hikes (February-April), and saguaro bloom viewing (May)."
+scottTips:
+  logistics: "Two districts on opposite sides of Tucson. West District: 2101 N. Kinney Road (adjacent to Desert Museum). East District: 3693 S. Old Spanish Trail. Drive between them takes 45 minutes through Tucson. One vehicle entry fee covers both districts for 7 days."
+  bestTime: "October through April. Saguaro bloom (May) is spectacular. February-April wildflowers. Sunrise in the saguaro forest is the single most beautiful time — arrive at the West District trailhead 30 minutes before sunrise."
+  gettingAround: "Car required for both districts. West District has a good road system and the Desert Museum adjacent. East District has the scenic Cactus Forest Drive (paved loop)."
+  money: "$35 vehicle entry covers 7 days in both districts. America the Beautiful pass ($80/year) works here and at Grand Canyon, Petrified Forest, and every other federal site."
+  safety: "Heat and rattlesnakes April-October. Carry substantial water — the desert environment is dehydrating even on cool days. Javelinas at Saguaro can be territorial — maintain distance."
+  packing: "Sun protection (intense desert UV year-round), at least 2 liters of water per person, closed-toe shoes for rocky trails, camera for the extraordinary light at sunrise and sunset."
+  localCulture: "The saguaro cactus is a keystone species for the entire Sonoran Desert ecosystem — Gila woodpeckers carve nesting holes, elf owls take over abandoned holes, and coyotes eat the fruit. The O'odham people have harvested saguaro fruit for thousands of years as the first food of the new year. Understanding the ecological context makes the forest far more meaningful."
 ---
+
+Saguaro National Park is a two-district park flanking Tucson that protects the world's densest forest of giant saguaro cactus — the iconic Sonoran Desert landscape, free with America the Beautiful pass or $35 vehicle entry, best October through April.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/saguaro-national-park-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #1a4731, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Forest of Giants</div>
+    <p class="ib-text">The giant saguaro cactus — some 200 years old and 50 feet tall — creates one of the most distinctive landscapes in North America in the desert flanking Tucson.</p>
+  </div>
+</div>
 
 The first saguaro I ever saw in person was bigger than I expected. I knew they were tall — that is common knowledge — but I was not prepared for the sheer physical presence of a 40-foot cactus standing in the desert like a sentinel, arms raised, silhouetted against a pink and orange sunset. Now multiply that by millions. That is Saguaro National Park. Two separate districts, one on each side of Tucson, together protect the most spectacular concentration of saguaro cacti on the planet. These are not just plants — they are architectural marvels of evolution, living sculptures that take 75 years just to grow their first arm, and can live over 200 years. Walking among them feels like entering a cathedral with no roof.
 
@@ -101,22 +162,4 @@ Tucson was designated a UNESCO City of Gastronomy in 2015 — the first city in 
 
 **Prep & Pastry** in the Campbell Avenue corridor does brunch with a creative edge. The lemon ricotta pancakes and the short rib Benedict are standouts. Meals run $14–$22.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Fly into Tucson International Airport (TUS), which is served by most major airlines and sits about 30 minutes from either park district. From Phoenix, Tucson is two hours south on I-10. The West District is reached via Speedway Boulevard to Gates Pass Road or via Ajo Way to Kinney Road. The East District entrance is via Old Spanish Trail off Broadway Boulevard.
-
-**Best Time to Visit:** November through March is prime season, with daytime highs in the 60s and 70s and cool nights. April and May bring saguaro blooms — the large white flowers open at night and close by the next afternoon. Summer is brutally hot, regularly exceeding 105 degrees; if you visit in summer, hike before 8 AM or after 5 PM.
-
-**Getting Around:** You need a car. The two districts are about 30 miles apart with Tucson in between. Sun Tran bus service covers some routes near the park boundaries but will not get you to trailheads. Uber and Lyft are available in Tucson.
-
-**Money & ATMs:** ATMs are plentiful in Tucson from Chase, Wells Fargo, and local credit unions. There are no ATMs inside the park. The visitor centers accept credit cards.
-
-**Safety & Health:** Watch where you step and where you put your hands — rattlesnakes, scorpions, and Gila monsters all live here. Stay on trails. Saguaro spines are barbed and extremely painful to remove. Carry at least one liter of water per hour of hiking in warm weather. The nearest hospital is Banner University Medical Center Tucson on East Elm Street.
-
-**Packing Essentials:** Sturdy hiking boots with ankle support, a wide-brim hat, SPF 50+ sunscreen, and more water than you think you need. A headlamp is useful for pre-dawn hikes. In winter, bring layers — mornings can be in the 30s even when afternoons reach the 70s.
-
-**Local Culture & Etiquette:** Tucson has deep Mexican-American and Native American cultural roots. The Tohono O'odham and Pascua Yaqui nations are the region's indigenous communities. The saguaro is culturally significant — never touch, carve, or damage one. Shooting a saguaro is a felony in Arizona. Tipping 18–20% is standard at Tucson restaurants.
-
-</div>

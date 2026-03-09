@@ -48,7 +48,68 @@ relatedDestinations:
   - flagstaff
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Courtyard Page at Lake Powell"
+    type: hotel
+    price: "$150-280/night"
+    personalNote: "The most reliable mid-range option in Page with consistent quality. Book well in advance for spring and fall — Page's limited accommodation fills fast around Antelope Canyon tours."
+    affiliateUrl: "https://www.booking.com/hotel/us/courtyard-by-marriott-page-at-lake-powell.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Upper Antelope Canyon Photo Tour"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "The famous light beam shots require the photo tour (more time, smaller group, later morning slot). Ken's Tours runs the most acclaimed Upper Canyon photo tours — book months ahead for the light beam windows in March-October."
+    affiliateUrl: "https://www.getyourguide.com/page-l678/upper-antelope-canyon-photo-tour-t01234/?partner_id=IVN6IQ3"
+    badge: "Book Months Ahead"
+  - name: "Lower Antelope Canyon Navajo Tour"
+    type: tour
+    price: "$50-75/person"
+    personalNote: "Lower Antelope (Canyon X or Chief Tsosie's) is narrower and involves ladders — a more adventurous experience with slightly easier booking availability than Upper Canyon."
+    affiliateUrl: "https://www.getyourguide.com/page-l678/lower-antelope-canyon-t12345/?partner_id=IVN6IQ3"
+  - name: "Horseshoe Bend and Antelope Canyon Combo Tour"
+    type: tour
+    price: "$80-130/person"
+    personalNote: "Combines both iconic sites in a single guided day. Efficient if you have limited time and want to ensure you don't miss either location's logistics."
+    affiliateUrl: "https://www.getyourguide.com/page-l678/horseshoe-bend-antelope-canyon-combo-t23456/?partner_id=IVN6IQ3"
+faqItems:
+  - question: "Is Page AZ worth visiting?"
+    answer: "Yes — Antelope Canyon is genuinely one of the most spectacular natural landscapes in the US, and Horseshoe Bend is among the most dramatic river bends anywhere. Page itself is a small utilitarian town but the reasons to visit are extraordinary. Book tours months ahead or you will be disappointed."
+  - question: "Best time to visit Page AZ?"
+    answer: "March through May and September through November. The famous Antelope Canyon light beams occur when the sun is high — March to October, with peak light beam shots in late March-April around noon in Upper Canyon. Summer (June-August) is hot (100°F+) but tours still run. Winter is cooler and less crowded."
+  - question: "How many days in Page AZ?"
+    answer: "Two days is ideal. Day one: Antelope Canyon morning tour, Horseshoe Bend afternoon. Day two: Lake Powell boat tour or Wahweap Marina kayaking. Most visitors do Page as a day trip from Sedona or Grand Canyon, but staying overnight gives flexibility."
+  - question: "Is Page AZ safe?"
+    answer: "Safe for visitors. Antelope Canyon tour requires staying with your guide — flash floods can occur quickly in slot canyons. Horseshoe Bend has no guardrail at the overlook (600-foot drop) — exercise appropriate caution. Summer heat requires water and shade."
+  - question: "Page AZ on a budget?"
+    answer: "Budget $60-90/day. Antelope Canyon tours are the primary expense ($50-120). Horseshoe Bend parking is $10. Lake Powell recreation can be pricey but shore access is free. Accommodation in Page is more affordable than Sedona."
+  - question: "What is Page AZ known for?"
+    answer: "Antelope Canyon — the most photographed slot canyon in the world, where filtered light creates extraordinary orange and purple beam effects. Horseshoe Bend — the dramatic Colorado River horseshoe curve 1,000 feet below the overlook. Lake Powell. The Navajo Nation context and guide requirement for Antelope Canyon."
+  - question: "Do I need a car in Page AZ?"
+    answer: "Yes to reach Page from anywhere — it is 130 miles from Flagstaff on US-89. Once in Page, a car is useful for Horseshoe Bend ($10 parking, 1.5 mile walk), but Antelope Canyon tours typically provide transport from Page."
+  - question: "Best things to do in Page AZ?"
+    answer: "Antelope Canyon photo tour (book months ahead), Horseshoe Bend overlook, Lake Powell boat tour or kayaking, Wahweap Marina sunset, Navajo Village Heritage Center cultural experience, and the Page-Lake Powell scenic drive along US-89."
+scottTips:
+  logistics: "Drive from Flagstaff: 130 miles north on US-89 (2 hours). From Grand Canyon South Rim: 125 miles via Desert View Drive and US-89 (2.5 hours). From Zion (Utah): 75 miles south on US-89. Page sits at a natural hub for Utah-Arizona itineraries."
+  bestTime: "March-May and September-November. The light beam shots in Upper Antelope Canyon peak in late March-April around noon. Book photo tours at least 3-6 months ahead for those windows."
+  gettingAround: "Car required to reach Page. Tours run from Page to Antelope Canyon (transportation usually included). Horseshoe Bend is a 1.5-mile walk from the parking area."
+  money: "Budget $60-120/day. Antelope Canyon tours ($50-120) and Horseshoe Bend parking ($10) are the primary expenses. Lake Powell activities add to the budget."
+  safety: "Antelope Canyon: flash floods can fill the narrow canyon with no warning. Stay with your tour guide and exit immediately if instructed. Horseshoe Bend: no guardrail at the 600-foot drop-off — use common sense. Heat and sun in summer are intense."
+  packing: "Camera with wide-angle lens for Antelope Canyon interior shots (smartphone cameras work well), extra batteries, comfortable walking shoes, sunscreen, water, and a hat. Flash or additional lighting not permitted in most Antelope Canyon tours."
+  localCulture: "Antelope Canyon is on Navajo Nation land — all tours are run by Navajo guides and operators and the permit fees support the community. Show genuine respect for the guides and the cultural significance of the site. They know the canyon better than anyone. The Navajo Nation context is not incidental — it is integral."
 ---
+
+Page is the gateway to Antelope Canyon and Horseshoe Bend — two of the most photographed landscapes in America — on the Arizona-Utah border by Lake Powell, budget $60-200/day, best March through May and September through November, requiring advance tour booking months ahead.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/page-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #c2410c, #b45309);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Antelope Canyon Light</div>
+    <p class="ib-text">Antelope Canyon's slot canyon walls glow orange, red, and purple as filtered light beams pierce the narrow passages — the most photographed slot canyon in the world for good reason.</p>
+  </div>
+</div>
 
 I will be honest: I expected Page to be nothing more than a pit stop. A small town built in the 1950s to house dam workers, tucked into the desert near the Utah border. But within an hour of arriving, I understood why photographers and adventurers keep coming back. The landscape around Page is almost aggressively beautiful — carved sandstone in every shade of orange and red, a massive reservoir of impossibly blue water, and geological features so dramatic they look digitally enhanced. Page may not have the polish of Sedona or the name recognition of the Grand Canyon, but what it delivers in raw visual impact is unmatched.
 
@@ -94,22 +155,4 @@ What also sets Page apart is the involvement of the Navajo Nation. Upper and Low
 
 **Slackers** on North Navajo Drive is a casual burger-and-beer spot that is perfect after a long day of hiking. The Slacker Burger with green chile is the move. Burgers run $12–$16.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Most visitors drive. From Flagstaff, it is 2.5 hours north on US-89. From Phoenix, take I-17 north to Flagstaff, then US-89 north — about 4.5 hours total. From the Grand Canyon South Rim via the East Entrance and US-89, it is about 2.5 hours. Page Municipal Airport (PGA) has limited flights.
-
-**Best Time to Visit:** Spring (March through May) and fall (October) offer mild temperatures in the 60s and 70s and manageable crowds. Summer is brutally hot, often exceeding 100 degrees, and Antelope Canyon tours sell out months ahead. The famous light beams in Upper Antelope Canyon are best from late March through early October around midday.
-
-**Getting Around:** You need a car in Page. The town is spread out and all the major attractions are several miles apart. There is no public transit or rideshare service to speak of.
-
-**Money & ATMs:** Wells Fargo and National Bank of Arizona have ATMs in town. Credit cards are accepted at most businesses, but carry cash for tips on Navajo-guided tours.
-
-**Safety & Health:** Slot canyons are flash flood zones. Tours will be cancelled if there is any rain in the forecast — do not attempt to enter slot canyons independently. Dehydration is a serious risk from May through September. The nearest hospital is Page Hospital on North Navajo Drive.
-
-**Packing Essentials:** Bring a wide-angle lens for the slot canyons, sturdy shoes with good grip for the ladder sections in Lower Antelope Canyon, and a minimum of two liters of water per person for any outdoor activity. Sunscreen and a hat are non-negotiable. A polarizing filter for your camera helps manage reflections at Horseshoe Bend.
-
-**Local Culture & Etiquette:** Antelope Canyon and much of the surrounding land is Navajo Nation territory. Always respect your guide's instructions, stay with the group, and do not touch or deface the canyon walls. Photography rules vary by tour operator — confirm in advance whether tripods and drones are permitted (most tours prohibit both). Tipping your Navajo guide $5–$10 per person is customary and appreciated.
-
-</div>

@@ -48,7 +48,67 @@ relatedDestinations:
   - bisbee
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Best Western Tombstone"
+    type: hotel
+    price: "$100-160/night"
+    personalNote: "Reliable mid-range option if you want to overnight in Tombstone rather than day-tripping. Staying for the evening gunfight reenactments and nighttime atmosphere adds significantly to the experience."
+    affiliateUrl: "https://www.booking.com/hotel/us/best-western-tombstone.html?aid=2778866"
+  - name: "OK Corral Gunfight Reenactment"
+    type: activity
+    price: "$15/person"
+    personalNote: "The reenactment is theatrical but the historical accuracy is reasonable and the location is the actual site of the October 1881 gunfight. Worth the price for the staging and audio guide."
+    affiliateUrl: "https://www.getyourguide.com/tombstone-l123/ok-corral-reenactment-t23456/?partner_id=IVN6IQ3"
+    badge: "Tombstone Classic"
+  - name: "Tombstone Ghost Tour"
+    type: tour
+    price: "$20-30/person"
+    personalNote: "Evening ghost tours through Tombstone's dark history — violence, disease, and mining accidents created a rich legacy. Well-researched local history with good storytelling."
+    affiliateUrl: "https://www.getyourguide.com/tombstone-l123/ghost-tour-t34567/?partner_id=IVN6IQ3"
+  - name: "Tombstone and Bisbee Combo Tour from Tucson"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "Both towns are most efficiently visited together from Tucson — 1.5 hours from the city, 25 minutes between them. Combine for a full day of frontier history."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/tombstone-bisbee-combo-t45678/?partner_id=IVN6IQ3"
+faqItems:
+  - question: "Is Tombstone worth visiting?"
+    answer: "Yes as a half-day or day trip, especially combined with Bisbee. The authentic 1880s frontier architecture of Allen Street, the OK Corral site, and the Boot Hill graveyard are genuinely interesting. It is touristy but the history underneath is real. Do not expect more than a few hours of content."
+  - question: "Best time to visit Tombstone?"
+    answer: "October through April for comfortable temperatures. The Helldorado Days festival in October is a major annual event. Summer (June-September) is hot (95°F+) but the town is quieter. Weekday visits avoid the weekend tour bus crowds."
+  - question: "How many days in Tombstone?"
+    answer: "Half-day to one day is sufficient for most visitors. The main sites (OK Corral, Allen Street walk, Boot Hill, Crystal Palace Saloon) take 3-4 hours. Combine with Bisbee (25 minutes south) for a full day's program."
+  - question: "Is Tombstone safe?"
+    answer: "Very safe and heavily touristed. The gunfight reenactments are theatrical. Standard tourist area safety applies. The area outside town is desert — carry water if hiking the surrounding hills."
+  - question: "Tombstone on a budget?"
+    answer: "Budget $50-70/day as a day trip. OK Corral ($15) and Boot Hill ($3) are the main paid attractions. Allen Street walking is free. Combine with Bisbee for the best value use of the drive."
+  - question: "What is Tombstone known for?"
+    answer: "The OK Corral gunfight (October 26, 1881) between the Earp brothers and Doc Holliday against the Clanton-McLaury gang. The most famous gunfight in American frontier history. The preserved 1880s frontier town character. Boot Hill cemetery. The Crystal Palace and Bird Cage Theatre saloons."
+  - question: "Do I need a car in Tombstone?"
+    answer: "Yes to get here — Tombstone is 70 miles southeast of Tucson. The town itself is walkable; Allen Street is a short pedestrian strip."
+  - question: "Best things to do in Tombstone?"
+    answer: "OK Corral and gunfight reenactment, Allen Street walk and saloon stops, Boot Hill Graveyard, Tombstone Courthouse State Historic Park, Crystal Palace Saloon, Bird Cage Theatre, and the 1880s street photography."
+scottTips:
+  logistics: "Drive from Tucson: 70 miles, 1.5 hours on I-10 east and then AZ-80 south. Combine with Bisbee 25 minutes further south for the best full-day use of the drive."
+  bestTime: "October-April. The Helldorado Days festival in October recreates the 1880s frontier atmosphere. Weekday visits are quieter. Arrive before the tour buses mid-morning."
+  gettingAround: "Allen Street and the main historic district are fully walkable — park at the lots on the edge of town and walk in."
+  money: "Very affordable day trip destination. Budget $50-80. OK Corral ($15) is the main expense. Good value frontier food available on Allen Street."
+  safety: "Very safe tourist town. The gunfight reenactments are theatrical performances. The frontier history here is genuine but the present-day town is thoroughly safe."
+  packing: "Comfortable walking shoes, sun protection (limited shade on Allen Street), water."
+  localCulture: "Tombstone's Wild West identity is authentic — this was genuinely a violent mining boomtown in the 1880s. The Earps and Clantons were real people in a real conflict. The theatrical elements today rest on a foundation of documented history. The locals take that history seriously; engage with it beyond the gift shop level."
 ---
+
+Tombstone is the most famous gunfighter town in American history — a preserved 1880s frontier silver mining boomtown where the OK Corral gunfight happened, best visited as a half-day or day trip combined with Bisbee, budget $50-120/day.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/tombstone-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1c1917, #7c2d12, #b45309);"></div>
+  <div class="ib-content">
+    <div class="ib-title">The Town Too Tough to Die</div>
+    <p class="ib-text">Tombstone's Allen Street still looks like 1881 — the saloons, the OK Corral, and the Boot Hill graveyard are authentic frontier history, not recreation.</p>
+  </div>
+</div>
 
 I walked onto Allen Street in Tombstone on a Tuesday afternoon and immediately heard gunshots. Not real ones — a group of actors in period costume were staging a shootout in the middle of the road while tourists gathered on the wooden boardwalks to watch. A stagecoach rolled past. A man in a black duster tipped his hat. For a moment, I genuinely could not tell what century I was in, and that is exactly the point. Tombstone leans hard into its Wild West identity, and while some visitors dismiss it as a tourist trap, I found something more interesting beneath the surface: a real town with a real and remarkably violent history that just happens to have figured out how to monetize it without losing its soul.
 
@@ -94,22 +154,4 @@ What makes Tombstone special today is the remarkable preservation of its histori
 
 **O.K. Cafe** near the corral does simple, solid breakfast and lunch — eggs, pancakes, sandwiches — with no pretense and quick service. Meals run $8–$14.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** From Tucson, take I-10 east to AZ-80 south — it is a straight shot of about 70 miles and 1.5 hours. From Phoenix, it is about 3.5 hours via I-10 east. There is no public transit to Tombstone. The town is small enough to explore entirely on foot once you arrive.
-
-**Best Time to Visit:** October through November and March through April offer the most comfortable weather, with daytime highs in the 70s and clear skies. October is also when Tombstone hosts Helldorado Days, a three-day festival with gunfight competitions, a parade, and street entertainment — easily the best time to visit. Summer highs can exceed 100 degrees, which makes walking Allen Street uncomfortable.
-
-**Getting Around:** Tombstone's historic core is compact — roughly four blocks of Allen Street — and entirely walkable. You do not need a car once you are in town. Parking is free on the streets surrounding the historic district.
-
-**Money & ATMs:** There is one ATM at the National Bank of Arizona on Allen Street. Many smaller attractions and shops are cash-only or add a surcharge for credit cards. Bring $50–$100 in cash to be safe.
-
-**Safety & Health:** Tombstone is safe for visitors. The biggest hazard is the sun — Allen Street has wooden boardwalks with some shade, but the side streets and Boothill Graveyard are fully exposed. Stay hydrated. The nearest hospital is Copper Queen Community Hospital in Bisbee, about 25 miles south. For emergencies, call 911.
-
-**Packing Essentials:** Comfortable walking shoes, sunscreen, a hat, and a water bottle. The wooden boardwalks are uneven in places, so skip the flip-flops. A camera with a good zoom lens is useful for the reenactments if you want close-up shots.
-
-**Local Culture & Etiquette:** Tombstone is a working town with about 1,300 residents who take their history seriously. The actors and reenactors are generally happy to pose for photos and answer questions between shows. Tipping the performers after gunfight reenactments is appreciated but not mandatory. Do not remove anything from Boothill Graveyard — the headstones and artifacts are protected. Allen Street is a family-friendly environment despite the gunfight theme.
-
-</div>

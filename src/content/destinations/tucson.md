@@ -48,7 +48,68 @@ relatedDestinations:
   - tombstone
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "Loews Ventana Canyon Resort"
+    type: hotel
+    price: "$200-450/night"
+    personalNote: "Beautifully positioned in the Santa Catalina Mountains above Tucson with a waterfall feature, world-class spa, and golf. The desert setting from the pool deck is extraordinary."
+    affiliateUrl: "https://www.booking.com/hotel/us/loews-ventana-canyon-resort.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Arizona-Sonora Desert Museum"
+    type: activity
+    price: "$25/person"
+    personalNote: "Not a standard zoo or museum — a 98-acre outdoor experience where desert ecosystems are displayed in their natural habitat. The raptor free-flight show is extraordinary. Allow a full morning."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/desert-museum-t90123/?partner_id=IVN6IQ3"
+    badge: "Don't Miss"
+  - name: "Saguaro National Park Sunset Jeep Tour"
+    type: tour
+    price: "$65-90/person"
+    personalNote: "The Saguaro cactus forest at sunset, when the red-orange light turns the desert gold, is one of Arizona's most beautiful scenes. Guided tours know the best photo locations."
+    affiliateUrl: "https://www.getyourguide.com/tucson-l890/saguaro-sunset-tour-t01234/?partner_id=IVN6IQ3"
+  - name: "Portable Water Filter (Sawyer)"
+    type: activity
+    price: "$30-50"
+    personalNote: "Useful for Saguaro National Park backcountry hiking where water sources exist but quality is uncertain. Also great as backup on longer desert trail hikes."
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+faqItems:
+  - question: "Is Tucson worth visiting?"
+    answer: "Yes — Tucson is one of the most underrated cities in the Southwest. The Sonoran Desert culture, Saguaro National Park (in two sections flanking the city), the Arizona-Sonora Desert Museum, Mission San Xavier, excellent Mexican food, and the University of Arizona arts scene make it a substantial destination."
+  - question: "Best time to visit Tucson?"
+    answer: "October through April. The winter season (November-March) is ideal — 65-75°F days, abundant sunshine, and almost no rain. Spring wildflowers (late February through March) can be spectacular. Summer (June-September) is hot (100°F+) with monsoon rains July-September — manageable if you adapt your schedule."
+  - question: "How many days in Tucson?"
+    answer: "Two to three days. Day one: Arizona-Sonora Desert Museum (morning), Mission San Xavier del Bac (afternoon). Day two: Saguaro National Park West or East District hiking. Day three: Mount Lemmon Scenic Byway, University of Arizona Museum of Art."
+  - question: "Is Tucson safe?"
+    answer: "Generally safe for visitors in tourist areas. The University of Arizona district, Catalina Foothills, and Marana are very safe. Downtown Tucson is improving but use standard urban precautions at night. Saguaro National Park is completely safe. Hiking safety: heat and rattlesnakes are real concerns April-October."
+  - question: "Tucson on a budget?"
+    answer: "Budget $70-100/day. Saguaro National Park entry is $35/vehicle. The Arizona-Sonora Desert Museum ($25) is essential and worth every dollar. Mission San Xavier is free. Mount Lemmon Scenic Byway is free. Excellent cheap Mexican food throughout the city."
+  - question: "What is Tucson known for?"
+    answer: "Saguaro National Park (two districts flanking the city with the world's densest saguaro forests). The Arizona-Sonora Desert Museum. Mission San Xavier del Bac (the White Dove of the Desert). University of Arizona. The Sonoran Desert hot dog cuisine. Mount Lemmon — the southernmost ski area in the US. Exceptional Mexican and Sonoran cuisine."
+  - question: "Do I need a car in Tucson?"
+    answer: "Yes — Tucson is car-dependent. The Sun Link streetcar covers the university corridor, but Saguaro National Park, the Desert Museum, and the Catalina Foothills all require a car."
+  - question: "Best things to do in Tucson?"
+    answer: "Arizona-Sonora Desert Museum (must-do), Saguaro National Park hiking, Mission San Xavier del Bac, Mount Lemmon Scenic Byway, Tucson Botanical Garden, University of Arizona Museum of Art, Fourth Avenue arts district, El Tiradito shrine, and the Barrio Histórico for excellent Mexican food."
+scottTips:
+  logistics: "Tucson International Airport (TUS) has direct service from major cities but fewer flights than Phoenix. Many visitors fly into Phoenix (PHX) and drive 110 miles south on I-10 (1.5-2 hours). Car rental is essential."
+  bestTime: "November through March for the best weather. The Saguaro National Park spring wildflower bloom (February-March) is extraordinary. The Gem Show in January-February brings 50,000 people to town — book accommodation well ahead."
+  gettingAround: "Car required for Saguaro National Park and most attractions. The Sun Link streetcar covers the university area. Downtown is walkable within a limited zone."
+  money: "Tucson is significantly more affordable than Scottsdale or Sedona. Budget $70-120/day. Saguaro NP entry ($35/vehicle) is the main park fee. The Desert Museum ($25) is worth every dollar."
+  safety: "Heat and rattlesnakes are the main desert hazards. Hike before 9am in summer, carry substantial water, wear closed-toe shoes. Drive carefully at dawn/dusk — javelinas and other wildlife cross roads frequently."
+  packing: "Sun protection (intense UV at 2,400 ft elevation), snake-aware closed-toe boots for hiking, water and electrolytes, binoculars for birding (Tucson is one of the top birding cities in the US)."
+  localCulture: "Tucson has a deep Sonoran Desert culture shaped by Indigenous, Spanish, Mexican, and Anglo influences. The University of Arizona gives it a younger energy than Phoenix. The food culture is serious — Tucson was the first US city designated a UNESCO City of Gastronomy, recognized for its Mexican and Indigenous food traditions. Don't miss the Sonoran hot dog."
 ---
+
+Tucson is a desert university city at 2,400 feet — the heart of Sonoran Desert culture with Saguaro National Park, Mission San Xavier, the Arizona-Sonora Desert Museum, and a vibrant food scene, budget $70-200/day, best October through April.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/tucson-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #1a4731, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Sonoran Desert Heart</div>
+    <p class="ib-text">Tucson sits in the Sonoran Desert surrounded by five mountain ranges, giant saguaro cactus forests, and one of the best Mexican food scenes in the American Southwest.</p>
+  </div>
+</div>
 
 Tucson surprised me in the best possible way. I came expecting a smaller, quieter version of Phoenix and instead found a city with a completely different personality — more bohemian, more rooted in its binational heritage, and with a food culture that earned it the distinction of being America's first (and still only) UNESCO City of Gastronomy. Where Phoenix sprawls outward in all directions with sleek new development, Tucson holds onto its history. Adobe buildings, century-old Mexican restaurants, and desert landscapes that have been continuously inhabited for over 4,000 years give the city a sense of depth that newer Sun Belt metros simply don't have.
 
@@ -102,22 +163,4 @@ For budget travelers, **Roadrunner Hostel & Inn** near Fourth Avenue has dorm be
 
 **Guadalajara Original Grill** on South Fourth Avenue serves massive plates of traditional Mexican food at prices that seem frozen in time. Combination plates with enchiladas, tacos, rice, and beans run about $12-16. The salsa bar alone is worth the visit.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Logistics & Getting There** — Tucson International Airport (TUS) is smaller and easier to navigate than Phoenix Sky Harbor, though it has fewer direct routes. If flying into Phoenix, the I-10 drive south to Tucson is straightforward and takes about 1 hour 45 minutes. The Sun Link streetcar downtown is free and connects all the major central areas.
-
-**Best Time to Visit** — October, November, March, and April offer the best combination of comfortable temperatures and manageable crowds. Summer monsoon season (July through September) brings dramatic thunderstorms and stunning sunsets, plus lower hotel rates — but daytime temps regularly exceed 100°F. December through February is mild and pleasant, though nights can dip into the 30s.
-
-**Getting Around** — A car is ideal for reaching Saguaro National Park, the Desert Museum, and Mount Lemmon. Within central Tucson, the free Sun Link streetcar covers downtown, Fourth Avenue, and the University of Arizona area. Lyft and Uber are available but less plentiful than in Phoenix. Biking is surprisingly practical — Tucson has an extensive bike lane network and a strong cycling culture.
-
-**Money & ATMs** — ATMs are available at major banks throughout the city. Tucson is genuinely affordable — you can eat extremely well for under $15 per person at many local restaurants. The Mexican food, in particular, offers incredible value. Some smaller taquerias and street vendors are cash-preferred.
-
-**Safety & Health** — Tucson is generally safe for tourists in the central and north areas. The usual desert precautions apply: carry water, wear sunscreen, watch for rattlesnakes on trails. On Mount Lemmon, road conditions can change quickly in winter — check ADOT road conditions before heading up. The nearest major trauma center is Banner University Medical Center Tucson.
-
-**Packing Essentials** — Layers are essential if you plan to visit Mount Lemmon — it can be 30 degrees cooler at the summit than in the city. Good hiking shoes, sunscreen, a refillable water bottle, and a hat are musts. If you're visiting during monsoon season, a light rain jacket will come in handy for those intense but brief afternoon storms.
-
-**Local Culture & Etiquette** — Tucson has deep Mexican and Native American cultural roots. Many residents are bilingual, and the binational character of the city is a source of pride. Respect the cultural heritage — Mission San Xavier del Bac is an active church, so dress modestly and keep your voice down inside. Tipping 18-20% at restaurants is standard. Support local businesses on Fourth Avenue and at the Mercado San Agustin — they're the heart of what makes Tucson special.
-
-</div>

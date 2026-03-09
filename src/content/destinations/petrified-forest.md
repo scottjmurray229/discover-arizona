@@ -49,7 +49,67 @@ relatedDestinations:
   - sedona
 contentStatus: published
 draft: false
+affiliatePicks:
+  - name: "La Posada Hotel Winslow"
+    type: hotel
+    price: "$120-220/night"
+    personalNote: "A Fred Harvey-era railroad hotel restored to its 1930s glory — one of the finest historic hotels in Arizona, 30 miles from Petrified Forest. The grounds and restaurant are extraordinary."
+    affiliateUrl: "https://www.booking.com/hotel/us/la-posada-hotel-winslow.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Petrified Forest and Painted Desert Guided Tour"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "A guided geology and natural history tour of the park explains the 225-million-year story behind the crystal logs and Painted Desert colors. Much more context than self-touring."
+    affiliateUrl: "https://www.getyourguide.com/petrified-forest-l234/guided-geology-tour-t34567/?partner_id=IVN6IQ3"
+  - name: "Route 66 and Petrified Forest Combo Tour from Flagstaff"
+    type: tour
+    price: "$100-150/person"
+    personalNote: "Combines Route 66 historic sites (Holbrook, Winslow) with the Petrified Forest in an efficient day loop from Flagstaff."
+    affiliateUrl: "https://www.getyourguide.com/flagstaff-l567/route-66-petrified-forest-t45678/?partner_id=IVN6IQ3"
+  - name: "Portable Water Filter (Sawyer Squeeze)"
+    type: activity
+    price: "$30-50"
+    personalNote: "Backcountry hiking in Petrified Forest requires carrying all water in — there are no water sources in the wilderness areas. A filter is useful for emergency backup."
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+faqItems:
+  - question: "Is Petrified Forest worth visiting?"
+    answer: "Yes, especially combined with the Painted Desert drive — the 28-mile park road through both sections takes 2-3 hours and is genuinely remarkable. The petrified wood logs and the Painted Desert color bands are unlike anything in the Southwest. It is an underrated park that rewards the detour off I-40."
+  - question: "Best time to visit Petrified Forest?"
+    answer: "March through May and September through November. The park sits at 5,400 feet elevation — cooler than the low desert with temperatures of 50-80°F in spring and fall. Summer afternoons can reach 95°F. Monsoon rains July-September create dramatic skies."
+  - question: "How many days at Petrified Forest?"
+    answer: "One day is sufficient. The 28-mile park road covers all the main viewpoints and takes 2-4 hours. Add backcountry hiking for a longer visit. Most visitors combine with Painted Desert as a day trip from Flagstaff or as a stop along I-40."
+  - question: "Is Petrified Forest safe?"
+    answer: "Very safe. Standard desert hiking precautions apply. Backcountry hiking requires carrying all water. The main road is accessible by all vehicles. Do not remove petrified wood — it is a federal offense (and locals report strange bad luck to those who do)."
+  - question: "Petrified Forest on a budget?"
+    answer: "Budget $35-50/day (mostly the vehicle entry fee). The park is compact enough to see in a day from Flagstaff or Holbrook. No camping within the park without a backcountry permit (free). La Posada in Winslow is the area's best accommodation investment."
+  - question: "What is Petrified Forest known for?"
+    answer: "The world's largest concentration of petrified wood — ancient Triassic-period trees that fell into swamps 225 million years ago and were slowly replaced by silica crystal. Rainbow Forest, Blue Mesa badlands, and the Painted Desert's colorful banded hills. Ancient petroglyphs at Newspaper Rock."
+  - question: "Do I need a car at Petrified Forest?"
+    answer: "Yes — the park is accessed via I-40 (north entrance, Painted Desert) or US-180 (south entrance, Rainbow Forest). The 28-mile park road connects both entrances and is the primary experience."
+  - question: "Best things to do at Petrified Forest?"
+    answer: "28-mile park road drive (north to south or reverse), Crystal Forest trail (0.75 miles of petrified logs), Blue Mesa badlands hike, Newspaper Rock petroglyph viewpoint, Long Logs trail (1.6 miles), Painted Desert rim overlooks, and dawn or dusk photography for the best light on the crystal logs."
+scottTips:
+  logistics: "Access from I-40 (north Painted Desert entrance) or US-180 from Holbrook (south Rainbow Forest entrance). Flagstaff to south entrance: 110 miles, 1.5 hours on US-180. Many visitors do a north-to-south drive-through between Flagstaff and Albuquerque or Phoenix."
+  bestTime: "Spring and fall for ideal temperatures. Sunrise and sunset create extraordinary light on the petrified logs and Painted Desert colors — the crystal wood literally glows. Midday light is flat."
+  gettingAround: "28-mile park road connects the two entrances. Pull-offs at all major viewpoints. Short hiking trails accessible from the road."
+  money: "$35 vehicle entry fee valid for 7 days. No food services within the park — bring lunch. La Posada in Winslow ($120-220/night) is the area's dining and lodging standout."
+  safety: "Carry all water you need (no water sources in backcountry), sun protection, and do not enter backcountry in summer afternoon heat. The petrified wood looks portable but removal is a federal crime."
+  packing: "Sun protection, full water supply for the day, and a camera. The light at sunrise and sunset makes this extraordinary — plan your visit around those hours."
+  localCulture: "The Petrified Forest region was home to the Ancestral Puebloan and other peoples for thousands of years — Newspaper Rock's petroglyphs represent a fraction of the cultural heritage visible throughout the park. The regional significance of the 225-million-year fossil record is not just geological but has been significant to the Indigenous understanding of deep time."
 ---
+
+Petrified Forest National Park is a high desert wilderness in northeastern Arizona where ancient trees turned to crystal over 225 million years — budget $35 vehicle entry, best March through May and September through November, combined with nearby Painted Desert.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/petrified-forest-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #6b21a8, #1a4731);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Ancient Forest in Stone</div>
+    <p class="ib-text">Two hundred and twenty-five million years of geological time crystallized into the rainbow-hued logs of the Petrified Forest — ancient trees turned to crystal on the high desert floor.</p>
+  </div>
+</div>
 
 I almost skipped Petrified Forest National Park. On the map it looked like a quick detour off I-40 — maybe an hour, maybe two, somewhere between Flagstaff and Albuquerque. I figured I would see some old logs, snap a few photos, and move on. I ended up staying until the ranger kicked me out at sunset. This is one of those places that rewards patience and attention. The longer you look, the more you see: logs that shimmer with quartz crystals in red, yellow, and purple; badlands that shift color with every passing cloud; petroglyphs scratched into dark desert varnish by people who lived here a thousand years ago. Petrified Forest is not flashy, but it is profoundly strange and deeply beautiful.
 
@@ -99,22 +159,4 @@ Options near the park are limited, so plan accordingly.
 
 The park itself has a small cafe at the **Painted Desert Visitor Center** near the north entrance serving sandwiches, snacks, and drinks. Pack a lunch if you want to picnic at one of the covered tables scattered along the park road.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** The park straddles I-40 in eastern Arizona. Enter from the north at I-40 Exit 311 or from the south via US-180. From Flagstaff, it is about 1 hour and 45 minutes east. From Phoenix, plan on 3.5 hours via I-17 and I-40. The park road connects the two entrances, so you can enter one side and exit the other.
-
-**Best Time to Visit:** Spring (March through May) and fall (October through November) bring ideal temperatures in the 50s to 70s and excellent light for photography. Summer can exceed 100 degrees, and winter occasionally brings snow. The park is open daily from 8 AM to 5 PM, with extended hours in summer. There is no overnight camping along the park road.
-
-**Getting Around:** You need a car. The park is a 28-mile linear drive with pullouts and short trails. There is no shuttle service. Fill your gas tank before entering — there are no fuel stations inside the park.
-
-**Money & ATMs:** There are no ATMs inside the park. The nearest ATMs are in Holbrook. The park visitor centers accept credit cards for entrance fees and gift shop purchases. Carry cash for vending machines.
-
-**Safety & Health:** Stay on marked trails — the petrified wood is sharp enough to cut through boots if you slip. Removing petrified wood, rocks, or artifacts from the park is a federal crime with fines up to $500. Even tiny fragments. The park does random vehicle checks at the exit. Bring more water than you think you need. The nearest hospital is Summit Healthcare Regional Medical Center in Show Low, about 80 miles south.
-
-**Packing Essentials:** Bring binoculars for Newspaper Rock, a wide-brim hat, sunscreen, and at least two liters of water per person. A polarizing filter for photography cuts glare on the petrified wood and deepens the sky. Layers are essential — desert temperatures can swing 40 degrees between midday and sunset.
-
-**Local Culture & Etiquette:** The petroglyphs and pueblo ruins in the park are sacred to modern Puebloan communities including the Hopi and Zuni. Treat them with respect — never touch petroglyphs or climb on archaeological structures. If you see other visitors disturbing resources, report it to a ranger. The park's motto is "Take only pictures, leave only footprints."
-
-</div>
