@@ -3,6 +3,7 @@ title: "Flagstaff"
 description: "A mountain town at 7,000 feet where Route 66 heritage meets Northern Arizona's pine forests, world-class stargazing, and year-round outdoor adventure just 80 miles south of the Grand Canyon."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Ponderosa pine forest and snow-capped San Francisco Peaks above Flagstaff, Arizona"
 tagline: "A ponderosa pine mountain town at 7,000 feet — Route 66 nostalgia, the observatory where Pluto was discovered, serious craft beer culture, and Grand Canyon South Rim exactly one hour south"
 region: northern
 bestMonths:

@@ -3,6 +3,7 @@ title: "Grand Canyon"
 description: "Explore the Grand Canyon, one of the Seven Natural Wonders of the World. From South Rim overlooks to backcountry trails and Colorado River rafting, discover everything you need to plan your Arizona adventure."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Layered red rock cliffs dropping to the Colorado River, Grand Canyon South Rim, Arizona"
 tagline: "A mile deep, 10 miles wide, and 277 miles long — photographs cannot capture the actual scale and standing at the rim for the first time genuinely stops people mid-sentence"
 region: northern
 bestMonths:

@@ -3,6 +3,7 @@ title: "Page"
 description: "A small desert town on the Arizona-Utah border where sculpted sandstone canyons, turquoise water, and engineering marvels converge at the edge of Lake Powell."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Horseshoe Bend's emerald Colorado River curving below towering sandstone cliffs near Page, Arizona"
 tagline: "Antelope Canyon light beams through narrow sandstone slots, Horseshoe Bend 270-degree river curve 1,000 feet below, Lake Powell blue reservoir — all within 20 miles of one small Arizona town"
 region: northern
 bestMonths:

@@ -3,6 +3,7 @@ title: "Scottsdale"
 description: "Discover Scottsdale, Arizona's premier resort city. From Old Town galleries and world-class spas to championship golf courses and rugged desert preserves, explore the best of the West's most western town."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Desert Botanical Garden pathways lined with saguaros and blooming cacti, Scottsdale, Arizona"
 tagline: "Old Town galleries, Frank Lloyd Wright Taliesin West, the finest resort spa concentration in the American West, and a food scene that consistently surprises visitors expecting desert mediocrity"
 region: phoenix-metro
 bestMonths:

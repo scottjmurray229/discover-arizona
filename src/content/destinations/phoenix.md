@@ -3,6 +3,7 @@ title: "Phoenix"
 description: "Explore Phoenix, Arizona's sprawling capital city in the heart of the Sonoran Desert. From world-class museums and desert hiking to vibrant arts districts and incredible Mexican food, discover why the Valley of the Sun is a year-round destination."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Downtown Phoenix skyline at dusk with desert mountain backdrop, Arizona"
 tagline: "Spring training baseball, the Desert Botanical Garden, world-class Sonoran Mexican food, and 325 days of sunshine — visit October through April to understand why so many people choose to stay"
 region: phoenix-metro
 bestMonths:

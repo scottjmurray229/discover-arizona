@@ -3,6 +3,7 @@ title: "Sedona"
 description: "Discover Sedona's iconic red rock formations, energy vortex sites, world-class hiking trails, and vibrant arts scene. Plan your trip to Arizona's most beautiful desert town with practical tips and honest recommendations."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Cathedral Rock's red sandstone spires rising above Oak Creek, Sedona, Arizona"
 tagline: "Red rock formations glowing in the afternoon light, energy vortexes drawing seekers from around the world, excellent Southwestern cuisine, and the best small-airport approach view in the United States"
 region: northern
 bestMonths:
