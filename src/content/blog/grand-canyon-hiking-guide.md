@@ -2,6 +2,7 @@
 title: "Grand Canyon Hiking Guide: What Nobody Tells First-Timers"
 description: "The trails nobody warns you about, the heat math nobody does before they go down, and the specific information that makes the difference between a great Grand Canyon hike and a rescue."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

@@ -2,6 +2,7 @@
 title: "Sedona Vortex Sites: What to Expect (A Skeptic's Guide)"
 description: "What the vortex sites actually are, why Cathedral Rock at sunrise is worth visiting regardless of your beliefs, and what a vortex tour will and won't give you."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"
