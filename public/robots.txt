@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://discoverarizona.info/sitemap-index.xml
+Sitemap: https://discoverarizona.info/video-sitemap.xml
