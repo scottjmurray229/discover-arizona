@@ -7,6 +7,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import scottImg from '../../images/scott-murray.jpg';
+import jeniceImg from '../../images/jenice-murray.jpg';
 ---
 
 <BaseLayout
@@ -40,8 +41,8 @@ import scottImg from '../../images/scott-murray.jpg';
 <!-- ═══════════════ PROFILE CARD ═══════════════ -->
 <section class="profiles-section">
   <div class="profiles-header">
-    <div class="section-eyebrow">Meet the Writer</div>
-    <h2 class="section-title">The Person Behind the Pages</h2>
+    <div class="section-eyebrow">Meet the Team</div>
+    <h2 class="section-title">The People Behind the Pages</h2>
   </div>
   <div class="profiles-grid">
     <div class="profile-card reveal">
@@ -56,6 +57,23 @@ import scottImg from '../../images/scott-murray.jpg';
           <div class="profile-stat"><div class="profile-stat-num">1000s</div><div class="profile-stat-label">Miles driven in AZ</div></div>
           <div class="profile-stat"><div class="profile-stat-num">40+</div><div class="profile-stat-label">Countries traveled</div></div>
         </div>
+      </div>
+    </div>
+    <div class="profile-card reveal">
+      <div class="profile-banner jenice"><div class="profile-banner-bg"></div></div>
+      <Image src={jeniceImg} alt="Jenice Murray" class="profile-avatar jenice-av" width={96} height={96} format="webp" loading="lazy" />
+      <div class="profile-body">
+        <div class="profile-name">Jenice</div>
+        <div class="profile-role">Desert Explorer · Cultural Enthusiast</div>
+        <p class="profile-bio">Born in the Philippines and based in San Diego. Desert explorer who brings personal storytelling and sensory detail to Discover Arizona. The one who knows the best sunset spots before Scott finds them on a map, researches where Tucson locals actually eat, and brings the emotional perspective that makes Arizona's landscapes feel alive rather than just photogenic.</p>
+        <div class="profile-stats">
+          <div class="profile-stat"><div class="profile-stat-num">Desert</div><div class="profile-stat-label">Southwest explorer</div></div>
+          <div class="profile-stat"><div class="profile-stat-num">40+</div><div class="profile-stat-label">Countries traveled</div></div>
+          <div class="profile-stat"><div class="profile-stat-num">Food</div><div class="profile-stat-label">Sonoran to fine dining</div></div>
+        </div>
+      </div>
+      <div class="profile-cta">
+        <a href="/about/jenice/" class="profile-cta-link">Read Jenice's full bio &rarr;</a>
       </div>
     </div>
   </div>
