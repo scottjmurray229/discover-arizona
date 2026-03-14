@@ -5,6 +5,26 @@ export const ARIZONA_ESSENTIALS: PackingItem[] = [
   { id: 'az-sunprotect', name: 'Full Sun Protection Kit', category: 'destination', description: 'SPF 50+ sunscreen, UPF 50 long-sleeved shirt, wide-brim hat, sunglasses. Arizona UV regularly hits 11+ (extreme). Exposed skin burns in 10 minutes in summer.', essential: true, amazonSearchFallback: 'upf+50+sun+protection+shirt+long+sleeve', affiliatePrice: '$30–50' },
   { id: 'az-hikeboots', name: 'Hiking Boots (ankle support)', category: 'destination', description: 'Grand Canyon, Antelope Canyon approach trails, Sedona red rock — loose rock, uneven terrain, and significant elevation changes. Trail runners minimum, ankle boots preferred.', essential: true, amazonSearchFallback: 'hiking+boots+ankle+support+trail', affiliatePrice: '$80–150' },
   { id: 'az-electrolytes', name: 'Electrolyte Packets', category: 'destination', description: 'Drinking water alone isn\'t enough in extreme heat. You sweat out sodium and potassium faster than you can drink. Nuun, Liquid IV, or similar — pack plenty.', essential: true, amazonSearchFallback: 'electrolyte+packets+hydration+nuun+travel', affiliatePrice: '$15–25' },
+  {
+    id: 'vpn-subscription',
+    name: 'VPN Subscription',
+    category: 'electronics',
+    description: 'Secure your data on public WiFi — essential for hotel, airport, and cafe networks abroad.',
+    essential: false,
+    affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=XXXXX&url_id=902',
+    affiliatePrice: '~$3/month',
+    affiliatePartner: 'NordVPN',
+  },
+  {
+    id: 'phone-gimbal',
+    name: 'Phone Gimbal for Travel Vlogging',
+    category: 'electronics',
+    description: 'Stabilized video from your phone — no editing needed.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/flow-2-pro?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$149',
+    affiliatePartner: 'Insta360',
+  },
 ];
 
 export const ARIZONA_GEAR_RECOMMENDATIONS: GearRecommendation[] = [
